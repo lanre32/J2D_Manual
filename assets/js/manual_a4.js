@@ -538,6 +538,13 @@ function cloneBlockShell(block, markCont=false){
       // Prefer list-aware splitting for blocks that declare data-split="list".
       // This is critical for MOBILE PDFs where Scripture Reading / question lists
       // can exceed a single page.
+      //
+      // IMPORTANT:
+      //   Some split strategies mutate the original element (moving child nodes
+      //   into a remainder clone). If the split does NOT actually make the
+      //   current page fit, the caller MUST restore the element before trying
+      //   a different placement strategy; otherwise content can be silently lost
+      //   (observed as missing sections / blank pages in some Mobile PDFs).
       let rem = null;
       try {
         const mode = (el && el.getAttribute) ? (el.getAttribute('data-split') || '').toLowerCase() : '';
@@ -554,6 +561,12 @@ function cloneBlockShell(block, markCont=false){
       if (appendAndCheck(el)) return;
 
       // Overflow: try to split the block to fill the remaining space.
+      // NOTE: splitting may mutate `el` (moving nodes into `remainder`).
+      // If we later decide to *not* accept the split (because it didn't resolve
+      // overflow), we must restore `el` from a snapshot to avoid losing content.
+      let snapshot = null;
+      try { snapshot = el.cloneNode(true); } catch (e) {}
+
       let remainder = splitSmart(el);
       if (remainder && !overflows(inner, FIT_FUZZ_PX)) {
         // Place remainder on next pages
@@ -572,6 +585,18 @@ function cloneBlockShell(block, markCont=false){
           }
         }
         return;
+      }
+
+      // Split attempt returned a remainder but did not make the current page fit.
+      // Restore original `el` so we don't lose nodes moved into the unused remainder.
+      if (remainder && snapshot) {
+        try {
+          el.replaceWith(snapshot);
+          el = snapshot;
+        } catch (e) {
+          try { el.innerHTML = snapshot.innerHTML; } catch (e2) {}
+        }
+        remainder = null;
       }
 
       // Splitting didn't help (or produced an unusable split). Roll back.
