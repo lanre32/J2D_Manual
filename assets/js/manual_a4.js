@@ -75,6 +75,13 @@
     const btnPrint = $('#btnPrint');
     const btnCopy = $('#btnCopy');
     const btnMode = $('#btnMode');
+    const btnPdfA4 = $('#btnPdfA4');
+    const btnPdfMobile = $('#btnPdfMobile');
+
+    // Safety: ensure PDF links always point to the expected files in this manual folder.
+    if (btnPdfA4) btnPdfA4.setAttribute('href', 'manual_a4.pdf');
+    if (btnPdfMobile) btnPdfMobile.setAttribute('href', 'manual_mobile.pdf');
+
 
     
     if (btnMode) {
@@ -230,11 +237,36 @@ if (btnPrint) {
       const paged = document.getElementById('paged');
       if (!paged) return;
       const pages = Array.from(paged.querySelectorAll('.page'));
+
+      // Remove pages that are genuinely empty OR only contain non-visible elements.
       pages.forEach((pg) => {
         const inner = pg.querySelector('.page__inner');
-        if (inner && inner.children && inner.children.length === 0) {
+        if (!inner) return;
+
+        const kids = Array.from(inner.children || []);
+        if (kids.length === 0) {
           pg.remove();
+          return;
         }
+
+        // If all children have ~zero area or are hidden, treat as empty.
+        const hasVisible = kids.some((k) => {
+          try {
+            const r = k.getBoundingClientRect ? k.getBoundingClientRect() : null;
+            if (!r || r.height < 2 || r.width < 2) return false;
+            const cs = window.getComputedStyle ? window.getComputedStyle(k) : null;
+            if (cs) {
+              if (cs.display === 'none' || cs.visibility === 'hidden') return false;
+              const op = parseFloat(cs.opacity || '1');
+              if (!isNaN(op) && op < 0.05) return false;
+            }
+            return true;
+          } catch (e) {
+            return false;
+          }
+        });
+
+        if (!hasVisible) pg.remove();
       });
 
       // Renumber remaining pages (cover is page 1).
@@ -538,13 +570,6 @@ function cloneBlockShell(block, markCont=false){
       // Prefer list-aware splitting for blocks that declare data-split="list".
       // This is critical for MOBILE PDFs where Scripture Reading / question lists
       // can exceed a single page.
-      //
-      // IMPORTANT:
-      //   Some split strategies mutate the original element (moving child nodes
-      //   into a remainder clone). If the split does NOT actually make the
-      //   current page fit, the caller MUST restore the element before trying
-      //   a different placement strategy; otherwise content can be silently lost
-      //   (observed as missing sections / blank pages in some Mobile PDFs).
       let rem = null;
       try {
         const mode = (el && el.getAttribute) ? (el.getAttribute('data-split') || '').toLowerCase() : '';
@@ -558,89 +583,55 @@ function cloneBlockShell(block, markCont=false){
       ensureStartRoom(el);
 
       const hadContent = inner.children.length > 0;
-      if (appendAndCheck(el)) return;
 
-      // Overflow: try to split the block to fill the remaining space.
-      // NOTE: splitting may mutate `el` (moving nodes into `remainder`).
-      // If we later decide to *not* accept the split (because it didn't resolve
-      // overflow), we must restore `el` from a snapshot to avoid losing content.
-      let snapshot = null;
-      try { snapshot = el.cloneNode(true); } catch (e) {}
+      // Append first fragment to the current page.
+      inner.appendChild(el);
 
-      let remainder = splitSmart(el);
-      if (remainder && !overflows(inner, FIT_FUZZ_PX)) {
-        // Place remainder on next pages
-        while (remainder) {
-          newPage();
-          // Try to place remainder; it may need further splitting.
-          appendAndCheck(remainder);
-          if (!overflows(inner, FIT_FUZZ_PX)) {
-            remainder = null;
-          } else {
-            remainder = splitSmart(remainder);
-            if (!remainder) {
-              console.warn('Continuation block still too tall and cannot be split:', el.id || el.className);
-              break;
-            }
-          }
+      // Continuation fragments to be placed on subsequent pages (in order).
+      const queue = [];
+
+      // Split the current fragment until it fits, queuing any continuation fragments.
+      // This is designed to be robust in headless Chromium PDF generation where
+      // subtle layout reflows can otherwise drop sections (e.g., KEY POINTS).
+      const splitUntilFits = (frag) => {
+        let guard = 0;
+        while (overflows(inner, FIT_FUZZ_PX) && guard < 80) {
+          const rem = splitSmart(frag);
+          if (!rem) break;
+          // New remainder comes immediately after this fragment, before any older tails.
+          queue.unshift(rem);
+          guard++;
         }
-        return;
-      }
+        return !overflows(inner, FIT_FUZZ_PX);
+      };
 
-      // Split attempt returned a remainder but did not make the current page fit.
-      // Restore original `el` so we don't lose nodes moved into the unused remainder.
-      if (remainder && snapshot) {
-        try {
-          el.replaceWith(snapshot);
-          el = snapshot;
-        } catch (e) {
-          try { el.innerHTML = snapshot.innerHTML; } catch (e2) {}
-        }
-        remainder = null;
-      }
+      // Try to make it fit on the current page (maximizes use of remaining space).
+      splitUntilFits(el);
 
-      // Splitting didn't help (or produced an unusable split). Roll back.
-      try { inner.removeChild(el); } catch (e) {}
-
-      // If we already had content on this page, move the whole block to a new page.
-      if (hadContent) {
+      // If still overflowing and we already had content on this page,
+      // move this fragment to a fresh page (prevents cropped boxes).
+      if (overflows(inner, FIT_FUZZ_PX) && hadContent) {
+        try { inner.removeChild(el); } catch (e) {}
         newPage();
-        // Now it should fit better; if not, we split on the fresh page.
-        appendAndCheck(el);
-        if (overflows(inner, FIT_FUZZ_PX)) {
-          remainder = splitSmart(el);
-          if (remainder) {
-            while (remainder) {
-              newPage();
-              appendAndCheck(remainder);
-              if (!overflows(inner, FIT_FUZZ_PX)) {
-                remainder = null;
-              } else {
-                remainder = splitSmart(remainder);
-              }
-            }
-          } else {
-            console.warn('Block exceeds one page and cannot be split:', el.id || el.className);
-          }
-        }
-        return;
+        inner.appendChild(el);
+        splitUntilFits(el);
       }
 
-      // Page was empty: keep as much as we can (best effort), then continue.
-      appendAndCheck(el);
-      remainder = splitSmart(el);
-      if (remainder) {
-        while (remainder) {
-          newPage();
-          appendAndCheck(remainder);
-          if (!overflows(inner, FIT_FUZZ_PX)) {
-            remainder = null;
-          } else {
-            remainder = splitSmart(remainder);
-          }
+      if (overflows(inner, FIT_FUZZ_PX)) {
+        console.warn('Block exceeds one page and cannot be fully split:', el.id || el.className);
+      }
+
+      // Place queued fragments sequentially
+      while (queue.length) {
+        const frag = queue.shift();
+        newPage();
+        inner.appendChild(frag);
+
+        splitUntilFits(frag);
+
+        if (overflows(inner, FIT_FUZZ_PX)) {
+          console.warn('Continuation block exceeds one page and cannot be fully split:', frag.id || frag.className);
         }
-      } else if (overflows(inner, FIT_FUZZ_PX)) {
-        console.warn('Block exceeds one page and cannot be split:', el.id || el.className);
       }
     }
 

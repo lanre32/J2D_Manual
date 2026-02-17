@@ -608,7 +608,20 @@ body[data-theme="cream-leather"] .chip{ background: rgba(255,255,255,.55); }
   }
   body[data-mode="mobile"] .cover{ background-size: cover; }
 
-  body[data-mode="mobile"] .cover__header{ padding: 14px 14px 10px; }
+  body[data-mode="mobile"] .cover__header{ padding: 14px 14px 10px; height:auto; min-height: 46px; }
+
+  /* Make header text wrap nicely on small screens */
+  body[data-mode="mobile"] .brand__name{
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    max-width: calc(100% - 64px);
+    font-size: clamp(18px, 4.8vw, 26px);
+    line-height: 1.15;
+    letter-spacing: 0.12em;
+    word-break: break-word;
+  }
+
   body[data-mode="mobile"] .cover__body{ padding: 16px 14px 18px; }
 
   body[data-mode="mobile"] .block{ padding: 16px 14px; border-radius: 18px; }

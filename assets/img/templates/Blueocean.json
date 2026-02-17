@@ -1,0 +1,17 @@
+{
+  "label": "Blueocean",
+  "vars": {
+    "--outer-bg": "#07080b",
+    "--ink": "#f7f4ec",
+    "--muted": "rgba(247,244,236,.78)",
+    "--accent": "#186090",
+    "--accent-2": "#001830",
+    "--hdr-ink": "#f7f4ec",
+    "--hdr-shadow": "rgba(0,0,0,.55)",
+    "--card-ink": "#f7f4ec",
+    "--card-bg": "rgba(10,12,16,.44)",
+    "--card-bg-2": "rgba(10,12,16,.30)",
+    "--card-border": "rgba(24,96,144,0.420)",
+    "--soft-border": "rgba(255,255,255,.14)"
+  }
+}
