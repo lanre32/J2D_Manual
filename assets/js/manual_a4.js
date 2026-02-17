@@ -82,8 +82,16 @@
     if (btnPdfA4) btnPdfA4.setAttribute('href', 'manual_a4.pdf');
     if (btnPdfMobile) btnPdfMobile.setAttribute('href', 'manual_mobile.pdf');
 
+    // Give downloaded PDFs unique, manual-specific filenames (prevents overwrite on phones).
+    try {
+      const parts = (window.location.pathname || '').split('/').filter(Boolean);
+      let slug = (parts[parts.length - 1] || 'manual').toLowerCase();
+      slug = slug.replace(/\.html?$/i, '');
+      slug = slug.replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'manual';
+      if (btnPdfA4) btnPdfA4.setAttribute('download', `${slug}_a4.pdf`);
+      if (btnPdfMobile) btnPdfMobile.setAttribute('download', `${slug}_mobile.pdf`);
+    } catch (e) {}
 
-    
     if (btnMode) {
       const mode = getPreferredMode();
       btnMode.textContent = mode === 'mobile' ? 'A4 view' : 'Mobile view';
@@ -171,6 +179,7 @@ if (btnPrint) {
     return sheet;
   }
 
+  
   function splitListBlock(block, container) {
     const splitMode = (block.getAttribute('data-split') || '').toLowerCase();
     if (splitMode !== 'list') return null;
@@ -179,9 +188,9 @@ if (btnPrint) {
     if (!list) return null;
 
     const items = Array.from(list.children).filter((n) => n && n.nodeType === 1);
-    // We can only split a list across pages if it has at least 2 items.
-    // (If it has 1 huge item, we'll fall back to generic splitting.)
-    if (items.length < 2) return null;
+    // Even if the list only has ONE huge item, we still attempt to split it
+    // (especially important for MOBILE PDFs where KEY POINTS can span multiple pages).
+    if (items.length < 1) return null;
 
     const isOrdered = list.tagName === 'OL';
     const startBase = isOrdered ? (parseInt(list.getAttribute('start') || '1', 10) || 1) : 1;
@@ -199,6 +208,111 @@ if (btnPrint) {
       heading.textContent = `${heading.textContent} (cont.)`;
     }
 
+    // --- Helper: split a "leaf" text element by words until the CURRENT page fits ---
+    const splitLeafByWords = (leafEl, minKeep = 14, minRemain = 14) => {
+      if (!leafEl) return null;
+      try {
+        if (leafEl.children && leafEl.children.length) return null; // avoid destroying markup
+      } catch (e) { return null; }
+
+      const full = (leafEl.textContent || '').trim();
+      if (!full) return null;
+
+      const words = full.split(/\s+/g);
+      if (words.length < (minKeep + minRemain + 10)) return null;
+
+      const original = full;
+      let lo = minKeep;
+      let hi = words.length - minRemain;
+      let best = 0;
+
+      while (lo <= hi) {
+        const mid = Math.floor((lo + hi) / 2);
+        leafEl.textContent = words.slice(0, mid).join(' ');
+        if (!overflows(container, FIT_FUZZ_PX)) {
+          best = mid;
+          lo = mid + 1;
+        } else {
+          hi = mid - 1;
+        }
+      }
+
+      // restore
+      leafEl.textContent = original;
+
+      if (!best || best >= words.length) return null;
+
+      return {
+        first: words.slice(0, best).join(' '),
+        rest: words.slice(best).join(' ')
+      };
+    };
+
+    // --- Helper: split a SINGLE list item (KP explain / paragraph) into a continuation item ---
+    const splitSingleListItem = (li) => {
+      if (!li) return null;
+
+      // Prefer the KP explanation span (safe leaf node).
+      const explain = li.querySelector('.kp-item__explain');
+      let target = null;
+      let targetKind = '';
+
+      if (explain && (!explain.children || explain.children.length === 0)) {
+        target = explain;
+        targetKind = 'kp-explain';
+      } else {
+        // Fallback: a simple paragraph (leaf)
+        const p = li.querySelector('p');
+        if (p && (!p.children || p.children.length === 0)) {
+          target = p;
+          targetKind = 'p';
+        }
+      }
+
+      if (!target) return null;
+
+      const res = splitLeafByWords(target, 14, 14);
+      if (!res) return null;
+
+      // Clone BEFORE we mutate/move nodes.
+      const cont = li.cloneNode(true);
+
+      const contTarget = (() => {
+        try {
+          if (targetKind === 'kp-explain') return cont.querySelector('.kp-item__explain');
+          if (targetKind === 'p') return cont.querySelector('p');
+        } catch (e) {}
+        return null;
+      })();
+
+      if (!contTarget) return null;
+
+      // Apply split text
+      try { target.textContent = res.first.replace(/\s+$/, '') + ' …'; } catch (e) {}
+      try { contTarget.textContent = res.rest.trim(); } catch (e) {}
+
+      // Mark continuation on KP titles if present
+      try {
+        const t = cont.querySelector('.kp-item__title');
+        if (t && !t.textContent.includes('(cont.)')) t.textContent = (t.textContent + ' (cont.)').trim();
+      } catch (e) {}
+
+      // For KP items: move apps/refs to continuation (keeps first page compact + avoids duplication).
+      const moveToCont = (sel) => {
+        try {
+          const orig = li.querySelector(sel);
+          if (!orig) return;
+          const dup = cont.querySelector(sel);
+          if (dup) dup.remove();
+          cont.appendChild(orig); // moves node out of the original item
+        } catch (e) {}
+      };
+      moveToCont('.kp-item__apps');
+      moveToCont('.kp-item__refs');
+
+      return cont;
+    };
+
     // Move list items from the end into the remainder until it fits.
     // Keep at least 1 item in the first block.
     let moved = 0;
@@ -209,11 +323,22 @@ if (btnPrint) {
       moved += 1;
     }
 
-    // If we didn't move anything, abort.
+    let insertedContinuation = false;
+
+    // If we still overflow, try splitting the remaining last item by words.
+    if (overflows(container)) {
+      const tail = list.lastElementChild;
+      const contItem = splitSingleListItem(tail);
+      if (contItem) {
+        remList.insertBefore(contItem, remList.firstChild);
+        insertedContinuation = true;
+      }
+    }
+
+    // If we didn't move anything AND couldn't split within an item, abort.
     if (remList.children.length === 0) return null;
 
-    // Safety: If we still overflow after moving items, ROLLBACK.
-    // This prevents accidental content loss in edge cases.
+    // Safety: If we still overflow after moving/splitting, ROLLBACK to avoid content loss.
     if (overflows(container)) {
       try {
         while (remList.firstElementChild) {
@@ -224,9 +349,10 @@ if (btnPrint) {
     }
 
     // Preserve ordered list numbering when the list is split.
-    if (isOrdered && moved > 0 && remList.tagName === 'OL') {
+    if (isOrdered && remList.tagName === 'OL') {
       const remainingCount = list.children.length;
-      remList.setAttribute('start', String(startBase + remainingCount));
+      const start = insertedContinuation ? (startBase + Math.max(0, remainingCount - 1)) : (startBase + remainingCount);
+      remList.setAttribute('start', String(start));
     }
 
     return remainder;

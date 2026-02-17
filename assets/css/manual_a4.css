@@ -603,7 +603,7 @@ body[data-theme="cream-leather"] .chip{ background: rgba(255,255,255,.55); }
   body[data-mode="mobile"] .sheet{
     width: min(94vw, 760px);
     height: auto;
-    aspect-ratio: 210 / 297;
+    aspect-ratio: auto; /* allow cover to grow (prevents “At a Glance” clipping on mobile) */
     border-radius: 14px;
   }
   body[data-mode="mobile"] .cover{ background-size: cover; }
