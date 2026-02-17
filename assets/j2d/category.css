@@ -1,0 +1,258 @@
+/*
+  Category page (folder -> manuals)
+  Uses the premium theme variables from assets/css/styles.css
+*/
+
+.j2d-catpage-top {
+  padding: 18px 0 8px;
+}
+
+.j2d-catpage-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.j2d-catpage-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.j2d-catpage-brand img {
+  object-fit: contain;
+}
+
+.j2d-catpage-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--card-bg) 70%, transparent);
+  border: 1px solid var(--card-border);
+  padding: 6px;
+}
+
+.j2d-catpage-wordmark {
+  height: 20px;
+  width: auto;
+}
+
+@media (max-width: 640px) {
+  .j2d-catpage-wordmark { display: none; }
+}
+
+.j2d-catpage-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.j2d-catpage-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--card-border);
+  background: color-mix(in srgb, var(--card-bg) 74%, transparent);
+  box-shadow: var(--shadow-soft);
+}
+
+.j2d-catpage-actions a:hover {
+  border-color: color-mix(in srgb, var(--accent) 50%, var(--card-border));
+}
+
+.j2d-catpage-title {
+  margin: 18px 0 6px;
+  font-family: var(--font-head);
+  letter-spacing: 0.4px;
+  font-size: clamp(26px, 3vw, 42px);
+  line-height: 1.1;
+}
+
+.j2d-catpage-sub {
+  color: var(--muted);
+  margin: 0;
+  max-width: 72ch;
+}
+
+.j2d-catpage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 22px;
+  padding-bottom: 70px;
+}
+
+@media (max-width: 980px) {
+  .j2d-catpage-grid { grid-template-columns: 1fr; }
+}
+
+.j2d-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  overflow: hidden;
+}
+
+.j2d-card-head {
+  padding: 16px 16px 12px;
+  border-bottom: 1px solid color-mix(in srgb, var(--card-border) 70%, transparent);
+}
+
+.j2d-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.j2d-search {
+  flex: 1;
+  min-width: 220px;
+}
+
+.j2d-search input {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  background: color-mix(in srgb, var(--card-bg-2) 92%, transparent);
+  color: var(--text);
+}
+
+.j2d-search input::placeholder {
+  color: color-mix(in srgb, var(--muted) 85%, transparent);
+}
+
+.j2d-count {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.j2d-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 520px;
+  overflow: auto;
+}
+
+@media (max-width: 980px) {
+  .j2d-list { max-height: none; }
+}
+
+.j2d-item {
+  border-radius: 14px;
+  border: 1px solid color-mix(in srgb, var(--card-border) 80%, transparent);
+  background: var(--card-bg-2);
+  padding: 12px 12px;
+  transition: transform .12s ease, border-color .12s ease, background .12s ease;
+}
+
+.j2d-item:hover,
+.j2d-item:focus-within {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--card-border));
+  background: color-mix(in srgb, var(--card-bg) 85%, transparent);
+}
+
+.j2d-item.is-active {
+  border-color: color-mix(in srgb, var(--accent) 70%, var(--card-border));
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 55%, transparent) inset;
+}
+
+.j2d-item a {
+  text-decoration: none;
+  display: block;
+}
+
+.j2d-item-title {
+  font-weight: 800;
+  letter-spacing: 0.1px;
+  line-height: 1.25;
+}
+
+.j2d-item-meta {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.j2d-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--card-border) 78%, transparent);
+  background: color-mix(in srgb, var(--card-bg-2) 92%, transparent);
+}
+
+.j2d-preview {
+  padding: 16px;
+}
+
+.j2d-preview h2 {
+  margin: 0 0 10px;
+  font-family: var(--font-head);
+  letter-spacing: 0.35px;
+  font-size: 20px;
+}
+
+.j2d-preview p {
+  margin: 0 0 12px;
+  color: color-mix(in srgb, var(--text) 92%, transparent);
+  line-height: 1.65;
+}
+
+.j2d-preview .j2d-preview-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.j2d-open {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, var(--card-border));
+  background:
+    radial-gradient(220px 80px at 20% 30%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 60%),
+    color-mix(in srgb, var(--card-bg) 70%, transparent);
+  box-shadow: var(--shadow-soft);
+}
+
+.j2d-open:hover {
+  border-color: color-mix(in srgb, var(--accent) 80%, var(--card-border));
+}
+
+.j2d-empty {
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px dashed color-mix(in srgb, var(--card-border) 85%, transparent);
+  color: var(--muted);
+  text-align: center;
+  margin: 10px;
+}

@@ -1,0 +1,99 @@
+:root {
+  --bg-color: #1d1d1d;
+  --light-color: #444;
+  --dark-color: #000;
+  --icon-color: #65615f;
+}
+
+/*
+  Liquid metal button styles
+  Adapted from the provided asset to avoid global body/html resets.
+  (Visual intent preserved; scope kept to the button elements.)
+*/
+
+.j2d-liquid-metal {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#liquid-metal {
+  /* Original design assumed 10px rem base; we keep the same visual size in px. */
+  /* Reduced so it fits the hero proportionately */
+  --lm-size: 240px;
+  position: relative;
+  width: var(--lm-size);
+  height: var(--lm-size);
+  border-radius: 50%;
+}
+
+#liquid-metal::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(var(--lm-size) - 30px);
+  height: calc(var(--lm-size) - 30px);
+  background: linear-gradient(var(--light-color), var(--dark-color));
+  border-radius: 50%;
+  box-shadow: inset 0 2px 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+#liquid-metal .outline {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(var(--lm-size) + 6px);
+  height: calc(var(--lm-size) + 6px);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#liquid-metal .outline::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 5px;
+  border-radius: inherit;
+  background: conic-gradient(from 180deg, blue, purple, red, purple, blue);
+  filter: grayscale(1);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  transition: all 0.3s ease;
+}
+
+#liquid-metal .outline:hover::before,
+#liquid-metal:focus-within .outline::before,
+.j2d-liquid-metal:focus-within #liquid-metal .outline::before {
+  filter: grayscale(0);
+}
+
+#liquid-metal .outline .svg-icon {
+  width: 82px;
+  fill: var(--icon-color);
+  transform: rotate(-45deg);
+}
+
+/* Make it responsive */
+@media (max-width: 1200px) {
+  #liquid-metal { --lm-size: 220px; }
+}
+
+@media (max-width: 768px) {
+  #liquid-metal { --lm-size: 200px; }
+}
+
+@media (max-width: 480px) {
+  #liquid-metal { --lm-size: 180px; }
+}

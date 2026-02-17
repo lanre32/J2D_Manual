@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "default": {
+    "theme": "navy-gold",
+    "font_pair": "cinzel-inter"
+  },
+  "categories": {
+    "Bible Foundations": {
+      "theme": "navy-gold",
+      "font_pair": "cinzel-inter"
+    },
+    "Faith & Trust": {
+      "theme": "cream-black",
+      "font_pair": "dmserif-sourcesans"
+    },
+    "Character & Holiness": {
+      "theme": "green-gold",
+      "font_pair": "cormorant-inter"
+    },
+    "Identity & Purpose": {
+      "theme": "cozy-leather",
+      "font_pair": "playfair-sourcesans"
+    },
+    "Prayer & Intercession": {
+      "theme": "cream-leather",
+      "font_pair": "playfair-sourcesans"
+    },
+    "Spiritual Disciplines": {
+      "theme": "lilac-purple",
+      "font_pair": "cormorant-sourcesans"
+    },
+    "Holy Spirit & Power": {
+      "theme": "black-gold",
+      "font_pair": "cinzel-inter"
+    },
+    "Worship & Church Life": {
+      "theme": "Blueocean",
+      "font_pair": "playfair-sourcesans"
+    },
+    "Leadership & Service": {
+      "theme": "BrownTan",
+      "font_pair": "dmserif-inter"
+    },
+    "Relationships": {
+      "theme": "Turqbrown",
+      "font_pair": "inter-inter"
+    },
+    "Family & Parenting": {
+      "theme": "Violet",
+      "font_pair": "cormorant-sourcesans"
+    },
+    "Evangelism & Mission": {
+      "theme": "armygreen",
+      "font_pair": "cormorant-inter"
+    },
+    "Stewardship": {
+      "theme": "greyish",
+      "font_pair": "playfair-sourcesans"
+    },
+    "Trials & Suffering": {
+      "theme": "navy-gold",
+      "font_pair": "cinzel-inter"
+    },
+    "Emotional Health": {
+      "theme": "cream-black",
+      "font_pair": "dmserif-sourcesans"
+    }
+  },
+  "note": "Edit this file to lock a theme/font per category. Theme ids come from manual_site/assets/img/templates (<id>_p1.png + <id>_p2.png)."
+}

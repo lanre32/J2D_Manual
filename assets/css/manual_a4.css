@@ -1,0 +1,679 @@
+/* ============================================================
+   Church Media Suite — Premium Manual (A4 + Mobile)
+   v10.11
+
+   Goals:
+   - Robust A4 pagination + PDF rendering (Chromium/Playwright)
+   - Beautiful mobile reading mode (continuous flow)
+   - Consistent typography (no random ALL CAPS / size jumps)
+   - Alternating block styling with theme-aware accents
+   ============================================================ */
+
+/* ---------- Reset ---------- */
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+/* ---------- Core tokens ---------- */
+body{
+  /* A4 geometry */
+  --page-w: 210mm;
+  --page-h: 297mm;
+  --header-h: 48mm;      /* aligns with header artwork on templates */
+
+  /* Safe area */
+  --pad-x: 15mm;
+  --pad-y: 12.5mm;
+
+  /* Typography scale (A4 default) */
+  --fs-body: 13.5px;
+  --lh-body: 1.55;
+  --fs-small: 11.5px;
+  --fs-chip: 11.5px;
+  --fs-kicker: 10.5px;
+
+  --fs-h1: 32px;
+  --fs-h2: 17px;
+  --fs-h3: 15px;
+
+  /* Theme defaults (overridden per theme) */
+  --outer-bg: #07080b;
+  --ink: #f7f4ec;
+  --muted: rgba(247,244,236,.78);
+  --accent: #d6b35a;
+  --accent-2: #7ad7ff;
+
+  /* Header ink (template header bar can be light/dark depending on theme) */
+  --hdr-ink: var(--ink);
+  --hdr-shadow: rgba(0,0,0,.55);
+
+  /* Card / block */
+  --card-ink: var(--ink);
+  --card-bg: rgba(10,12,16,.42);
+  --card-bg-2: rgba(10,12,16,.30);
+  --card-border: rgba(214,179,90,.40);
+  --soft-border: rgba(255,255,255,.14);
+
+  --shadow: rgba(0,0,0,.38);
+  --shadow-soft: rgba(0,0,0,.18);
+
+  /* Fonts */
+  --font-head: "Cinzel", "DM Serif Display", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--card-ink);
+
+  background:
+    radial-gradient(1200px 800px at 25% 10%, rgba(214,179,90,.10), transparent 60%),
+    radial-gradient(1000px 700px at 80% 0%, rgba(122,215,255,.08), transparent 55%),
+    var(--outer-bg);
+}
+
+/* ---------- Theme palettes ---------- */
+body[data-theme="navy-gold"]{
+  --outer-bg:#07080b;
+  --ink:#f7f4ec;
+  --muted:rgba(247,244,236,.78);
+  --accent:#d6b35a;
+  --accent-2:#7ad7ff;
+  --hdr-ink:#f7f4ec;
+  --card-ink:var(--ink);
+  --card-bg:rgba(10,12,16,.44);
+  --card-bg-2:rgba(10,12,16,.32);
+  --card-border:rgba(214,179,90,.42);
+}
+body[data-theme="green-gold"]{
+  --outer-bg:#06110a;
+  --ink:#fbf6ea;
+  --muted:rgba(251,246,234,.78);
+  --accent:#d9b35a;
+  --accent-2:#7bf0c3;
+  --hdr-ink:#1b2a20;
+  --card-ink:var(--ink);
+  --card-bg:rgba(7,14,10,.44);
+  --card-bg-2:rgba(7,14,10,.32);
+  --card-border:rgba(217,179,90,.45);
+}
+body[data-theme="cream-black"]{
+  --outer-bg:#0a0a0a;
+  --ink:#f7f1e4;
+  --muted:rgba(247,241,228,.78);
+  --accent:#f2c14f;
+  --accent-2:#a6e3ff;
+  --hdr-ink:#1a1a1a;
+  --card-ink:var(--ink);
+  --card-bg:rgba(10,10,10,.46);
+  --card-bg-2:rgba(10,10,10,.34);
+  --card-border:rgba(242,193,79,.44);
+  --font-head:"Playfair Display", Georgia, serif;
+}
+
+/* Light-card themes */
+body[data-theme="black-gold"],
+body[data-theme="lilac-purple"],
+body[data-theme="cozy-leather"],
+body[data-theme="cream-leather"]{
+  --ink:#1b1b1b;
+  --muted:rgba(27,27,27,.70);
+  --card-ink:#1b1b1b;
+  --card-bg:rgba(255,255,255,.78);
+  --card-bg-2:rgba(255,255,255,.64);
+  --card-border:rgba(0,0,0,.14);
+  --soft-border:rgba(0,0,0,.10);
+  --shadow: rgba(0,0,0,.24);
+  --shadow-soft: rgba(0,0,0,.12);
+}
+body[data-theme="black-gold"]{
+  --outer-bg:#070708;
+  --accent:#f2c14f;
+  --accent-2:#ff7ad9;
+  --hdr-ink:#fff8ea;
+  --font-head:"DM Serif Display", "Cinzel", Georgia, serif;
+}
+body[data-theme="lilac-purple"]{
+  --outer-bg:#0c0712;
+  --accent:#e3b9ff;
+  --accent-2:#7ad7ff;
+  --hdr-ink:#fff8ff;
+  --font-head:"DM Serif Display", "Cinzel", Georgia, serif;
+}
+body[data-theme="cozy-leather"]{
+  --outer-bg:#1a120c;
+  --accent:#caa96c;
+  --accent-2:#2bb3ff;
+  --hdr-ink:#2a1b12;
+  --font-head:"Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-body:"Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+body[data-theme="cream-leather"]{
+  --outer-bg:#f0ece4;
+  --accent:#a0783d;
+  --accent-2:#2b8bff;
+  --hdr-ink:#fff4e6;
+  --font-head:"Playfair Display", Georgia, serif;
+  --font-body:"Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* ---------- Font pairs (optional meta control) ---------- */
+body[data-font="cinzel-inter"]{ --font-head:"Cinzel", "DM Serif Display", Georgia, serif; --font-body:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+body[data-font="playfair-sourcesans"]{ --font-head:"Playfair Display", Georgia, serif; --font-body:"Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+body[data-font="dmserif-inter"]{ --font-head:"DM Serif Display", Georgia, serif; --font-body:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+/* ---------- Helpers ---------- */
+.sr-only{
+  position:absolute!important;
+  width:1px;height:1px;
+  padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);
+  white-space:nowrap;border:0;
+}
+.muted{ color: var(--muted); }
+.label{ font-size: var(--fs-small); font-weight: 700; color: var(--muted); }
+
+/* ---------- Viewer shell ---------- */
+.viewer{
+  max-width: calc(var(--page-w) + 80px);
+  margin: 0 auto;
+  padding: 18px 14px 40px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap: 22px;
+}
+
+/* ---------- Toolbar (screen only) ---------- */
+.toolbar{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  background: linear-gradient(180deg, rgba(0,0,0,.62), rgba(0,0,0,.20));
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+body[data-theme="cozy-leather"] .toolbar,
+body[data-theme="cream-leather"] .toolbar,
+body[data-theme="black-gold"] .toolbar,
+body[data-theme="lilac-purple"] .toolbar{
+  background: linear-gradient(180deg, rgba(255,255,255,.78), rgba(255,255,255,.25));
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+.toolbar__right{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+
+.btn{
+  font: 600 13px/1 var(--font-body);
+  letter-spacing: .2px;
+  border-radius: 999px;
+  padding: 10px 14px;
+  cursor:pointer;
+  user-select:none;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color: var(--card-ink);
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 10px 22px var(--shadow-soft);
+}
+body[data-theme="cozy-leather"] .btn,
+body[data-theme="cream-leather"] .btn,
+body[data-theme="black-gold"] .btn,
+body[data-theme="lilac-purple"] .btn{ border:1px solid rgba(0,0,0,.12); background: rgba(255,255,255,.60); }
+.btn:active{ transform: translateY(1px); }
+.btn:focus{ outline:none; box-shadow: 0 0 0 3px rgba(122,215,255,.20), 0 10px 22px var(--shadow-soft); }
+
+.btn--metal{ border-color: rgba(214,179,90,.30); background: linear-gradient(180deg, rgba(214,179,90,.22), rgba(214,179,90,.08)); }
+.btn--neo{ background: rgba(255,255,255,.08); }
+
+/* Toast */
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:16px;
+  transform: translateX(-50%) translateY(12px);
+  background: rgba(15,18,25,.92);
+  color:#fff;
+  padding:10px 12px;
+  border-radius: 999px;
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+  opacity:0;
+  pointer-events:none;
+  transition: opacity .25s ease, transform .25s ease;
+  z-index: 9999;
+  font-size: 13px;
+}
+.toast.is-on{ opacity:1; transform: translateX(-50%) translateY(0); }
+.pulse{ outline: 2px solid rgba(122,215,255,.75); outline-offset: 4px; animation: pulseFade .9s ease-out 1; }
+@keyframes pulseFade{ 0%{outline-color: rgba(122,215,255,.9)} 100%{outline-color: rgba(122,215,255,0)} }
+
+/* ---------- Page (A4 sheet) ---------- */
+.sheet{
+  width: var(--page-w);
+  height: var(--page-h);
+  position: relative;
+  border-radius: 18px;
+  overflow:hidden;
+  box-shadow: 0 24px 55px var(--shadow);
+  background: rgba(255,255,255,.02);
+}
+
+.cover{ background-image: var(--bg-cover); }
+.page{ background-image: var(--bg-page); }
+.cover,.page{
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+/* ---------- Cover layout ---------- */
+.cover__header{
+  height: var(--header-h);
+  padding: 8mm var(--pad-x) 0;
+  /* Center the brand line on the cover (requested: “RCCG LSP HOME CONNECT” centred) */
+  display:flex;
+  justify-content:center;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: 10px;
+  width: 100%;
+}
+.brand__logo{
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid var(--soft-border);
+  background: rgba(255,255,255,.06);
+}
+.brand__name{
+  font-family: var(--font-head);
+  font-size: 34px;
+  letter-spacing: .6px;
+  line-height: 1.05;
+  color: var(--hdr-ink);
+  text-shadow: 0 10px 22px var(--hdr-shadow);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  text-align:center;
+}
+
+/* Liquid hero (screen only) */
+@media screen{
+  .brand__name[data-liquid]{
+    background: linear-gradient(115deg, var(--hdr-ink), var(--accent), var(--hdr-ink), var(--accent-2), var(--hdr-ink));
+    background-size: 220% 220%;
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation: liquidShine 7s ease-in-out infinite;
+    filter: drop-shadow(0 12px 22px var(--hdr-shadow));
+  }
+  @keyframes liquidShine{ 0%{background-position: 0% 50%} 50%{background-position: 100% 50%} 100%{background-position: 0% 50%} }
+}
+@media print{
+  .brand__name[data-liquid]{ -webkit-text-fill-color: var(--hdr-ink); color: var(--hdr-ink); background:none; animation:none; filter:none; }
+}
+
+.cover__body{ padding: 10mm var(--pad-x) var(--pad-y); }
+
+.cover__title{
+  margin-bottom: 10mm;
+  padding: 10px 14px;
+  border-radius: 16px;
+  background: var(--card-bg);
+  color: var(--card-ink);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 18px 35px var(--shadow-soft);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.pills{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom: 6px; }
+.pill{
+  display:inline-flex;
+  align-items:center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing:.25px;
+  border: 1px solid var(--soft-border);
+  background: rgba(255,255,255,.10);
+}
+.pill--accent{ border-color: color-mix(in srgb, var(--accent) 70%, transparent); background: color-mix(in srgb, var(--accent) 18%, transparent); }
+.pill--ghost{ opacity:.9; }
+
+.h1{
+  font-family: var(--font-head);
+  letter-spacing: .2px;
+  font-size: var(--fs-h1);
+  line-height: 1.12;
+  margin: .25rem 0 .15rem;
+}
+
+/* ---------- Flow + paged containers ---------- */
+.flow{
+  position: absolute;
+  left: -99999px;
+  top: 0;
+  width: var(--page-w);
+  visibility: hidden;
+}
+.paged{ width: var(--page-w); display:block; }
+
+/* ---------- Page inner area (page 2+) ---------- */
+.page__inner{
+  position:absolute;
+  left:0; right:0;
+  top:0; bottom:0;
+  padding: calc(var(--header-h) + 6mm) var(--pad-x) var(--pad-y);
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+/* ---------- Blocks (the magazine “glass” sections) ---------- */
+.block{
+  position: relative;
+  padding: 8mm 9mm;
+  border-radius: 18px;
+  border: 1px solid var(--card-border);
+  color: var(--card-ink);
+
+  /* primary look */
+  background:
+    linear-gradient(135deg,
+      color-mix(in srgb, var(--accent) 14%, transparent),
+      transparent 60%),
+    var(--card-bg);
+
+  box-shadow: 0 18px 40px var(--shadow-soft);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* Accent bar */
+.block::before{
+  content:"";
+  position:absolute;
+  left: 0;
+  top: 14px;
+  bottom: 14px;
+  width: 4px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--accent), color-mix(in srgb, var(--accent) 10%, transparent));
+  opacity: .90;
+}
+
+/* Alternating variant */
+.block--alt{
+  border-color: color-mix(in srgb, var(--accent-2) 45%, var(--card-border));
+  background:
+    linear-gradient(135deg,
+      color-mix(in srgb, var(--accent-2) 16%, transparent),
+      transparent 62%),
+    var(--card-bg-2);
+}
+.block--alt::before{ background: linear-gradient(180deg, var(--accent-2), color-mix(in srgb, var(--accent-2) 10%, transparent)); }
+
+.block--glance{ margin:0; }
+.block--section-title{ padding: 7mm 9mm; }
+
+.block__head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.block__title{
+  font-family: var(--font-head);
+  font-size: var(--fs-h2);
+  line-height: 1.18;
+  margin:0;
+  letter-spacing: .15px;
+}
+.block__title::after{
+  content:"";
+  display:block;
+  margin-top: 6px;
+  width: 56px;
+  height: 2px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 75%, transparent);
+  opacity: .95;
+}
+.block--alt .block__title::after{ background: color-mix(in srgb, var(--accent-2) 75%, transparent); }
+
+.block__subtitle{
+  font-family: var(--font-head);
+  font-size: var(--fs-h3);
+  line-height: 1.22;
+  margin:0;
+  letter-spacing: .15px;
+  opacity: .96;
+}
+
+.prose{ margin:.55rem 0; }
+.prose em{ font-style: italic; }
+.prose strong{ font-weight: 700; }
+
+/* ---------- Cards (inside At-a-glance) ---------- */
+.glance-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (max-width: 980px){ .glance-grid{ grid-template-columns: 1fr; } }
+
+.card{
+  background: var(--card-bg-2);
+  border: 1px solid var(--soft-border);
+  border-radius: 14px;
+  padding: 10px 12px;
+}
+.card__kicker{
+  font-size: var(--fs-kicker);
+  letter-spacing: .35px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+  font-weight: 800;
+}
+.card__text{ font-size: var(--fs-body); line-height: var(--lh-body); }
+
+/* ---------- Chips / refs ---------- */
+.chips{ display:flex; flex-wrap:wrap; gap:6px; }
+.chip{
+  display:inline-flex;
+  align-items:center;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: var(--fs-chip);
+  border: 1px solid var(--soft-border);
+  background: rgba(255,255,255,.08);
+}
+body[data-theme="black-gold"] .chip,
+body[data-theme="lilac-purple"] .chip,
+body[data-theme="cozy-leather"] .chip,
+body[data-theme="cream-leather"] .chip{ background: rgba(255,255,255,.55); }
+.chip--ref{ border-color: color-mix(in srgb, var(--accent) 60%, var(--soft-border)); background: color-mix(in srgb, var(--accent) 12%, transparent); }
+
+/* ---------- Lists ---------- */
+.list{ margin:.55rem 0 0; padding-left: 1.1em; }
+.list li{ margin:.38rem 0; }
+.list--tight li{ margin:.24rem 0; }
+.list li::marker{ color: color-mix(in srgb, var(--accent) 78%, transparent); }
+.block--alt .list li::marker{ color: color-mix(in srgb, var(--accent-2) 78%, transparent); }
+
+/* ---------- Group discussion navigation ---------- */
+.gd-nav{
+  display:flex;
+  gap: 8px;
+  align-items:center;
+  flex-wrap:wrap;
+  margin: 6px 0 4px;
+}
+.tabs__btn{
+  appearance:none;
+  border:none;
+  cursor:pointer;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font: 700 12.5px/1 var(--font-body);
+  letter-spacing:.2px;
+  color: var(--card-ink);
+  background: rgba(255,255,255,.10);
+  border: 1px solid var(--soft-border);
+}
+.tabs__btn.is-active{
+  background: color-mix(in srgb, var(--accent) 18%, rgba(255,255,255,.08));
+  border-color: color-mix(in srgb, var(--accent) 60%, var(--soft-border));
+}
+.block--alt .tabs__btn.is-active{
+  background: color-mix(in srgb, var(--accent-2) 18%, rgba(255,255,255,.08));
+  border-color: color-mix(in srgb, var(--accent-2) 60%, var(--soft-border));
+}
+.tabs__glow{ display:none; }
+
+/* ---------- Key point items ---------- */
+.kp-item{ padding: 0; }
+.kp-item + .kp-item{
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--soft-border);
+}
+.kp-item__title{ font-family: var(--font-head); font-size: 15px; line-height: 1.25; font-weight: 700; }
+.kp-item__apps{ margin-top: 6px; }
+.kp-item__refs{ display:flex; flex-wrap:wrap; gap: 6px; align-items:center; margin-top: 8px; }
+
+/* ---------- Footer ---------- */
+.doc-footer{
+  margin-top: 0;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg-2);
+  color: var(--card-ink);
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  font-size: 12px;
+}
+
+
+/* ============================================================
+   Mobile reading mode (screen)
+   - continuous flow, comfortable line length
+   ============================================================ */
+@media screen{
+  body[data-mode="mobile"]{
+    --fs-body: 21.5px;
+    --lh-body: 1.65;
+    --fs-small: 18.5px;
+    --fs-chip: 19.5px;
+    --fs-kicker: 15px;
+    --fs-h1: 34px;
+    --fs-h2: 26px;
+    --fs-h3: 24px;
+  }
+
+  body[data-mode="mobile"] .viewer{
+    max-width: 760px;
+    padding: 12px 10px 36px;
+    gap: 14px;
+  }
+
+  /* Cover becomes responsive card */
+  body[data-mode="mobile"] .sheet{
+    width: min(94vw, 760px);
+    height: auto;
+    aspect-ratio: 210 / 297;
+    border-radius: 14px;
+  }
+  body[data-mode="mobile"] .cover{ background-size: cover; }
+
+  body[data-mode="mobile"] .cover__header{ padding: 14px 14px 10px; }
+  body[data-mode="mobile"] .cover__body{ padding: 16px 14px 18px; }
+
+  body[data-mode="mobile"] .block{ padding: 16px 14px; border-radius: 18px; }
+
+  /* In mobile reading mode show flow + hide paged */
+  body[data-mode="mobile"] #paged{ display:none !important; }
+  body[data-mode="mobile"] #flow{
+    position: static !important;
+    left:auto !important;
+    top:auto !important;
+    width: min(94vw, 760px) !important;
+    max-width: 760px !important;
+    margin: 0 auto !important;
+    visibility: visible !important;
+    padding: 0;
+  }
+}
+
+
+/* ============================================================
+   Print / PDF
+   ============================================================ */
+@page{ size: A4; margin: 0; }
+
+@media print{
+  html{ -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body{ background:#fff; }
+
+  .toolbar, .toast{ display:none !important; }
+
+  .viewer{ padding:0; gap:0; display:block !important; max-width:none !important; }
+  #flow{ display:none !important; }
+  #paged{ display:block !important; }
+
+  .sheet{ border-radius:0; box-shadow:none; break-inside: avoid; page-break-inside: avoid; }
+
+  /* Page breaks: cover + each page are already A4-sized. Keep explicit breaks but prevent trailing blank. */
+  .cover, #paged .page{ break-after: page; page-break-after: always; }
+  #paged .page:last-child{ break-after: auto; page-break-after: auto; }
+
+  /* Disable blur in print — can cause missing/cropped text on some Windows setups */
+  .block, .card, .cover__title, .doc-footer{ backdrop-filter:none !important; -webkit-backdrop-filter:none !important; }
+
+  /* Screen-only nav */
+  .gd-nav{ display:none !important; }
+
+  /* Prevent orphan bullets */
+  li{ break-inside: avoid; page-break-inside: avoid; }
+}
+
+
+/* ============================================================
+   Mobile PDF profile
+   - still A4 pages, but bigger type + single-column feel
+   - applied during pagination (screen) AND during print
+   ============================================================ */
+body[data-print-profile="mobile"]{
+  --fs-body: 21.5px;
+  --lh-body: 1.65;
+  --fs-small: 18.5px;
+  --fs-chip: 19.5px;
+  --fs-kicker: 15px;
+  --fs-h2: 26px;
+  --fs-h3: 24px;
+}
+
+body[data-print-profile="mobile"] .glance-grid{ grid-template-columns: 1fr !important; }
+

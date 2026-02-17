@@ -1,0 +1,320 @@
+/*
+  Neon folders (Category selector)
+  Adapted from the provided css-neon-folder-animation asset.
+  Scope: folders.html
+*/
+
+html, body { height: 100%; }
+
+body.neon-body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d2b;
+  background-image:
+    linear-gradient(to right, rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+    radial-gradient(circle at top right, rgba(192, 38, 211, 0.4), transparent 50%),
+    radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.4), transparent 60%),
+    radial-gradient(circle at center, rgba(0, 255, 255, 0.05), transparent 70%);
+  background-size: 20px 20px, 20px 20px, cover, cover, cover;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body.neon-body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, white 1px, transparent 1px) repeat;
+  background-size: 50px 50px;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.neon-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 18px;
+  background: rgba(13, 13, 43, 0.55);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.neon-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.neon-brand img.neon-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.neon-brand img.neon-wordmark {
+  height: 22px;
+  width: auto;
+  object-fit: contain;
+}
+
+.neon-nav {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.neon-nav a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.18);
+}
+
+.neon-nav a:hover {
+  border-color: rgba(0,255,255,0.30);
+}
+
+.neon-nav a[aria-current="page"] {
+  border-color: rgba(0,255,255,0.45);
+  box-shadow: 0 0 18px rgba(0,255,255,0.12);
+}
+
+.neon-main {
+  position: relative;
+  z-index: 1;
+  padding: 44px 0 90px;
+}
+
+.neon-main h1 {
+  margin: 0 auto;
+  width: min(1100px, calc(100% - 40px));
+  color: rgba(255,255,255,0.95);
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+  font-size: clamp(28px, 3.2vw, 44px);
+}
+
+.neon-main p {
+  margin: 12px auto 0;
+  width: min(1100px, calc(100% - 40px));
+  color: rgba(255,255,255,0.72);
+  line-height: 1.6;
+}
+
+.neon-grid {
+  margin: 46px auto 0;
+  width: min(1280px, calc(100% - 40px));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 56px 46px;
+  justify-items: center;
+}
+
+@keyframes line-pulse-extend-1 {
+  0% { height: 30px; opacity: 0.6; box-shadow: 0 0 10px currentColor, 0 0 15px currentColor; }
+  50% { height: 95px; opacity: 1; box-shadow: 0 0 20px currentColor, 0 0 30px currentColor, 0 0 50px currentColor; }
+  100% { height: 90px; opacity: 0.9; box-shadow: 0 0 15px currentColor, 0 0 25px currentColor; }
+}
+@keyframes line-pulse-extend-2 {
+  0% { height: 35px; opacity: 0.7; box-shadow: 0 0 10px currentColor, 0 0 15px currentColor; }
+  50% { height: 105px; opacity: 1; box-shadow: 0 0 20px currentColor, 0 0 30px currentColor, 0 0 50px currentColor; }
+  100% { height: 100px; opacity: 0.9; box-shadow: 0 0 15px currentColor, 0 0 25px currentColor; }
+}
+@keyframes line-pulse-extend-3 {
+  0% { height: 28px; opacity: 0.5; box-shadow: 0 0 10px currentColor, 0 0 15px currentColor; }
+  50% { height: 90px; opacity: 0.9; box-shadow: 0 0 20px currentColor, 0 0 30px currentColor, 0 0 45px currentColor; }
+  100% { height: 85px; opacity: 0.8; box-shadow: 0 0 15px currentColor, 0 0 25px currentColor; }
+}
+@keyframes folder-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 10px rgba(0, 255, 255, 0.5),
+      0 0 15px rgba(255, 0, 255, 0.4),
+      0 0 20px rgba(0, 255, 0, 0.3),
+      inset 0 0 8px rgba(0,0,0,0.4);
+  }
+  50% {
+    box-shadow:
+      0 0 15px rgba(0, 255, 255, 0.7),
+      0 0 25px rgba(255, 0, 255, 0.6),
+      0 0 35px rgba(0, 255, 0, 0.5),
+      inset 0 0 12px rgba(0,0,0,0.5);
+  }
+}
+
+.folder-container-neon {
+  position: relative;
+  width: 280px;
+  height: 300px;
+  transition: transform 0.6s ease-out;
+  perspective: 1500px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.folder-container-neon:focus-visible {
+  outline: 3px solid rgba(0,255,255,0.55);
+  outline-offset: 8px;
+  border-radius: 18px;
+}
+
+.doc-sheet {
+  position: absolute;
+  bottom: 115px;
+  left: 50%;
+  width: 80px;
+  background-color: rgba(10, 10, 30, 0.6);
+  border-radius: 4px 4px 0 0;
+  transform-origin: bottom center;
+  opacity: 0.7;
+  transition: height 0.5s ease-out, opacity 0.5s ease-out, box-shadow 0.5s ease-out, transform 0.6s ease-out;
+  border: 1px solid currentColor;
+  border-bottom: none;
+  box-shadow: 0 0 10px currentColor, 0 0 15px currentColor;
+  color: white;
+}
+
+.sheet-1 {
+  color: #00ffff;
+  height: 30px;
+  transform: translateX(calc(-50% - 55px)) rotate(-12deg);
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.sheet-2 {
+  color: #ff00ff;
+  height: 35px;
+  transform: translateX(-50%) rotate(0deg);
+  z-index: 2;
+  opacity: 0.7;
+  width: 90px;
+}
+
+.sheet-3 {
+  color: #00ff00;
+  height: 28px;
+  transform: translateX(calc(-50% + 55px)) rotate(12deg);
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.folder-container-neon:hover {
+  transform: rotateY(5deg) rotateX(3deg);
+}
+
+.folder-container-neon:hover .sheet-1 {
+  animation: line-pulse-extend-1 0.7s ease-in-out forwards;
+  transform: translateX(calc(-50% - 60px)) rotate(-15deg) translateZ(10px);
+}
+
+.folder-container-neon:hover .sheet-2 {
+  animation: line-pulse-extend-2 0.7s 0.1s ease-in-out forwards;
+  transform: translateX(-50%) rotate(0deg) translateZ(15px);
+}
+
+.folder-container-neon:hover .sheet-3 {
+  animation: line-pulse-extend-3 0.7s 0.05s ease-in-out forwards;
+  transform: translateX(calc(-50% + 60px)) rotate(15deg) translateZ(10px);
+}
+
+.folder-container-neon:hover .folder-card-neon {
+  transform: translateY(-10px) scale(1.03) translateZ(20px);
+  animation: folder-glow 2s infinite alternate ease-in-out;
+}
+
+.folder-card-neon {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-color: rgba(20, 20, 50, 0.9);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  border-radius: 0 8px 16px 16px;
+  box-shadow:
+    0 0 10px rgba(0, 255, 255, 0.4),
+    0 0 15px rgba(255, 0, 255, 0.3),
+    inset 0 0 6px rgba(0,0,0,0.4);
+  padding: 22px 18px;
+  z-index: 5;
+  transition: transform 0.6s ease-out, box-shadow 0.6s ease-out;
+  font-family: 'Orbitron', sans-serif;
+  border-top: none;
+  transform-style: preserve-3d;
+}
+
+.folder-card-neon::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -1px;
+  height: 20px;
+  width: 120px;
+  background-color: rgba(20, 20, 50, 0.95);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 -3px 8px rgba(0, 255, 255, 0.3);
+  z-index: 4;
+}
+
+.folder-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  height: 100%;
+}
+
+.folder-icon-neon {
+  width: 34px;
+  height: 34px;
+  color: #00ffff;
+  filter: drop-shadow(0 0 8px #00ffff) drop-shadow(0 0 12px #00ffff);
+  transition: transform 0.4s ease-in-out;
+}
+
+.folder-title-neon {
+  margin: 0;
+  color: #e0e0e0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-shadow:
+    0 0 4px #00ffff,
+    0 0 8px #ff00ff,
+    0 0 12px #00ff00;
+}
+
+.folder-container-neon:hover .folder-icon-neon {
+  transform: scale(1.2) translateZ(5px);
+}
+
+/* Improve title wrapping for long category names */
+.folder-title-neon {
+  max-width: 190px;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+@media (max-width: 420px) {
+  .folder-container-neon { width: 260px; }
+}

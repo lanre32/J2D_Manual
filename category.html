@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Category — The Journey 2 Discovery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse Bible study manuals by category. Hover any manual title to preview the Big Idea.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="landing/assets/img/logo/favicon.png">
+
+  <!-- Premium manual theme tokens + base typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=DM+Serif+Display&family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/j2d/category.css">
+</head>
+
+<body data-theme="navy-gold">
+  <!-- Background layers (use --wallpaper + --scrim from theme variables) -->
+  <div class="bg fx-wallpaper"></div>
+  <div class="bg fx-scrim"></div>
+  <div class="bg fx-ornaments"></div>
+  <div class="bg fx-noise"></div>
+
+  <header class="j2d-catpage-top">
+    <div class="wrap j2d-catpage-bar">
+      <a class="j2d-catpage-brand" href="index.html" aria-label="Back to home">
+        <img class="j2d-catpage-logo" src="landing/assets/img/logo/logo.png" alt="RCCG logo">
+        <img class="j2d-catpage-wordmark" src="landing/assets/img/j2d/journey-2-discovery.png" alt="The Journey 2 Discovery">
+      </a>
+
+      <div class="j2d-catpage-actions" aria-label="Category actions">
+        <a href="folders.html">← Categories</a>
+        <a href="index.html#about">Vision</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1 id="categoryName" class="j2d-catpage-title">Category</h1>
+    <p id="categoryDesc" class="j2d-catpage-sub"></p>
+
+    <div class="j2d-catpage-grid">
+      <!-- Manual list -->
+      <section class="j2d-card" aria-label="Manual list">
+        <div class="j2d-card-head">
+          <div class="j2d-row">
+            <div class="j2d-search">
+              <label for="manualSearch" class="meta__label">Search manuals</label>
+              <input id="manualSearch" type="text" placeholder="Search title, Big Idea, tags, scripture…" autocomplete="off">
+            </div>
+            <div class="j2d-count" id="manualCount"></div>
+          </div>
+        </div>
+
+        <ul id="manualList" class="j2d-list"></ul>
+      </section>
+
+      <!-- Big Idea preview -->
+      <aside class="j2d-card j2d-preview" aria-label="Big Idea preview">
+        <h2>Big Idea</h2>
+        <p id="manualIdea">Hover a manual title to preview its Big Idea.</p>
+        <div id="manualMeta" class="j2d-preview-meta"></div>
+        <a id="manualOpen" class="j2d-open" href="#" aria-disabled="true">Open manual ↗</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="wrap" style="padding-bottom: 28px;">
+    <div class="muted" style="font-size: 13px; text-align: center; padding: 10px 0;">
+      © <span id="j2dYear"></span> RCCG — The Journey 2 Discovery
+    </div>
+  </footer>
+
+  <script src="assets/j2d/category.js"></script>
+</body>
+</html>
