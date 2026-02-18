@@ -75,22 +75,96 @@
     const btnPrint = $('#btnPrint');
     const btnCopy = $('#btnCopy');
     const btnMode = $('#btnMode');
-    const btnPdfA4 = $('#btnPdfA4');
-    const btnPdfMobile = $('#btnPdfMobile');
+    let btnPdfA4 = $('#btnPdfA4');
+    let btnPdfMobile = $('#btnPdfMobile');
+
+    // Backwards-compatible: some already-published manuals may not have IDs on the
+    // PDF links (older template versions). Fall back to a robust selector.
+    if (!btnPdfA4) btnPdfA4 = document.querySelector('.toolbar__right a[href$="manual_a4.pdf"]');
+    if (!btnPdfMobile) btnPdfMobile = document.querySelector('.toolbar__right a[href$="manual_mobile.pdf"]');
 
     // Safety: ensure PDF links always point to the expected files in this manual folder.
     if (btnPdfA4) btnPdfA4.setAttribute('href', 'manual_a4.pdf');
     if (btnPdfMobile) btnPdfMobile.setAttribute('href', 'manual_mobile.pdf');
 
-    // Give downloaded PDFs unique, manual-specific filenames (prevents overwrite on phones).
-    try {
-      const parts = (window.location.pathname || '').split('/').filter(Boolean);
-      let slug = (parts[parts.length - 1] || 'manual').toLowerCase();
-      slug = slug.replace(/\.html?$/i, '');
-      slug = slug.replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'manual';
-      if (btnPdfA4) btnPdfA4.setAttribute('download', `${slug}_a4.pdf`);
-      if (btnPdfMobile) btnPdfMobile.setAttribute('download', `${slug}_mobile.pdf`);
-    } catch (e) {}
+    // Build a short, safe filename based on the manual title (fallback to URL slug).
+    const buildBaseName = () => {
+      const MAX = 60; // keep filenames reasonable on mobile file systems
+
+      // 1) Prefer the on-page H1 title
+      let title = '';
+      try {
+        const h1 = document.querySelector('.cover__title h1') || document.querySelector('h1');
+        title = (h1 ? h1.textContent : '').trim();
+      } catch (e) {}
+
+      // 2) Fallback to last URL segment
+      let slug = 'manual';
+      try {
+        const parts = (window.location.pathname || '').split('/').filter(Boolean);
+        slug = (parts[parts.length - 1] || 'manual').replace(/\.html?$/i, '');
+      } catch (e) {}
+
+      let base = (title || slug || 'manual').trim();
+      base = base.replace(/[’']/g, '');
+      base = base.toLowerCase();
+      base = base.replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+      if (!base) {
+        base = (slug || 'manual').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'manual';
+      }
+      if (base.length > MAX) base = base.slice(0, MAX).replace(/-+$/g, '');
+      return base || 'manual';
+    };
+
+    const baseName = buildBaseName();
+    const fnameA4 = `${baseName}_A4.pdf`;
+    const fnameMobile = `${baseName}_MOBILE.pdf`;
+
+    // Apply download attributes (some mobile browsers ignore this for PDFs; we also
+    // attach a click handler that forces a blob download to enforce the filename).
+    if (btnPdfA4) btnPdfA4.setAttribute('download', fnameA4);
+    if (btnPdfMobile) btnPdfMobile.setAttribute('download', fnameMobile);
+
+    async function forceDownload(url, filename) {
+      try {
+        const res = await fetch(url, { cache: 'no-store' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const blob = await res.blob();
+        const objUrl = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = objUrl;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+
+        setTimeout(() => {
+          try { URL.revokeObjectURL(objUrl); } catch (e) {}
+        }, 5000);
+      } catch (e) {
+        // Best-effort fallback
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+      }
+    }
+
+    if (btnPdfA4) {
+      btnPdfA4.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        forceDownload('manual_a4.pdf', fnameA4);
+      });
+    }
+    if (btnPdfMobile) {
+      btnPdfMobile.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        forceDownload('manual_mobile.pdf', fnameMobile);
+      });
+    }
 
     if (btnMode) {
       const mode = getPreferredMode();
