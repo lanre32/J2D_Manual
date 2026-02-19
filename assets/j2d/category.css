@@ -173,6 +173,20 @@
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 55%, transparent) inset;
 }
 
+/* Touch UX: after the first tap we "arm" the item (previewed) and hint to tap again to open */
+.j2d-item.is-armed {
+  border-color: color-mix(in srgb, var(--accent) 84%, var(--card-border));
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--accent) 55%, transparent) inset,
+    0 0 18px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.j2d-item.is-armed .j2d-item-meta::after {
+  content: "• Tap again to open";
+  font-weight: 800;
+  color: color-mix(in srgb, var(--accent) 75%, var(--text));
+}
+
 .j2d-item a {
   text-decoration: none;
   display: block;

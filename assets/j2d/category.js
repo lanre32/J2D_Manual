@@ -2,6 +2,10 @@
   const $ = (q, el = document) => el.querySelector(q);
   const $$ = (q, el = document) => Array.from(el.querySelectorAll(q));
 
+  // Touch-first devices don't have hover. We treat the first tap as "preview" and
+  // a second tap (within a short window) as "open".
+  const IS_TOUCH = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+
   const norm = (s) => (s || '').toString().toLowerCase().trim();
 
   const escapeHtml = (s) => (s || '').toString()
@@ -101,7 +105,11 @@
     const open = $('#manualOpen');
 
     if (!item) {
-      if (idea) idea.textContent = 'Hover a manual title to preview its Big Idea.';
+      if (idea) {
+        idea.textContent = IS_TOUCH
+          ? 'Tap a manual title to preview its Big Idea. Tap again (or use “Open manual”) to open.'
+          : 'Hover a manual title to preview its Big Idea.';
+      }
       if (meta) meta.innerHTML = '';
       if (open) {
         open.setAttribute('href', '#');
@@ -186,6 +194,51 @@
       el.addEventListener('mouseenter', () => setActive(idx));
       el.addEventListener('focusin', () => setActive(idx));
     });
+
+    // Mobile/touch: first tap previews, second tap opens
+    if (IS_TOUCH) {
+      let lastTapIdx = null;
+      let lastTapAt = 0;
+      const ARM_WINDOW_MS = 900;
+
+      $$('.j2d-item-link', list).forEach((link) => {
+        link.addEventListener('click', (ev) => {
+          const li = link.closest('.j2d-item');
+          const idx = Number(li?.getAttribute('data-idx') || '-1');
+          if (idx < 0) return;
+
+          const now = Date.now();
+          const isSecondTap = (lastTapIdx === idx) && (now - lastTapAt <= ARM_WINDOW_MS);
+
+          if (isSecondTap) {
+            // Let the browser follow the link.
+            lastTapIdx = null;
+            lastTapAt = 0;
+            li?.classList.remove('is-armed');
+            return;
+          }
+
+          // First tap: prevent navigation and just preview.
+          ev.preventDefault();
+          setActive(idx);
+
+          // Visual cue (optional)
+          $$('.j2d-item.is-armed', list).forEach((n) => n.classList.remove('is-armed'));
+          li?.classList.add('is-armed');
+
+          lastTapIdx = idx;
+          lastTapAt = now;
+
+          window.setTimeout(() => {
+            if (lastTapIdx === idx && (Date.now() - lastTapAt) >= ARM_WINDOW_MS) {
+              lastTapIdx = null;
+              lastTapAt = 0;
+              li?.classList.remove('is-armed');
+            }
+          }, ARM_WINDOW_MS + 40);
+        });
+      });
+    }
   };
 
   const init = async () => {

@@ -24,7 +24,8 @@
 #liquid-metal {
   /* Original design assumed 10px rem base; we keep the same visual size in px. */
   /* Reduced so it fits the hero proportionately */
-  --lm-size: 240px;
+  /* Further reduced (~20%) for a better balance with the hero content */
+  --lm-size: 192px;
   position: relative;
   width: var(--lm-size);
   height: var(--lm-size);
@@ -80,20 +81,21 @@
 }
 
 #liquid-metal .outline .svg-icon {
-  width: 82px;
+  /* Scale icon with the button so it stays proportionate on mobile */
+  width: clamp(46px, calc(var(--lm-size) * 0.34), 82px);
   fill: var(--icon-color);
   transform: rotate(-45deg);
 }
 
 /* Make it responsive */
 @media (max-width: 1200px) {
-  #liquid-metal { --lm-size: 220px; }
+  #liquid-metal { --lm-size: 176px; }
 }
 
 @media (max-width: 768px) {
-  #liquid-metal { --lm-size: 200px; }
+  #liquid-metal { --lm-size: 160px; }
 }
 
 @media (max-width: 480px) {
-  #liquid-metal { --lm-size: 180px; }
+  #liquid-metal { --lm-size: 144px; }
 }

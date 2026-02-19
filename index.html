@@ -26,9 +26,14 @@
   <!-- J2D custom add-ons -->
   <link href="assets/j2d/liquid-metal.css" rel="stylesheet" />
   <link href="assets/j2d/j2d.css" rel="stylesheet" />
+
+  <!-- Text ring loader font (used in the header brand animation) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,600&display=swap" rel="stylesheet">
 </head>
 
-<body id="bdy" class="scroll-style">
+<body id="bdy" class="scroll-style j2d-home">
 
   <!-- PreLoader -->
   <div class="se-pre-con"></div>
@@ -39,9 +44,27 @@
       <nav id="navbar_top" class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand j2d-brand" href="index.html" aria-label="RCCG — The Journey 2 Discovery">
-            <img src="landing/assets/img/logo/logo.png" class="logo-display j2d-rccg" alt="RCCG logo">
-            <img src="landing/assets/img/logo/logo-dark.png" class="logo-scrolled j2d-rccg" alt="RCCG logo">
-            <img src="landing/assets/img/j2d/journey-2-discovery.png" class="j2d-wordmark" alt="The Journey 2 Discovery">
+            <div class="j2d-brand-row" aria-hidden="true">
+              <img src="landing/assets/img/logo/logo.png" class="logo-display j2d-rccg" alt="RCCG logo">
+              <img src="landing/assets/img/logo/logo-dark.png" class="logo-scrolled j2d-rccg" alt="RCCG logo">
+              <span class="j2d-wordmark-wrap">
+                <img src="landing/assets/img/j2d/oceania3.png" class="j2d-wordmark" alt="RCCG Oceania">
+              </span>
+            </div>
+
+            <!-- Text ring loading animation (decorative) -->
+            <div class="j2d-brand-loader" aria-hidden="true">
+              <div class="j2d-ring-preloader" aria-label="Journey 2 Discovery">
+                <div class="j2d-ring">
+                  <div class="j2d-sector">J</div><div class="j2d-sector">o</div><div class="j2d-sector">u</div><div class="j2d-sector">r</div><div class="j2d-sector">n</div><div class="j2d-sector">e</div><div class="j2d-sector">y</div><div class="j2d-sector"> </div><div class="j2d-sector">2</div><div class="j2d-sector"> </div><div class="j2d-sector">D</div><div class="j2d-sector">i</div><div class="j2d-sector">s</div><div class="j2d-sector">c</div><div class="j2d-sector">o</div><div class="j2d-sector">v</div><div class="j2d-sector">e</div><div class="j2d-sector">r</div><div class="j2d-sector">y</div>
+                  <div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div>
+                </div>
+                <div class="j2d-ring">
+                  <div class="j2d-sector">J</div><div class="j2d-sector">o</div><div class="j2d-sector">u</div><div class="j2d-sector">r</div><div class="j2d-sector">n</div><div class="j2d-sector">e</div><div class="j2d-sector">y</div><div class="j2d-sector"> </div><div class="j2d-sector">2</div><div class="j2d-sector"> </div><div class="j2d-sector">D</div><div class="j2d-sector">i</div><div class="j2d-sector">s</div><div class="j2d-sector">c</div><div class="j2d-sector">o</div><div class="j2d-sector">v</div><div class="j2d-sector">e</div><div class="j2d-sector">r</div><div class="j2d-sector">y</div>
+                  <div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div>
+                </div>
+              </div>
+            </div>
           </a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
