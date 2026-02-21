@@ -16,6 +16,7 @@
   };
 
   const DEFAULT_CATEGORIES = [
+    'House Fellowship Manual 2026',
     'Bible Foundations',
     'Character & Holiness',
     'Emotional Health',
@@ -30,8 +31,8 @@
     'Spiritual Disciplines',
     'Stewardship',
     'Trials & Suffering',
-    'Worship & Church Life',
-    'Pre-Prepared'
+    'Worship & Church Life'
+    
   ];
 
   const folderIconSvg = () => `
