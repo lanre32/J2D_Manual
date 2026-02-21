@@ -37,7 +37,8 @@
     "Evangelism & Mission": "Sharing the gospel, discipleship, and living on mission.",
     "Stewardship": "Managing time, resources, work, and money with Kingdom priorities.",
     "Trials & Suffering": "Finding hope, endurance, and joy through challenges and seasons of pain.",
-    "Emotional Health": "Healing, peace, and resilience — renewing the mind with God’s truth."
+    "Emotional Health": "Healing, peace, and resilience — renewing the mind with God’s truth.",
+    "Pre-Prepared": "Curated, ready-to-use study resources — prepared manuals you can pick up and run with."
   };
 
   const state = {
@@ -49,6 +50,29 @@
     const res = await fetch(url, { cache: "no-store" });
     if (!res.ok) throw new Error(`${url} returned ${res.status}`);
     return await res.json();
+  };
+
+  const loadLibraryCombined = async () => {
+    const items = [];
+    let generatedAt = "—";
+
+    try {
+      const lib = await loadJson("data/library.json");
+      (lib?.items || []).forEach((it) => items.push(it));
+      generatedAt = lib?.generated_at || generatedAt;
+    } catch (err) {
+      console.warn("Failed to load library.json", err);
+    }
+
+    // Optional extra library (pre-prepared packs)
+    try {
+      const extra = await loadJson("data/library_preprepared.json");
+      (extra?.items || []).forEach((it) => items.push(it));
+    } catch (err) {
+      // Not required.
+    }
+
+    return { items, generatedAt };
   };
 
   const countByCategory = (items) => {
@@ -236,17 +260,17 @@
       console.warn("Failed to load category_styles.json", err);
     }
 
-    // Load library
+    // Load library (main + optional add-ons)
     try {
-      const lib = await loadJson("data/library.json");
-      state.items = lib?.items || [];
+      const lib = await loadLibraryCombined();
+      state.items = lib.items || [];
       const updated = $("#j2dUpdated");
-      if (updated) updated.textContent = lib?.generated_at || "—";
+      if (updated) updated.textContent = lib.generatedAt || "—";
     } catch (err) {
       state.items = [];
       const updated = $("#j2dUpdated");
       if (updated) updated.textContent = "—";
-      console.warn("Failed to load library.json", err);
+      console.warn("Failed to load library", err);
     }
 
     renderCategories();

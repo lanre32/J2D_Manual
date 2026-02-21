@@ -55,10 +55,30 @@
   };
 
   const load = async () => {
-    const res = await fetch("/data/library.json", { cache: "no-store" });
-    const data = await res.json();
-    if (elUpdated) elUpdated.textContent = (data.generated_at || "");
-    const items = data.items || [];
+    const items = [];
+    let generatedAt = "";
+
+    try {
+      const res = await fetch("/data/library.json", { cache: "no-store" });
+      const data = await res.json();
+      generatedAt = (data.generated_at || generatedAt);
+      (data.items || []).forEach((it) => items.push(it));
+    } catch (e) {
+      // continue; we'll try optional extras
+    }
+
+    // Optional: ship pre-prepared packs without touching the main library.json
+    try {
+      const res2 = await fetch("/data/library_preprepared.json", { cache: "no-store" });
+      if (res2.ok) {
+        const extra = await res2.json();
+        (extra.items || []).forEach((it) => items.push(it));
+      }
+    } catch (e) {
+      // ignore
+    }
+
+    if (elUpdated) elUpdated.textContent = (generatedAt || "");
     const q = norm(elQ ? elQ.value : "");
     render(filterItems(items, q));
     if (elQ) elQ.addEventListener("input", () => render(filterItems(items, norm(elQ.value))));

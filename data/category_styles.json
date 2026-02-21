@@ -64,6 +64,10 @@
     "Emotional Health": {
       "theme": "cream-black",
       "font_pair": "dmserif-sourcesans"
+    },
+    "Pre-Prepared": {
+      "theme": "whitemarble",
+      "font_pair": "playfair-sourcesans"
     }
   },
   "note": "Edit this file to lock a theme/font per category. Theme ids come from manual_site/assets/img/templates (<id>_p1.png + <id>_p2.png)."

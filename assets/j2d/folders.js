@@ -30,7 +30,8 @@
     'Spiritual Disciplines',
     'Stewardship',
     'Trials & Suffering',
-    'Worship & Church Life'
+    'Worship & Church Life',
+    'Pre-Prepared'
   ];
 
   const folderIconSvg = () => `

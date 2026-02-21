@@ -21,6 +21,28 @@
     return await res.json();
   };
 
+  // Merge the main library with any optional add-on libraries.
+  // This lets you ship "pre-prepared" manuals without overwriting the main library.json.
+  const loadLibraryCombined = async () => {
+    const items = [];
+    try {
+      const lib = await loadJson('data/library.json');
+      (lib?.items || []).forEach((it) => items.push(it));
+    } catch (e) {
+      console.warn('Failed to load library.json', e);
+    }
+
+    // Optional: pre-prepared packs (manual_site/data/library_preprepared.json)
+    try {
+      const extra = await loadJson('data/library_preprepared.json');
+      (extra?.items || []).forEach((it) => items.push(it));
+    } catch (e) {
+      // Not required.
+    }
+
+    return items;
+  };
+
   const getParam = (key) => {
     const u = new URL(window.location.href);
     return u.searchParams.get(key);
@@ -41,7 +63,8 @@
     "Evangelism & Mission": "Sharing the gospel, discipleship, and living on mission.",
     "Stewardship": "Managing time, resources, work, and money with Kingdom priorities.",
     "Trials & Suffering": "Finding hope, endurance, and joy through challenges and seasons of pain.",
-    "Emotional Health": "Healing, peace, and resilience — renewing the mind with God’s truth."
+    "Emotional Health": "Healing, peace, and resilience — renewing the mind with God’s truth.",
+    "Pre-Prepared": "Curated, ready-to-use study resources — prepared manuals you can pick up and run with."
   };
 
   const state = {
@@ -268,14 +291,13 @@
     if (desc) desc.textContent = CATEGORY_DESCRIPTIONS[cat] || 'Bible study manuals for this life topic.';
     document.title = `${cat} — The Journey 2 Discovery`;
 
-    // Load library
+    // Load library (main + any optional add-ons)
     try {
-      const lib = await loadJson('data/library.json');
-      const all = lib?.items || [];
+      const all = await loadLibraryCombined();
       state.items = all.filter((it) => (it.category || '') === cat);
     } catch (e) {
       state.items = [];
-      console.warn('Failed to load library.json', e);
+      console.warn('Failed to load library', e);
     }
 
     // Wire search
