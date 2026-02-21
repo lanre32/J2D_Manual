@@ -15,8 +15,12 @@
     return await res.json();
   };
 
+  // Featured folder: always show first (and styled differently).
+  const FEATURED_CATEGORY = 'House Fellowship Manuals 2026';
+
+  // Fallback list (used if category_styles.json can't be loaded).
   const DEFAULT_CATEGORIES = [
-    'House-Fellowship-Manual-2026',
+    FEATURED_CATEGORY,
     'Bible Foundations',
     'Character & Holiness',
     'Emotional Health',
@@ -32,7 +36,6 @@
     'Stewardship',
     'Trials & Suffering',
     'Worship & Church Life'
-    
   ];
 
   const folderIconSvg = () => `
@@ -41,19 +44,23 @@
     </svg>
   `;
 
-  const folderHtml = (cat) => `
-    <div class="folder-container-neon" role="link" tabindex="0" data-cat="${escapeHtml(cat)}" aria-label="Open ${escapeHtml(cat)}">
-      <div class="doc-sheet sheet-1"></div>
-      <div class="doc-sheet sheet-2"></div>
-      <div class="doc-sheet sheet-3"></div>
-      <div class="folder-card-neon">
-        <div class="folder-inner">
-          ${folderIconSvg()}
-          <h2 class="folder-title-neon">${escapeHtml(cat)}</h2>
+  const folderHtml = (cat) => {
+    const featured = (cat === FEATURED_CATEGORY);
+    const cls = featured ? 'folder-container-neon is-featured' : 'folder-container-neon';
+    return `
+      <div class="${cls}" role="link" tabindex="0" data-cat="${escapeHtml(cat)}" aria-label="Open ${escapeHtml(cat)}">
+        <div class="doc-sheet sheet-1"></div>
+        <div class="doc-sheet sheet-2"></div>
+        <div class="doc-sheet sheet-3"></div>
+        <div class="folder-card-neon">
+          <div class="folder-inner">
+            ${folderIconSvg()}
+            <h2 class="folder-title-neon">${escapeHtml(cat)}</h2>
+          </div>
         </div>
       </div>
-    </div>
-  `;
+    `;
+  };
 
   const init = async () => {
     const grid = $('#foldersGrid');
@@ -62,10 +69,26 @@
     let categories = [];
     try {
       const catStyles = await loadJson('data/category_styles.json');
-      categories = Object.keys(catStyles?.categories || {}).sort((a, b) => a.localeCompare(b));
+      const styleMap = catStyles?.categories || {};
+
+      categories = Object.keys(styleMap);
+
+      // If an "order" number is provided, we sort by it first (lowest = first),
+      // otherwise we fall back to alphabetical ordering.
+      const orderOf = (c) => {
+        const o = styleMap?.[c]?.order;
+        return (typeof o === 'number' && Number.isFinite(o)) ? o : 9999;
+      };
+
+      categories.sort((a, b) => (orderOf(a) - orderOf(b)) || a.localeCompare(b));
     } catch (e) {
       categories = DEFAULT_CATEGORIES;
       console.warn('Failed to load category_styles.json; using fallback list.', e);
+    }
+
+    // Defensive: ensure featured category appears first if present.
+    if (categories.includes(FEATURED_CATEGORY)) {
+      categories = [FEATURED_CATEGORY, ...categories.filter((c) => c !== FEATURED_CATEGORY)];
     }
 
     grid.innerHTML = categories.map(folderHtml).join('');

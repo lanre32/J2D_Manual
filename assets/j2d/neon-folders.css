@@ -318,3 +318,74 @@ body.neon-body::before {
 @media (max-width: 420px) {
   .folder-container-neon { width: 260px; }
 }
+
+
+/* ---------------------------------------------------------------------------
+   Featured folder (House Fellowship Manuals 2026)
+   Make it first, slightly larger, and with a warm red/orange/yellow neon vibe.
+--------------------------------------------------------------------------- */
+
+@keyframes folder-glow-warm {
+  0%, 100% {
+    box-shadow:
+      0 0 10px rgba(255, 59, 48, 0.45),
+      0 0 18px rgba(255, 159, 10, 0.38),
+      0 0 26px rgba(255, 214, 10, 0.30),
+      inset 0 0 10px rgba(0,0,0,0.45);
+  }
+  50% {
+    box-shadow:
+      0 0 18px rgba(255, 59, 48, 0.70),
+      0 0 30px rgba(255, 159, 10, 0.62),
+      0 0 44px rgba(255, 214, 10, 0.50),
+      inset 0 0 14px rgba(0,0,0,0.55);
+  }
+}
+
+.folder-container-neon.is-featured {
+  width: 320px;
+  height: 330px;
+}
+
+.folder-container-neon.is-featured:focus-visible {
+  outline: 3px solid rgba(255, 159, 10, 0.65);
+  outline-offset: 8px;
+}
+
+.folder-container-neon.is-featured .sheet-1 { color: #ff3b30; }
+.folder-container-neon.is-featured .sheet-2 { color: #ff9f0a; }
+.folder-container-neon.is-featured .sheet-3 { color: #ffd60a; }
+
+.folder-container-neon.is-featured .folder-icon-neon {
+  color: #ff9f0a;
+  filter: drop-shadow(0 0 8px #ff9f0a) drop-shadow(0 0 12px #ffd60a);
+}
+
+.folder-container-neon.is-featured .folder-card-neon {
+  border-color: rgba(255, 159, 10, 0.55);
+  box-shadow:
+    0 0 14px rgba(255, 159, 10, 0.32),
+    0 0 18px rgba(255, 59, 48, 0.22),
+    inset 0 0 8px rgba(0,0,0,0.45);
+}
+
+.folder-container-neon.is-featured .folder-card-neon::before {
+  border-color: rgba(255, 159, 10, 0.55);
+  box-shadow: 0 -3px 10px rgba(255, 159, 10, 0.28);
+}
+
+.folder-container-neon.is-featured .folder-title-neon {
+  text-shadow:
+    0 0 4px #ffd60a,
+    0 0 8px #ff9f0a,
+    0 0 14px #ff3b30;
+}
+
+.folder-container-neon.is-featured:hover .folder-card-neon {
+  animation: folder-glow-warm 2s infinite alternate ease-in-out;
+}
+
+/* Mobile sizing */
+@media (max-width: 420px) {
+  .folder-container-neon.is-featured { width: 290px; height: 320px; }
+}
