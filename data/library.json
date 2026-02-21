@@ -1,26 +1,6 @@
 {
-  "generated_at": "2026-02-21 13:56:16",
+  "generated_at": "2026-02-21 17:21:47",
   "items": [
-    {
-      "title": "Strategic Relationships and Financial Wisdom",
-      "slug": "strategic-relationships-and-financial-wisdom",
-      "category": "Relationships",
-      "date": "2026-02-21",
-      "big_idea": "In a world where appearances can be deceiving, living authentically and investing in meaningful relationships can lead to true prosperity and success. By examining biblical examples like Joseph and Lot, we learn the importance of aligning ourselves with wise counsel and maintaining excellence in all our endeavors.",
-      "primary_passages": [
-        "Genesis 12:2-4",
-        "Proverbs 13:20"
-      ],
-      "tags": [
-        "Strategic Relationships",
-        "Financial Wisdom",
-        "Authentic Living",
-        "Excellence in Service",
-        "Biblical Examples"
-      ],
-      "url": "/manuals/relationships/strategic-relationships-and-financial-wisdom/",
-      "theme": "Turqbrown"
-    },
     {
       "title": "Victory Through Faith and Obedience",
       "slug": "victory-through-faith-and-obedience",
@@ -43,6 +23,26 @@
       ],
       "url": "/manuals/faith-trust/victory-through-faith-and-obedience/",
       "theme": "cream-black"
+    },
+    {
+      "title": "Strategic Relationships and Financial Wisdom",
+      "slug": "strategic-relationships-and-financial-wisdom",
+      "category": "Relationships",
+      "date": "2026-02-21",
+      "big_idea": "In a world where appearances can be deceiving, living authentically and investing in meaningful relationships can lead to true prosperity and success. By examining biblical examples like Joseph and Lot, we learn the importance of aligning ourselves with wise counsel and maintaining excellence in all our endeavors.",
+      "primary_passages": [
+        "Genesis 12:2-4",
+        "Proverbs 13:20"
+      ],
+      "tags": [
+        "Strategic Relationships",
+        "Financial Wisdom",
+        "Authentic Living",
+        "Excellence in Service",
+        "Biblical Examples"
+      ],
+      "url": "/manuals/relationships/strategic-relationships-and-financial-wisdom/",
+      "theme": "Turqbrown"
     },
     {
       "title": "Becoming the Spiritual Man",
