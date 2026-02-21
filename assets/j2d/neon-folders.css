@@ -343,8 +343,8 @@ body.neon-body::before {
 }
 
 .folder-container-neon.is-featured {
-  width: 260px;
-  height: 320px;
+  width: 280px;
+  height: 300px;
 }
 
 .folder-container-neon.is-featured:focus-visible {
