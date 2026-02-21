@@ -16,7 +16,7 @@
   };
 
   const DEFAULT_CATEGORIES = [
-    'House Fellowship Manual 2026',
+    'Pre-Prepared',
     'Bible Foundations',
     'Character & Holiness',
     'Emotional Health',
