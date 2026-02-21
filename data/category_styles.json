@@ -68,6 +68,7 @@
     "House-Fellowship-Manual-2026": {
       "theme": "whitemarble",
       "font_pair": "playfair-sourcesans"
+      "order": 0
     }
   },
   "note": "Edit this file to lock a theme/font per category. Theme ids come from manual_site/assets/img/templates (<id>_p1.png + <id>_p2.png)."
