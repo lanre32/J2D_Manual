@@ -31,7 +31,7 @@
     'Stewardship',
     'Trials & Suffering',
     'Worship & Church Life',
-    'Pre-Prepared'
+    'House Fellowship Manual 2026'
   ];
 
   const folderIconSvg = () => `
