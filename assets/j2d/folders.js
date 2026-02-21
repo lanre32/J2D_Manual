@@ -16,7 +16,6 @@
   };
 
   const DEFAULT_CATEGORIES = [
-    'Pre-Prepared',
     'Bible Foundations',
     'Character & Holiness',
     'Emotional Health',
@@ -31,8 +30,8 @@
     'Spiritual Disciplines',
     'Stewardship',
     'Trials & Suffering',
-    'Worship & Church Life'
-    
+    'Worship & Church Life',
+    'Pre-Prepared'
   ];
 
   const folderIconSvg = () => `
