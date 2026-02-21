@@ -344,7 +344,7 @@ body.neon-body::before {
 
 .folder-container-neon.is-featured {
   width: 260px;
-  height: 380px;
+  height: 320px;
 }
 
 .folder-container-neon.is-featured:focus-visible {
@@ -387,5 +387,5 @@ body.neon-body::before {
 
 /* Mobile sizing */
 @media (max-width: 420px) {
-  .folder-container-neon.is-featured { width: 290px; height: 320px; }
+  .folder-container-neon.is-featured { width: 260px; height: 320px; }
 }
