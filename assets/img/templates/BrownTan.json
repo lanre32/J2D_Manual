@@ -1,0 +1,17 @@
+{
+  "label": "Browntan",
+  "vars": {
+    "--outer-bg": "#07080b",
+    "--ink": "#f7f4ec",
+    "--muted": "rgba(247,244,236,.78)",
+    "--accent": "#906030",
+    "--accent-2": "#c09078",
+    "--hdr-ink": "#121212",
+    "--hdr-shadow": "rgba(255,255,255,.35)",
+    "--card-ink": "#f7f4ec",
+    "--card-bg": "rgba(10,12,16,.44)",
+    "--card-bg-2": "rgba(10,12,16,.30)",
+    "--card-border": "rgba(144,96,48,0.420)",
+    "--soft-border": "rgba(255,255,255,.14)"
+  }
+}

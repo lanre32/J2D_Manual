@@ -1,6 +1,467 @@
 {
-  "generated_at": "2026-02-22 16:47:15",
+  "generated_at": "2026-02-23 07:37:25",
   "items": [
+    {
+      "title": "Love-Driven Stewardship and Breakthrough",
+      "slug": "love-driven-stewardship-and-breakthrough",
+      "category": "Stewardship",
+      "date": "2026-02-23",
+      "big_idea": "Discover how love for God is the key to unlocking divine presence and breakthroughs. Through the examples of biblical figures like David and Peter, learn how love-driven stewardship leads to unimaginable blessings. Avoid the pitfalls of Solomon by staying true to God's greatest commandment.",
+      "primary_passages": [
+        "Mark 12:30-31",
+        "1 Corinthians 2:9",
+        "2 Chronicles 16:9",
+        "Romans 8:35-39",
+        "1 John 4:16"
+      ],
+      "tags": [
+        "Love for God",
+        "Divine Breakthroughs",
+        "Effective Stewardship",
+        "Biblical Examples",
+        "Greatest Commandment"
+      ],
+      "url": "/manuals/stewardship/love-driven-stewardship-and-breakthrough/",
+      "theme": "greyish"
+    },
+    {
+      "title": "Personal Responsibility in Faith",
+      "slug": "personal-responsibility-in-faith",
+      "category": "Faith & Trust",
+      "date": "2026-02-23",
+      "big_idea": "In the journey of faith, personal responsibility is paramount. God rewards individuals based on their personal engagement, faith, and obedience. Through examples like Abraham and Elijah, we see that divine speed and acceleration are possible when we align with God's will. Avoid procrastination and unbelief to ensure you don't miss out on God's promises.",
+      "primary_passages": [
+        "Genesis 22:1",
+        "1 Kings 18:46",
+        "1 Corinthians 3:6",
+        "Numbers 14:28-34",
+        "Hebrews 3:12-15"
+      ],
+      "tags": [
+        "Personal Responsibility",
+        "Faith Journey",
+        "Divine Acceleration",
+        "Obedience to God",
+        "Avoiding Unbelief"
+      ],
+      "url": "/manuals/faith-trust/personal-responsibility-in-faith/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Faith's Unlimited Possibilities",
+      "slug": "faiths-unlimited-possibilities",
+      "category": "Faith & Trust",
+      "date": "2026-02-23",
+      "big_idea": "Explore the mystery of the spirit of faith and its role in unlocking a world of unlimited possibilities. Learn how faith empowers believers to overcome challenges, believe the unbelievable, and achieve the impossible. Through biblical examples and teachings, discover how to cultivate and impart the spirit of faith in your life.",
+      "primary_passages": [
+        "Mark 5:36-38",
+        "Ephesians 6:16",
+        "2 Corinthians 4:13",
+        "Hebrews 11:32-33",
+        "John 1:12"
+      ],
+      "tags": [
+        "Unlimited Possibilities",
+        "Divine Empowerment",
+        "Overcoming Challenges",
+        "Spirit of Faith",
+        "Faith in Action"
+      ],
+      "url": "/manuals/faith-trust/faiths-unlimited-possibilities/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Dominion Through Passion for God",
+      "slug": "dominion-through-passion-for-god",
+      "category": "Faith & Trust",
+      "date": "2026-02-23",
+      "big_idea": "Discover how a fervent passion for God empowers believers to reclaim their dominion over the challenges of life. Through biblical examples and teachings, learn how seeking God's kingdom first and maintaining zeal can illuminate your path and elevate your spiritual authority.",
+      "primary_passages": [
+        "Genesis 1:26",
+        "Jeremiah 51:20",
+        "Matthew 6:33",
+        "Ephesians 5:6",
+        "1 Kings 19:10"
+      ],
+      "tags": [
+        "Passion for God",
+        "Spiritual Authority",
+        "Dominion Over Darkness",
+        "Kingdom Prioritization",
+        "Empowerment Through Zeal"
+      ],
+      "url": "/manuals/faith-trust/dominion-through-passion-for-god/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Empowerment Through Violent Faith",
+      "slug": "empowerment-through-violent-faith",
+      "category": "Faith & Trust",
+      "date": "2026-02-23",
+      "big_idea": "Faith is not a passive belief but an active, violent force that can change the world. Through the examples of biblical figures and modern testimonies, we see that faith empowers believers to face adversities with boldness and confidence. By understanding and engaging with this spiritual force, we can unlock unlimited possibilities and experience supernatural turnarounds.",
+      "primary_passages": [
+        "Luke 18:1-8",
+        "Mark 9:23",
+        "Romans 1:16",
+        "Genesis 49:8-12",
+        "Proverbs 30:30"
+      ],
+      "tags": [
+        "Transformative Faith",
+        "Overcoming Challenges",
+        "Boldness in Belief",
+        "Active Engagement",
+        "Supernatural Possibilities"
+      ],
+      "url": "/manuals/faith-trust/empowerment-through-violent-faith/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Self-Discipline for Biblical Success",
+      "slug": "self-discipline-for-biblical-success",
+      "category": "Character & Holiness",
+      "date": "2026-02-23",
+      "big_idea": "Explore how self-discipline shapes success through the lives of biblical figures like Joseph, Daniel, and Paul the Apostle. Learn how efficient time management and personal responsibility are crucial for fulfilling one's mission and achieving greatness.",
+      "primary_passages": [
+        "1 Corinthians 9:24-26",
+        "Ecclesiastes 10:5-18",
+        "Proverbs 13:11",
+        "Deuteronomy 30:19",
+        "1 Corinthians 9:16"
+      ],
+      "tags": [
+        "Self-Discipline",
+        "Biblical Success",
+        "Time Management",
+        "Personal Responsibility",
+        "Joseph",
+        "Daniel",
+        "Paul the Apostle"
+      ],
+      "url": "/manuals/character-holiness/self-discipline-for-biblical-success/",
+      "theme": "green-gold"
+    },
+    {
+      "title": "Building Leadership and Responsibility",
+      "slug": "building-leadership-and-responsibility",
+      "category": "Leadership & Service",
+      "date": "2026-02-23",
+      "big_idea": "Life's seasons are irreversible, and the choices made in youth can shape one's future. By embracing responsibility early, investing time wisely, and managing oneself efficiently, individuals can build leadership capacity and avoid the pitfalls of wasteful living. This study explores biblical principles that guide personal and spiritual growth.",
+      "primary_passages": [
+        "Lamentations 3:27",
+        "1 Corinthians 6:12",
+        "Ephesians 5:16",
+        "Proverbs 12:24",
+        "Proverbs 22:29",
+        "Luke 15:14-15"
+      ],
+      "tags": [
+        "Leadership Development",
+        "Responsible Living",
+        "Efficient Management",
+        "Youth Responsibility",
+        "Personal Growth"
+      ],
+      "url": "/manuals/leadership-service/building-leadership-and-responsibility/",
+      "theme": "BrownTan"
+    },
+    {
+      "title": "Faith's Transformative Power",
+      "slug": "faiths-transformative-power",
+      "category": "Faith & Trust",
+      "date": "2026-02-23",
+      "big_idea": "Faith is not just a belief but a dynamic force that can change the course of events and bring about supernatural outcomes. By understanding and applying faith, believers can tap into God's power, overcome challenges, and turn trials into testimonies. This study explores how faith operates and its profound impact on the lives of biblical figures.",
+      "primary_passages": [
+        "John 14:12",
+        "Matthew 8:23-27",
+        "Ephesians 6:16",
+        "Hebrews 11:24-27",
+        "1 Kings 18:46",
+        "Acts 9:33-35"
+      ],
+      "tags": [
+        "Power of Faith",
+        "Faith in Action",
+        "Supernatural Outcomes",
+        "Partnership with God",
+        "Transformative Faith"
+      ],
+      "url": "/manuals/faith-trust/faiths-transformative-power/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "God's Vengeance and Deliverance",
+      "slug": "gods-vengeance-and-deliverance",
+      "category": "Faith & Trust",
+      "date": "2026-02-23",
+      "big_idea": "Explore the dual nature of God as both a life-giver and a judge. Understand how God's vengeance is not only a response to wickedness but also a protective measure for His people. Learn how believers can live untouchable lives through redemption and divine intervention.",
+      "primary_passages": [
+        "Romans 12:19",
+        "1 Samuel 2:6",
+        "Psalm 94:1",
+        "Isaiah 54:14-17",
+        "Zechariah 2:8"
+      ],
+      "tags": [
+        "Divine Justice",
+        "God's Protection",
+        "Vengeance and Deliverance",
+        "Trust in God's Timing",
+        "Redemption and Security"
+      ],
+      "url": "/manuals/faith-trust/gods-vengeance-and-deliverance/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Meditation for Spiritual Success",
+      "slug": "meditation-for-spiritual-success",
+      "category": "Spiritual Disciplines",
+      "date": "2026-02-23",
+      "big_idea": "Discover the transformative power of meditation on God's word. By engaging in thoughtful reflection, you can unlock prosperity and success, much like Isaac and Elijah. This study explores how meditation is superior to free thinking and essential for spiritual access.",
+      "primary_passages": [
+        "Joshua 1:8",
+        "Psalm 1:1-3",
+        "Genesis 24:63",
+        "Isaiah 1:18",
+        "Proverbs 18:1"
+      ],
+      "tags": [
+        "Scriptural Meditation",
+        "Spiritual Growth",
+        "Quiet Reflection",
+        "Divine Wisdom",
+        "Prosperity and Success"
+      ],
+      "url": "/manuals/spiritual-disciplines/meditation-for-spiritual-success/",
+      "theme": "lilac-purple"
+    },
+    {
+      "title": "Spirituality: Foundation of Destiny",
+      "slug": "spirituality-foundation-of-destiny",
+      "category": "Spiritual Disciplines",
+      "date": "2026-02-23",
+      "big_idea": "In a world filled with challenges and uncertainties, spirituality provides a solid foundation for a fulfilling life. By embracing godliness and living according to the word of God, individuals can secure their destinies and flourish even in difficult times. Through the examples of biblical figures like Joseph and Daniel, we see the profound impact of a spiritual life.",
+      "primary_passages": [
+        "1 Corinthians 3:11",
+        "1 Timothy 4:8",
+        "Psalm 11:3",
+        "Psalm 37:18-19",
+        "Matthew 4:4"
+      ],
+      "tags": [
+        "Spiritual Foundation",
+        "Godliness and Destiny",
+        "Living by Scripture",
+        "Benefits of Spirituality",
+        "Biblical Examples"
+      ],
+      "url": "/manuals/spiritual-disciplines/spirituality-foundation-of-destiny/",
+      "theme": "lilac-purple"
+    },
+    {
+      "title": "Understanding the God of Vengeance",
+      "slug": "understanding-the-god-of-vengeance",
+      "category": "Faith & Trust",
+      "date": "2026-02-23",
+      "big_idea": "The God of Vengeance is a powerful force against wickedness, offering protection and justice for His chosen. Understanding this aspect of God is crucial for believers to triumph over evil. Through prayer and faith, we can invoke divine vengeance to end the oppression of the wicked.",
+      "primary_passages": [
+        "Psalm 94:1",
+        "Exodus 22:18",
+        "Luke 18:1",
+        "Malachi 3:17",
+        "Ephesians 6:6"
+      ],
+      "tags": [
+        "God as Protector",
+        "Divine Justice",
+        "Vengeance Prayers",
+        "Spiritual Battles",
+        "Trust in God's Timing"
+      ],
+      "url": "/manuals/faith-trust/understanding-the-god-of-vengeance/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Connecting with Divine Blessings",
+      "slug": "connecting-with-divine-blessings",
+      "category": "Stewardship",
+      "date": "2026-02-23",
+      "big_idea": "Discover how aligning with God's covenant and practicing tithing can unlock supernatural blessings in your life. By examining biblical examples and understanding the power of divine favor, you can experience prosperity and comfort beyond worldly measures.",
+      "primary_passages": [
+        "Psalm 115:12",
+        "Proverbs 10:22",
+        "Deuteronomy 8:18",
+        "Malachi 3:18",
+        "Isaiah 51:1-3"
+      ],
+      "tags": [
+        "Divine Principles",
+        "Supernatural Blessings",
+        "Tithing",
+        "Covenant Understanding",
+        "Divine Favor"
+      ],
+      "url": "/manuals/stewardship/connecting-with-divine-blessings/",
+      "theme": "greyish"
+    },
+    {
+      "title": "Purifying the Mind for Success",
+      "slug": "purifying-the-mind-for-success",
+      "category": "Character & Holiness",
+      "date": "2026-02-23",
+      "big_idea": "Our thoughts shape our future, and aligning them with divine revelation is key to true success. By purifying our minds through scripture, we can overcome self-justification and negative thinking, leading to a life of fulfillment and purpose.",
+      "primary_passages": [
+        "Proverbs 23:7",
+        "Joshua 1:8",
+        "Jeremiah 17:9-10",
+        "Mark 10:20"
+      ],
+      "tags": [
+        "Purity of Thoughts",
+        "Scripture Meditation",
+        "Divine Guidance",
+        "Overcoming Self-Justification",
+        "Aligning with God's Word"
+      ],
+      "url": "/manuals/character-holiness/purifying-the-mind-for-success/",
+      "theme": "green-gold"
+    },
+    {
+      "title": "Faith's Universal Power and Triumph",
+      "slug": "faiths-universal-power-and-triumph",
+      "category": "Faith & Trust",
+      "date": "2026-02-23",
+      "big_idea": "Faith is not just a religious concept but a powerful force that transcends cultural and ethnic boundaries. It enables believers to access the voice of God, overcome worldly challenges, and live in spiritual victory. Understanding and applying faith is essential to unlocking the mysteries of the kingdom and achieving mastery in life.",
+      "primary_passages": [
+        "Mark 9:23",
+        "Ephesians 6:16",
+        "1 John 5:4",
+        "Romans 10:17",
+        "Acts 10:34"
+      ],
+      "tags": [
+        "Universal Force of Faith",
+        "Overcoming Challenges",
+        "Divine Guidance",
+        "Spiritual Victory",
+        "Mysteries of the Kingdom"
+      ],
+      "url": "/manuals/faith-trust/faiths-universal-power-and-triumph/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Sanctification and Divine Favor",
+      "slug": "sanctification-and-divine-favor",
+      "category": "Character & Holiness",
+      "date": "2026-02-23",
+      "big_idea": "Discover how sanctification serves as the key to unlocking divine favor and blessings. Through biblical examples like Joseph and Abraham, learn how obedience and sanctification can lead to a life of excellence and victory over iniquity. Engage with the power of the blood of Jesus and the importance of seeking God's kingdom first.",
+      "primary_passages": [
+        "1 Timothy 4:7-8",
+        "Genesis 39:1-4",
+        "Exodus 7:10-12",
+        "Hebrews 9:14",
+        "Matthew 6:33"
+      ],
+      "tags": [
+        "Sanctification",
+        "Divine Favor",
+        "Obedience",
+        "Godliness",
+        "Blood of Jesus"
+      ],
+      "url": "/manuals/character-holiness/sanctification-and-divine-favor/",
+      "theme": "green-gold"
+    },
+    {
+      "title": "Wisdom from Above: Divine Insights",
+      "slug": "wisdom-from-above-divine-insights",
+      "category": "Faith & Trust",
+      "date": "2026-02-23",
+      "big_idea": "Discover how wisdom from above can transform ordinary situations into extraordinary outcomes. Through biblical examples like Joseph and Solomon, learn how divine insights can lead to success and fulfillment of divine projects. Embrace the passion and zeal for God that propels you towards your destiny.",
+      "primary_passages": [
+        "Job 28:7-28",
+        "Matthew 6:33",
+        "Proverbs 3:19"
+      ],
+      "tags": [
+        "Divine Wisdom",
+        "Supernatural Provision",
+        "Biblical Insights",
+        "Joseph and Solomon",
+        "Passion for God"
+      ],
+      "url": "/manuals/faith-trust/wisdom-from-above-divine-insights/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Zion: The Church as Refuge",
+      "slug": "zion-the-church-as-refuge",
+      "category": "Worship & Church Life",
+      "date": "2026-02-23",
+      "big_idea": "In a world full of challenges, the Church stands as a covenant bunker, offering refuge and blessings to those who dwell within. By understanding the interconnectedness of scriptural principles and the importance of spiritual covering, believers can thrive in faith and prosperity. The concept of 'Church in the House' further emphasizes the role of the Church in personal and communal growth.",
+      "primary_passages": [
+        "Psalm 84:4-11",
+        "Hebrews 12:22-24",
+        "Obadiah 17",
+        "Deuteronomy 28",
+        "Psalm 132:13"
+      ],
+      "tags": [
+        "Church as Refuge",
+        "Spiritual Covering",
+        "Zion Symbolism",
+        "Faith and Prosperity",
+        "Church in the Home"
+      ],
+      "url": "/manuals/worship-church-life/zion-the-church-as-refuge/",
+      "theme": "Blueocean"
+    },
+    {
+      "title": "Accessing the Ways of God",
+      "slug": "accessing-the-ways-of-god",
+      "category": "Spiritual Disciplines",
+      "date": "2026-02-23",
+      "big_idea": "While many focus on the power of God, it is His ways that offer deeper insight and guidance. Through new birth, joy, and the guidance of the Holy Spirit, believers can access these divine paths. This study explores how to align with God's higher ways for a fulfilling spiritual journey.",
+      "primary_passages": [
+        "Psalm 103:7",
+        "Micah 4:1-2",
+        "Isaiah 55:1-2, 8, 11",
+        "Proverbs 3:5-6",
+        "John 16:12-14"
+      ],
+      "tags": [
+        "Accessing God's Ways",
+        "Spiritual Growth",
+        "Holy Spirit Guidance",
+        "Joy in Faith",
+        "Trust in God"
+      ],
+      "url": "/manuals/spiritual-disciplines/accessing-the-ways-of-god/",
+      "theme": "lilac-purple"
+    },
+    {
+      "title": "Spiritual Preparedness and Responsibility",
+      "slug": "spiritual-preparedness-and-responsibility",
+      "category": "Identity & Purpose",
+      "date": "2026-02-23",
+      "big_idea": "Your destiny is shaped by your spiritual engagement and the associations you keep. By remaining spiritually active and responsible, you can secure a future that aligns with your divine purpose. Avoiding negative influences and embracing positive spiritual practices are key to achieving this goal.",
+      "primary_passages": [
+        "Romans 8:6",
+        "Proverbs 13:20",
+        "John 15:16",
+        "Romans 8:14",
+        "Ecclesiastes 10:18"
+      ],
+      "tags": [
+        "Spiritual Engagement",
+        "Personal Responsibility",
+        "Divine Purpose",
+        "Positive Associations",
+        "Destiny Shaping"
+      ],
+      "url": "/manuals/identity-purpose/spiritual-preparedness-and-responsibility/",
+      "theme": "cozy-leather"
+    },
     {
       "title": "Victory in Christ: Spiritual Warfare",
       "slug": "victory-in-christ-spiritual-warfare",
