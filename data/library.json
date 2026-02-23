@@ -1,6 +1,267 @@
 {
-  "generated_at": "2026-02-22 08:40:09",
+  "generated_at": "2026-02-24 05:05:19",
   "items": [
+    {
+      "title": "Leadership Attitudes: Lessons from Caleb",
+      "slug": "leadership-attitudes-lessons-from-caleb",
+      "category": "Leadership & Service",
+      "date": "2026-02-24",
+      "big_idea": "Leadership potential exists in everyone, but it is the attitudes we cultivate that set true leaders apart. By examining biblical figures like Caleb and David, alongside modern examples like Bill Gates and Steven Jobs, we learn that leadership is not just about skills but about the mindset and environment that nurture those skills.",
+      "primary_passages": [
+        "Numbers 14:24",
+        "Matthew 4:17",
+        "Genesis 1:26",
+        "Psalm 82:6"
+      ],
+      "tags": [
+        "Leadership Attitudes",
+        "Cultivating Mindset",
+        "Biblical Leadership",
+        "Environment Impact",
+        "Belief Systems"
+      ],
+      "url": "/manuals/leadership-service/leadership-attitudes-lessons-from-caleb/",
+      "theme": "BrownTan"
+    },
+    {
+      "title": "Overcoming Seasons of Crisis",
+      "slug": "overcoming-seasons-of-crisis",
+      "category": "Faith & Trust",
+      "date": "2026-02-24",
+      "big_idea": "In life's inevitable seasons of crisis, understanding that nothing is permanent except God and His promises can transform challenges into opportunities. By recognizing the temporary nature of crises and relying on faith, we can navigate through difficulties with hope and resilience.",
+      "primary_passages": [
+        "Ecclesiastes 3:1",
+        "Genesis 8:22",
+        "Ezekiel 34:26",
+        "John 16:33",
+        "1 John 5:4"
+      ],
+      "tags": [
+        "God's Promises",
+        "Temporary Crises",
+        "Faith and Resilience",
+        "Eternal Perspective",
+        "Hope in Challenges"
+      ],
+      "url": "/manuals/faith-trust/overcoming-seasons-of-crisis/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Understanding the Kingdom of God",
+      "slug": "understanding-the-kingdom-of-god",
+      "category": "Identity & Purpose",
+      "date": "2026-02-24",
+      "big_idea": "Jesus emphasized the importance of seeking the Kingdom of God above all else. Through parables and teachings, He revealed the value and mysteries of the Kingdom. Understanding this Kingdom is a lifelong journey that requires diligence and a desire to learn, as it holds the key to spiritual fulfillment and divine provision.",
+      "primary_passages": [
+        "Matthew 6:33",
+        "Matthew 4:17",
+        "Matthew 13"
+      ],
+      "tags": [
+        "Kingdom of God",
+        "Jesus' Teachings",
+        "Spiritual Fulfillment",
+        "Divine Provision",
+        "Parables of the Kingdom"
+      ],
+      "url": "/manuals/identity-purpose/understanding-the-kingdom-of-god/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Fasting for Spiritual Breakthrough",
+      "slug": "fasting-for-spiritual-breakthrough",
+      "category": "Spiritual Disciplines",
+      "date": "2026-02-24",
+      "big_idea": "Fasting is not just about abstaining from food; it's a kingdom key that unlocks spiritual power and increases your capacity for divine insight. By examining biblical examples like Esther, Jehoshaphat, and Daniel, we learn how fasting can lead to national deliverance, divine guidance, and spiritual insight.",
+      "primary_passages": [
+        "Matthew 6:5",
+        "Matthew 6:17-18",
+        "2 Chronicles 20:3",
+        "Acts 13:2"
+      ],
+      "tags": [
+        "Fasting and Prayer",
+        "Spiritual Breakthrough",
+        "Biblical Fasting Examples",
+        "Divine Guidance",
+        "Kingdom Keys"
+      ],
+      "url": "/manuals/spiritual-disciplines/fasting-for-spiritual-breakthrough/",
+      "theme": "lilac-purple"
+    },
+    {
+      "title": "The Power of Silence and Self-Mastery",
+      "slug": "the-power-of-silence-and-self-mastery",
+      "category": "Emotional Health",
+      "date": "2026-02-24",
+      "big_idea": "In a world full of noise and constant reactions, the true strength lies in mastering the art of silence and non-reactivity. By choosing our battles wisely and protecting our peace, we cultivate emotional maturity and self-mastery. This study explores how silence can be a powerful tool in maintaining inner tranquility.",
+      "primary_passages": [
+        "Proverbs 17:27-28",
+        "James 1:19",
+        "Ecclesiastes 3:7",
+        "Proverbs 15:1"
+      ],
+      "tags": [
+        "Power of Silence",
+        "Emotional Self-Control",
+        "Inner Peace",
+        "Self-Mastery",
+        "Non-Reactivity"
+      ],
+      "url": "/manuals/emotional-health/the-power-of-silence-and-self-mastery/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Trusting God's Timing and Control",
+      "slug": "trusting-gods-timing-and-control",
+      "category": "Faith & Trust",
+      "date": "2026-02-24",
+      "big_idea": "In a world full of uncertainties, the Bible teaches us to trust in God's perfect timing and to let go of our need to control every situation. By surrendering our battles to God, we find peace and assurance that He is working for our good. This study explores how faith overcomes fear and how God's delays are not denials.",
+      "primary_passages": [
+        "Philippians 1:6",
+        "Hebrews 11:1",
+        "Ecclesiastes 3:11",
+        "2 Chronicles 20:15",
+        "Exodus 14:14"
+      ],
+      "tags": [
+        "Trusting God's Timing",
+        "Letting Go of Control",
+        "Faith Over Fear",
+        "Peace in Surrender",
+        "God's Perfect Plans"
+      ],
+      "url": "/manuals/faith-trust/trusting-gods-timing-and-control/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Divine Isolation for Elevation",
+      "slug": "divine-isolation-for-elevation",
+      "category": "Identity & Purpose",
+      "date": "2026-02-24",
+      "big_idea": "Throughout biblical history, God has strategically used isolation to prepare His chosen individuals for greater tasks. From Abraham's call to leave his homeland to Jesus' time in the wilderness, these moments of separation are not punishments but divine preparations for elevation and purpose fulfillment.",
+      "primary_passages": [
+        "Genesis 12:1",
+        "Genesis 37-50",
+        "Exodus 3:1",
+        "1 Samuel 16:11-13",
+        "Matthew 4:1-11"
+      ],
+      "tags": [
+        "Divine Preparation",
+        "Isolation for Growth",
+        "Purposeful Separation",
+        "Biblical Examples",
+        "Character Development"
+      ],
+      "url": "/manuals/identity-purpose/divine-isolation-for-elevation/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Prayer and Fasting: Kingdom Keys",
+      "slug": "prayer-and-fasting-kingdom-keys",
+      "category": "Spiritual Disciplines",
+      "date": "2026-02-24",
+      "big_idea": "Discover the transformative power of prayer and fasting as keys to unlocking spiritual and physical benefits. Learn how these practices align with God's will and invite His presence into our lives. Through humility and dedication, we can experience profound changes both personally and in the world around us.",
+      "primary_passages": [
+        "Matthew 6:9-10",
+        "2 Chronicles 7:14",
+        "Ecclesiastes 3:11"
+      ],
+      "tags": [
+        "Prayer and Fasting",
+        "Spiritual Growth",
+        "Divine Intervention",
+        "Consecration",
+        "Kingdom Keys"
+      ],
+      "url": "/manuals/spiritual-disciplines/prayer-and-fasting-kingdom-keys/",
+      "theme": "lilac-purple"
+    },
+    {
+      "title": "Eagle Principles for Personal Growth",
+      "slug": "eagle-principles-for-personal-growth",
+      "category": "Identity & Purpose",
+      "date": "2026-02-24",
+      "big_idea": "Just as eagles soar to great heights and renew themselves, individuals can achieve personal growth by adopting eagle-like principles. This study explores how solitude, vision, and resilience can lead to fulfilled dreams and leadership excellence. Discover how to overcome challenges and renew your strength through biblical insights and practical applications.",
+      "primary_passages": [
+        "Isaiah 40:31"
+      ],
+      "tags": [
+        "Eagle Principles",
+        "Personal Growth",
+        "Leadership Vision",
+        "Resilience",
+        "Renewal"
+      ],
+      "url": "/manuals/identity-purpose/eagle-principles-for-personal-growth/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Media's Influence in God's Kingdom",
+      "slug": "medias-influence-in-gods-kingdom",
+      "category": "Faith & Trust",
+      "date": "2026-02-24",
+      "big_idea": "In a world where media dominates the airwaves, understanding its influence on the human will and spirit is essential. By examining the power of media, we can learn how to protect our minds and use media positively to advance God's kingdom. This study explores the biblical perspective on media's role and the importance of controlling what we consume.",
+      "primary_passages": [
+        "Ephesians 2:2",
+        "Proverbs 23:7",
+        "John 1:1-3"
+      ],
+      "tags": [
+        "Media Influence",
+        "Spiritual Discernment",
+        "Biblical Values",
+        "Mind Protection",
+        "Positive Engagement"
+      ],
+      "url": "/manuals/faith-trust/medias-influence-in-gods-kingdom/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Decisions and Their Consequences",
+      "slug": "decisions-and-their-consequences",
+      "category": "Character & Holiness",
+      "date": "2026-02-24",
+      "big_idea": "Every decision carries weight, impacting not just the individual but potentially entire communities or nations. Understanding the difference between personal and national sin is crucial, as is recognizing that laws should not accommodate vices. By examining examples like the legalization of marijuana, we can better grasp the importance of voting with conscience and the dangers of letting chance dictate our lives.",
+      "primary_passages": [
+        "Exodus 20:1-17",
+        "Genesis 3:1-19",
+        "Proverbs 14:34"
+      ],
+      "tags": [
+        "Consequences of Decisions",
+        "Moral Integrity",
+        "Personal and National Sin",
+        "Voting with Conscience",
+        "Laws and Vices"
+      ],
+      "url": "/manuals/character-holiness/decisions-and-their-consequences/",
+      "theme": "green-gold"
+    },
+    {
+      "title": "Kingdom Economics: Wisdom and Wealth",
+      "slug": "kingdom-economics-wisdom-and-wealth",
+      "category": "Stewardship",
+      "date": "2026-02-24",
+      "big_idea": "In the kingdom of God, wealth is not defined by money but by value and wisdom. By transforming our mindset and understanding money as a tool, we can align with kingdom principles that prioritize wisdom and value creation over financial accumulation. This study explores how biblical figures like Joseph, Solomon, and Jesus exemplified these principles.",
+      "primary_passages": [
+        "Deuteronomy 8:18",
+        "Proverbs 22:7",
+        "Matthew 6",
+        "Romans 12:2",
+        "1 Corinthians 14:33"
+      ],
+      "tags": [
+        "Kingdom Economics",
+        "Wisdom and Wealth",
+        "Value Creation",
+        "Mindset Transformation",
+        "Debt and Freedom"
+      ],
+      "url": "/manuals/stewardship/kingdom-economics-wisdom-and-wealth/",
+      "theme": "greyish"
+    },
     {
       "title": "Victory in Christ: Spiritual Warfare",
       "slug": "victory-in-christ-spiritual-warfare",

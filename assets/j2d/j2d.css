@@ -1,5 +1,5 @@
 /*
-  Study Hub add-on styles (brand)
+  J2D (The Study Hub) add-on styles
   Keeps the licensed template intact, only adds layout + library/category UI.
 */
 
@@ -63,17 +63,15 @@
 
 /* Text ring loader (scoped; does not affect page/body styles) */
 .j2d-brand-loader {
-  position: absolute;
-  top: clamp(92px, 9vh, 150px);
-  right: clamp(18px, 4vw, 72px);
-  z-index: 6;
+  margin-left: calc(var(--j2d-logo-size) * 0.15);
+  opacity: 1.0;
   pointer-events: none;
 }
 
 .j2d-ring-preloader {
-  --ring-size: 7.6em;
+  --ring-size: 6.2em;
   --ring-depth: 4.2em;
-  --ring-font: 1.55em;
+  --ring-font: 1.25em;
 
   display: flex;
   flex-direction: column;
@@ -85,12 +83,12 @@
   color: #007a3f;
   perspective: 40em;
   transform-style: preserve-3d;
-  animation: j2dTiltSpin 8s linear infinite;
+  animation: j2dTiltSpin 12s linear infinite;
 }
 
 .j2d-ring {
   transform-style: preserve-3d;
-  animation: j2dSpin 4s linear infinite;
+  animation: j2dSpin 6s linear infinite;
   font-size: var(--ring-font);
   position: relative;
   height: 1.8rem;
@@ -102,7 +100,7 @@
 }
 
 .j2d-sector {
-  font-weight: 800;
+  font-weight: 600;
   position: absolute;
   top: 0;
   left: 0;
@@ -165,9 +163,9 @@
 
 @media (max-width: 480px) {
   .j2d-ring-preloader {
-    --ring-size: 6.8em;
+    --ring-size: 5.2em;
     --ring-depth: 3.6em;
-    --ring-font: 1.25em;
+    --ring-font: 1.1em;
   }
 }
 
