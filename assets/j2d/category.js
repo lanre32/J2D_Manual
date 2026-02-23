@@ -289,7 +289,7 @@
     const desc = $('#categoryDesc');
     if (title) title.textContent = cat;
     if (desc) desc.textContent = CATEGORY_DESCRIPTIONS[cat] || 'Bible study manuals for this life topic.';
-    document.title = `${cat} — The Journey 2 Discovery`;
+    document.title = `${cat} — RCCG Oceania Study Hub`;
 
     // Load library (main + any optional add-ons)
     try {

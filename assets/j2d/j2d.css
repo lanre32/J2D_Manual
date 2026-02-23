@@ -1,5 +1,5 @@
 /*
-  J2D (The Journey 2 Discovery) add-on styles
+  Study Hub add-on styles (brand)
   Keeps the licensed template intact, only adds layout + library/category UI.
 */
 
@@ -64,14 +64,15 @@
 /* Text ring loader (scoped; does not affect page/body styles) */
 .j2d-brand-loader {
   margin-left: calc(var(--j2d-logo-size) * 0.15);
+  margin-top: 6px;
   opacity: 0.9;
   pointer-events: none;
 }
 
 .j2d-ring-preloader {
-  --ring-size: 7.2em;
+  --ring-size: 7.6em;
   --ring-depth: 4.2em;
-  --ring-font: 1.25em;
+  --ring-font: 1.55em;
 
   display: flex;
   flex-direction: column;
@@ -100,7 +101,7 @@
 }
 
 .j2d-sector {
-  font-weight: 600;
+  font-weight: 800;
   position: absolute;
   top: 0;
   left: 0;
@@ -163,9 +164,9 @@
 
 @media (max-width: 480px) {
   .j2d-ring-preloader {
-    --ring-size: 6.2em;
+    --ring-size: 6.8em;
     --ring-depth: 3.6em;
-    --ring-font: 1.1em;
+    --ring-font: 1.25em;
   }
 }
 
