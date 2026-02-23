@@ -1,6 +1,418 @@
 {
-  "generated_at": "2026-02-22 08:40:09",
+  "generated_at": "2026-02-23 21:12:10",
   "items": [
+    {
+      "title": "Embracing Transformation in Christ",
+      "slug": "embracing-transformation-in-christ",
+      "category": "Spiritual Disciplines",
+      "date": "2026-02-23",
+      "big_idea": "Transformation is not about comfort but about aligning with God's purpose. By renewing our minds and embracing discipline, we can overcome past mindsets and step into the future God has planned for us. Biblical examples like Joseph, Moses, and Paul illustrate the power of transformation and the necessity of letting go of excuses and embracing God's vision.",
+      "primary_passages": [
+        "2 Corinthians 5:17",
+        "Romans 12:2",
+        "Hebrews 12:11",
+        "Exodus 4:10-12",
+        "Philippians 3:13-14"
+      ],
+      "tags": [
+        "Transformation in Christ",
+        "Renewed Mindsets",
+        "Spiritual Growth",
+        "Discipline and Purpose",
+        "Letting Go of the Old Self"
+      ],
+      "url": "/manuals/spiritual-disciplines/embracing-transformation-in-christ/",
+      "theme": "lilac-purple"
+    },
+    {
+      "title": "Vision and Self-Discipline in Faith",
+      "slug": "vision-and-self-discipline-in-faith",
+      "category": "Identity & Purpose",
+      "date": "2026-02-23",
+      "big_idea": "Discover how vision acts as a guiding force in decision-making and discipline. Learn from biblical teachings and historical examples like Corrie Ten Boom and Walt Disney, who exemplified faith and preparation. Understand how these principles can transform your life and align you with God's plan.",
+      "primary_passages": [
+        "Habakkuk 2",
+        "Hebrews 11:6",
+        "1 Corinthians 6:12"
+      ],
+      "tags": [
+        "Vision and Purpose",
+        "Self-Discipline",
+        "Faith and Preparation",
+        "Decision-Making",
+        "God's Plan"
+      ],
+      "url": "/manuals/identity-purpose/vision-and-self-discipline-in-faith/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Jesus' Kingdom Mandate and Assignment",
+      "slug": "jesus-kingdom-mandate-and-assignment",
+      "category": "Evangelism & Mission",
+      "date": "2026-02-23",
+      "big_idea": "Jesus Christ's primary mission was to declare the arrival of God's Kingdom, urging humanity to align with this divine jurisdiction. As ambassadors of Christ, believers are called to represent this Kingdom, preaching its message to all nations until the end comes. This study explores the Kingdom mandate and our role within it.",
+      "primary_passages": [
+        "Matthew 24",
+        "Matthew 4:17",
+        "Genesis"
+      ],
+      "tags": [
+        "Kingdom of God",
+        "Jesus' Mission",
+        "Ambassadors for Christ",
+        "Preaching the Kingdom",
+        "Divine Assignment"
+      ],
+      "url": "/manuals/evangelism-mission/jesus-kingdom-mandate-and-assignment/",
+      "theme": "armygreen"
+    },
+    {
+      "title": "Prioritizing the Kingdom of God",
+      "slug": "prioritizing-the-kingdom-of-god",
+      "category": "Identity & Purpose",
+      "date": "2026-02-23",
+      "big_idea": "In a world full of distractions and complexities, Jesus calls us to simplify our lives by prioritizing the kingdom of God above all else. By becoming like children—simple, trusting, and dependent—we can truly experience the fullness of His kingdom. This study explores how to realign our priorities to reflect this divine mandate.",
+      "primary_passages": [
+        "Matthew 6:33",
+        "Luke 9:57",
+        "Luke 9:60",
+        "Luke 18:28",
+        "Luke 18:15-17"
+      ],
+      "tags": [
+        "Kingdom of God",
+        "Prioritizing God",
+        "Childlike Faith",
+        "Simplicity in Life",
+        "Sacrifices for Faith"
+      ],
+      "url": "/manuals/identity-purpose/prioritizing-the-kingdom-of-god/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Faith and Limitations in Life",
+      "slug": "faith-and-limitations-in-life",
+      "category": "Faith & Trust",
+      "date": "2026-02-23",
+      "big_idea": "Life is filled with mysteries and challenges that we cannot always explain or control. By recognizing our limitations and placing our faith in God, we can navigate life's adversities with purpose and resilience. Embracing change and maintaining faith are crucial to living a fulfilled life.",
+      "primary_passages": [
+        "Psalm 131:1",
+        "Matthew 27:5",
+        "1 Timothy 6:11"
+      ],
+      "tags": [
+        "Embracing Limitations",
+        "Faith in Adversity",
+        "Navigating Challenges",
+        "Humility and Trust",
+        "Purposeful Living"
+      ],
+      "url": "/manuals/faith-trust/faith-and-limitations-in-life/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Understanding Women's Purpose Biblically",
+      "slug": "understanding-womens-purpose-biblically",
+      "category": "Identity & Purpose",
+      "date": "2026-02-23",
+      "big_idea": "In a world where gender roles have evolved significantly since World War II, understanding the biblical perspective on women's purpose is crucial. This study delves into the power and identity of women as seen through scripture, emphasizing the importance of purpose in fulfilling God's intent. By examining key biblical passages, we uncover the divine design for both men and women.",
+      "primary_passages": [
+        "Genesis 1:26-28",
+        "Proverbs 31:10-31",
+        "Luke 10:38-42"
+      ],
+      "tags": [
+        "Biblical Womanhood",
+        "Divine Design",
+        "Gender Roles",
+        "Purposeful Living",
+        "Women's Identity"
+      ],
+      "url": "/manuals/identity-purpose/understanding-womens-purpose-biblically/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Redefining Leadership in Papua New Guinea",
+      "slug": "redefining-leadership-in-papua-new-guinea",
+      "category": "Leadership & Service",
+      "date": "2026-02-23",
+      "big_idea": "Leadership is not about dominance but about serving your unique gifts to your generation. Historical and colonial influences have shaped our understanding of leadership, often instilling fear of success and prosperity. By challenging these beliefs and embracing our God-given potential, we can redefine leadership in a way that empowers and uplifts communities.",
+      "primary_passages": [
+        "Genesis 1:26"
+      ],
+      "tags": [
+        "Leadership Through Service",
+        "Challenging Colonial Beliefs",
+        "Empowering Communities",
+        "Biblical Leadership",
+        "Overcoming Mental Oppression"
+      ],
+      "url": "/manuals/leadership-service/redefining-leadership-in-papua-new-guinea/",
+      "theme": "BrownTan"
+    },
+    {
+      "title": "Kingdom Purpose for Wealth Management",
+      "slug": "kingdom-purpose-for-wealth-management",
+      "category": "Stewardship",
+      "date": "2026-02-23",
+      "big_idea": "Wealth is not a personal possession but a resource entrusted by the king for kingdom purposes. By aligning our understanding of wealth with kingdom principles, we can manage resources effectively and fulfill our divine purpose. This study explores how biblical teachings guide us in viewing and handling wealth as stewards of the kingdom.",
+      "primary_passages": [
+        "Deuteronomy 7-8",
+        "Matthew 25",
+        "Genesis 1:26",
+        "Luke 16:11"
+      ],
+      "tags": [
+        "Kingdom Wealth Management",
+        "Stewardship Principles",
+        "Divine Purpose",
+        "Resource Management",
+        "Trustworthiness in Wealth"
+      ],
+      "url": "/manuals/stewardship/kingdom-purpose-for-wealth-management/",
+      "theme": "greyish"
+    },
+    {
+      "title": "Understanding the Names of God",
+      "slug": "understanding-the-names-of-god",
+      "category": "Identity & Purpose",
+      "date": "2026-02-23",
+      "big_idea": "The names of God are not just titles; they reveal His character, attributes, and how He interacts with the world. From 'Jehovah Jireh' to 'El Shaddai', each name provides insight into God's eternal nature and His intimate involvement in our lives. Discover how these names can deepen your understanding and relationship with the Almighty.",
+      "primary_passages": [
+        "Exodus 3:14",
+        "John 4:24",
+        "Hebrews 11:6",
+        "Genesis 1:26",
+        "1 Timothy 1:17"
+      ],
+      "tags": [
+        "Names of God",
+        "God's Character",
+        "Divine Attributes",
+        "Relationship with God",
+        "Understanding God"
+      ],
+      "url": "/manuals/identity-purpose/understanding-the-names-of-god/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Vision and Divine Purpose",
+      "slug": "vision-and-divine-purpose",
+      "category": "Identity & Purpose",
+      "date": "2026-02-23",
+      "big_idea": "Vision is not just a dream; it's a powerful force that enables you to see the invisible and make it possible. It is a critical factor for hope and discipline, often imparted by God to guide you toward your destiny. However, true visions will be tested for authenticity and require perseverance.",
+      "primary_passages": [
+        "Proverbs 29:18",
+        "Ephesians 3:20"
+      ],
+      "tags": [
+        "Divine Vision",
+        "Destiny Shaping",
+        "Discipline and Vision",
+        "Testing of Vision",
+        "God's Purpose"
+      ],
+      "url": "/manuals/identity-purpose/vision-and-divine-purpose/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Kingdom Worship and Provision",
+      "slug": "kingdom-worship-and-provision",
+      "category": "Worship & Church Life",
+      "date": "2026-02-23",
+      "big_idea": "In a kingdom, the king's environment and reputation reveal his glory. Worship and gratitude towards the king activate his obligation to provide and protect. Biblical examples like Solomon and Jesus illustrate how worship and gifts honor the king, while God's prosperity serves to uphold His name.",
+      "primary_passages": [
+        "1 Kings 10:1-13",
+        "Matthew 2:1-12",
+        "Exodus 33:18-23",
+        "Psalm 24:7-10"
+      ],
+      "tags": [
+        "King's Glory",
+        "Worship and Provision",
+        "Gratitude and Blessings",
+        "Honoring God",
+        "Kingdom Environment"
+      ],
+      "url": "/manuals/worship-church-life/kingdom-worship-and-provision/",
+      "theme": "Blueocean"
+    },
+    {
+      "title": "Divine Laws: Eternal and Life-Giving",
+      "slug": "divine-laws-eternal-and-life-giving",
+      "category": "Bible Foundations",
+      "date": "2026-02-23",
+      "big_idea": "Explore the eternal nature of God's divine laws and their life-giving power. Understand the balance between grace and law, and the importance of distinguishing divine laws from human traditions. Through biblical examples and teachings, discover how obedience to God's commands is a true expression of love and leads to a fulfilling life.",
+      "primary_passages": [
+        "Matthew 5:17",
+        "Psalm 19:7",
+        "John 14:21",
+        "Mark 7",
+        "Joshua 1:4"
+      ],
+      "tags": [
+        "Eternal Divine Laws",
+        "Grace and Law",
+        "Obedience and Love",
+        "Tradition vs. Commandments",
+        "Life-Giving Principles"
+      ],
+      "url": "/manuals/bible-foundations/divine-laws-eternal-and-life-giving/",
+      "theme": "navy-gold"
+    },
+    {
+      "title": "Understanding True Manhood and Work",
+      "slug": "understanding-true-manhood-and-work",
+      "category": "Identity & Purpose",
+      "date": "2026-02-23",
+      "big_idea": "Explore how true manhood is rooted in the work and gifts that God provides. Discover the importance of distinguishing between a job and a gift, and learn how women play a supportive role in this divine design. Through biblical insights and real-world examples, understand how to cultivate and refine your unique gifts.",
+      "primary_passages": [
+        "Genesis 2:15",
+        "Genesis 2:24",
+        "Proverbs 18:16",
+        "Ecclesiastes 11:6"
+      ],
+      "tags": [
+        "True Manhood",
+        "God-Given Gifts",
+        "Work and Purpose",
+        "Role of Women",
+        "Biblical Manhood"
+      ],
+      "url": "/manuals/identity-purpose/understanding-true-manhood-and-work/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Kingdom Restoration by Jesus",
+      "slug": "kingdom-restoration-by-jesus",
+      "category": "Identity & Purpose",
+      "date": "2026-02-23",
+      "big_idea": "The kingdom of God is the primary message Jesus preached, emphasizing the restoration of what Adam lost. Understanding our role in God's kingdom involves seeking His influence in every aspect of life. This study explores how Jesus restores the kingdom and our dominion as intended by God.",
+      "primary_passages": [
+        "Genesis 1:26",
+        "Matthew 6:33"
+      ],
+      "tags": [
+        "Kingdom Restoration",
+        "Dominion on Earth",
+        "Jesus' Teachings",
+        "God's Purpose",
+        "Kingdom Influence"
+      ],
+      "url": "/manuals/identity-purpose/kingdom-restoration-by-jesus/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Kingdom Culture vs. Religious Misunderstanding",
+      "slug": "kingdom-culture-vs-religious-misunderstanding",
+      "category": "Identity & Purpose",
+      "date": "2026-02-23",
+      "big_idea": "Many misunderstand Jesus' message, thinking it is about religion, when it is truly about the Kingdom of Heaven. This study explores how God's original plan was to extend His heavenly kingdom on earth, and how true fulfillment comes from seeking this kingdom, not religious practices.",
+      "primary_passages": [
+        "Matthew 5",
+        "Ephesians 1:3",
+        "Isaiah 45:18",
+        "Genesis 1:26",
+        "Psalms 115:16"
+      ],
+      "tags": [
+        "Kingdom of Heaven",
+        "Jesus' Message",
+        "Kingdom Culture",
+        "God's Plan",
+        "Spiritual Fulfillment"
+      ],
+      "url": "/manuals/identity-purpose/kingdom-culture-vs-religious-misunderstanding/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Leadership Principles from History and Scripture",
+      "slug": "leadership-principles-from-history-and-scripture",
+      "category": "Leadership & Service",
+      "date": "2026-02-23",
+      "big_idea": "Explore the essence of true leadership through the lens of historical figures and biblical teachings. Understand how self-discovery and principled living form the foundation of effective leadership. Learn from the successes and failures of leaders like Mahatma Gandhi and the Roman Empire to cultivate a leadership style that is both impactful and ethical.",
+      "primary_passages": [
+        "John 8:32"
+      ],
+      "tags": [
+        "True Leadership Principles",
+        "Service and Humility",
+        "Self-Discovery in Leadership",
+        "Ethical Decision-Making",
+        "Historical Leadership Lessons"
+      ],
+      "url": "/manuals/leadership-service/leadership-principles-from-history-and-scripture/",
+      "theme": "BrownTan"
+    },
+    {
+      "title": "Prayer: Earth's Legal Authority",
+      "slug": "prayer-earths-legal-authority",
+      "category": "Prayer & Intercession",
+      "date": "2026-02-23",
+      "big_idea": "Prayer is not merely a religious ritual but a legal petition to a higher authority, requiring human involvement for God's actions on earth. By understanding our constitutional rights in prayer, we can effectively invite divine intervention and ensure our petitions align with God's will.",
+      "primary_passages": [
+        "Genesis 1:26",
+        "Matthew 6:5",
+        "1 John 5:15",
+        "Isaiah 7:9"
+      ],
+      "tags": [
+        "Prayer as Legal Petition",
+        "Human Authority",
+        "Divine Intervention",
+        "Continuous Prayer",
+        "Sincere Prayer"
+      ],
+      "url": "/manuals/prayer-intercession/prayer-earths-legal-authority/",
+      "theme": "cream-leather"
+    },
+    {
+      "title": "Mastering Emotions through Biblical Discipline",
+      "slug": "mastering-emotions-through-biblical-discipline",
+      "category": "Emotional Health",
+      "date": "2026-02-23",
+      "big_idea": "In a world filled with chaos and uncertainty, mastering emotions is not just about self-control; it's a spiritual discipline rooted in faith. By focusing on God and His promises, we can find peace and strength to rise above our circumstances, just as Joseph and Jesus demonstrated. This study explores how to harness inner peace and maintain emotional control through biblical principles.",
+      "primary_passages": [
+        "Proverbs 16:32",
+        "Isaiah 26:3",
+        "Mark 4:35-41",
+        "Genesis 39:21",
+        "1 Corinthians 15:31",
+        "Galatians 6:9"
+      ],
+      "tags": [
+        "Emotional Mastery",
+        "Spiritual Discipline",
+        "Trusting God's Plan",
+        "Inner Peace",
+        "Faith in Adversity"
+      ],
+      "url": "/manuals/emotional-health/mastering-emotions-through-biblical-discipline/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Kingdom Economics and Management",
+      "slug": "kingdom-economics-and-management",
+      "category": "Stewardship",
+      "date": "2026-02-23",
+      "big_idea": "In the kingdom of God, management is not just a skill but a divine principle that governs growth and stewardship. Through biblical teachings, we learn that God values good management and that financial resources are attracted to those who manage well. This study explores how principles like accountability, discipline, and diligence are essential for effective management and financial stewardship.",
+      "primary_passages": [
+        "Genesis 2:4",
+        "Mark 7:22",
+        "Luke 12",
+        "Matthew 6",
+        "Proverbs 13:22"
+      ],
+      "tags": [
+        "Kingdom Economics",
+        "Financial Stewardship",
+        "Effective Management",
+        "Accountability and Discipline",
+        "Biblical Principles"
+      ],
+      "url": "/manuals/stewardship/kingdom-economics-and-management/",
+      "theme": "greyish"
+    },
     {
       "title": "Victory in Christ: Spiritual Warfare",
       "slug": "victory-in-christ-spiritual-warfare",
