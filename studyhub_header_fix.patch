@@ -1,0 +1,224 @@
+--- a/index.html
++++ b/index.html
+@@ -51,80 +51,6 @@
+                 <img src="landing/assets/img/j2d/oceania3.png" class="j2d-wordmark" alt="RCCG Oceania">
+               </span>
+             </div>
+-
+-            <!-- Text ring loading animation (decorative) -->
+-            <div class="j2d-brand-loader" aria-hidden="true">
+-                            <div class="j2d-ring-preloader" aria-label="Study Hub">
+-                <div class="j2d-ring">
+-                  <div class="j2d-sector">S</div>
+-                  <div class="j2d-sector">T</div>
+-                  <div class="j2d-sector">U</div>
+-                  <div class="j2d-sector">D</div>
+-                  <div class="j2d-sector">Y</div>
+-                  <div class="j2d-sector">&nbsp;</div>
+-                  <div class="j2d-sector">H</div>
+-                  <div class="j2d-sector">U</div>
+-                  <div class="j2d-sector">B</div>
+-                  <div class="j2d-sector">•</div>
+-                  <div class="j2d-sector">S</div>
+-                  <div class="j2d-sector">T</div>
+-                  <div class="j2d-sector">U</div>
+-                  <div class="j2d-sector">D</div>
+-                  <div class="j2d-sector">Y</div>
+-                  <div class="j2d-sector">&nbsp;</div>
+-                  <div class="j2d-sector">H</div>
+-                  <div class="j2d-sector">U</div>
+-                  <div class="j2d-sector">B</div>
+-                  <div class="j2d-sector">•</div>
+-                  <div class="j2d-sector">S</div>
+-                  <div class="j2d-sector">T</div>
+-                  <div class="j2d-sector">U</div>
+-                  <div class="j2d-sector">D</div>
+-                  <div class="j2d-sector">Y</div>
+-                  <div class="j2d-sector">&nbsp;</div>
+-                  <div class="j2d-sector">H</div>
+-                  <div class="j2d-sector">U</div>
+-                  <div class="j2d-sector">B</div>
+-                  <div class="j2d-sector">•</div>
+-                </div>
+-                <div class="j2d-ring">
+-                  <div class="j2d-sector">S</div>
+-                  <div class="j2d-sector">T</div>
+-                  <div class="j2d-sector">U</div>
+-                  <div class="j2d-sector">D</div>
+-                  <div class="j2d-sector">Y</div>
+-                  <div class="j2d-sector">&nbsp;</div>
+-                  <div class="j2d-sector">H</div>
+-                  <div class="j2d-sector">U</div>
+-                  <div class="j2d-sector">B</div>
+-                  <div class="j2d-sector">•</div>
+-                  <div class="j2d-sector">S</div>
+-                  <div class="j2d-sector">T</div>
+-                  <div class="j2d-sector">U</div>
+-                  <div class="j2d-sector">D</div>
+-                  <div class="j2d-sector">Y</div>
+-                  <div class="j2d-sector">&nbsp;</div>
+-                  <div class="j2d-sector">H</div>
+-                  <div class="j2d-sector">U</div>
+-                  <div class="j2d-sector">B</div>
+-                  <div class="j2d-sector">•</div>
+-                  <div class="j2d-sector">S</div>
+-                  <div class="j2d-sector">T</div>
+-                  <div class="j2d-sector">U</div>
+-                  <div class="j2d-sector">D</div>
+-                  <div class="j2d-sector">Y</div>
+-                  <div class="j2d-sector">&nbsp;</div>
+-                  <div class="j2d-sector">H</div>
+-                  <div class="j2d-sector">U</div>
+-                  <div class="j2d-sector">B</div>
+-                  <div class="j2d-sector">•</div>
+-                </div>
+-              </div>
+-                <div class="j2d-ring"><div class="j2d-sector">S</div><div class="j2d-sector">T</div><div class="j2d-sector">U</div><div class="j2d-sector">D</div><div class="j2d-sector">Y</div><div class="j2d-sector">&nbsp;</div><div class="j2d-sector">H</div><div class="j2d-sector">U</div><div class="j2d-sector">B</div><div class="j2d-sector">•</div><div class="j2d-sector">S</div><div class="j2d-sector">T</div><div class="j2d-sector">U</div><div class="j2d-sector">D</div><div class="j2d-sector">Y</div><div class="j2d-sector">&nbsp;</div><div class="j2d-sector">H</div><div class="j2d-sector">U</div><div class="j2d-sector">B</div><div class="j2d-sector">•</div><div class="j2d-sector">S</div><div class="j2d-sector">T</div><div class="j2d-sector">U</div><div class="j2d-sector">D</div><div class="j2d-sector">Y</div><div class="j2d-sector">&nbsp;</div><div class="j2d-sector">H</div><div class="j2d-sector">U</div><div class="j2d-sector">B</div><div class="j2d-sector">•</div></div><div class="j2d-sector">o</div><div class="j2d-sector">u</div><div class="j2d-sector">r</div><div class="j2d-sector">n</div><div class="j2d-sector">e</div><div class="j2d-sector">y</div><div class="j2d-sector"> </div><div class="j2d-sector">2</div><div class="j2d-sector"> </div><div class="j2d-sector">D</div><div class="j2d-sector">i</div><div class="j2d-sector">s</div><div class="j2d-sector">c</div><div class="j2d-sector">o</div><div class="j2d-sector">v</div><div class="j2d-sector">e</div><div class="j2d-sector">r</div><div class="j2d-sector">y</div>
+-                  <div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div><div class="j2d-sector"></div>
+-                </div>
+-              </div>
+-            </div>
+           </a>
+ 
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+@@ -186,6 +112,77 @@
+     <div id="home" class="hero-section">
+       <div class="hero-single-2" style="background-image: url(landing/assets/img/02_koyta_img/02.header.jpg)">
+         <canvas class="canvasParticles-two"></canvas>
++
++        <!-- Study Hub rotating text ring (decorative) -->
++        <div class="j2d-studyhub-corner" aria-hidden="true">
++          <div class="j2d-ring-preloader" aria-label="Study Hub">
++            <div class="j2d-ring">
++              <div class="j2d-sector">S</div>
++              <div class="j2d-sector">T</div>
++              <div class="j2d-sector">U</div>
++              <div class="j2d-sector">D</div>
++              <div class="j2d-sector">Y</div>
++              <div class="j2d-sector">&nbsp;</div>
++              <div class="j2d-sector">H</div>
++              <div class="j2d-sector">U</div>
++              <div class="j2d-sector">B</div>
++              <div class="j2d-sector">•</div>
++              <div class="j2d-sector">S</div>
++              <div class="j2d-sector">T</div>
++              <div class="j2d-sector">U</div>
++              <div class="j2d-sector">D</div>
++              <div class="j2d-sector">Y</div>
++              <div class="j2d-sector">&nbsp;</div>
++              <div class="j2d-sector">H</div>
++              <div class="j2d-sector">U</div>
++              <div class="j2d-sector">B</div>
++              <div class="j2d-sector">•</div>
++              <div class="j2d-sector">S</div>
++              <div class="j2d-sector">T</div>
++              <div class="j2d-sector">U</div>
++              <div class="j2d-sector">D</div>
++              <div class="j2d-sector">Y</div>
++              <div class="j2d-sector">&nbsp;</div>
++              <div class="j2d-sector">H</div>
++              <div class="j2d-sector">U</div>
++              <div class="j2d-sector">B</div>
++              <div class="j2d-sector">•</div>
++            </div>
++            <div class="j2d-ring">
++              <div class="j2d-sector">S</div>
++              <div class="j2d-sector">T</div>
++              <div class="j2d-sector">U</div>
++              <div class="j2d-sector">D</div>
++              <div class="j2d-sector">Y</div>
++              <div class="j2d-sector">&nbsp;</div>
++              <div class="j2d-sector">H</div>
++              <div class="j2d-sector">U</div>
++              <div class="j2d-sector">B</div>
++              <div class="j2d-sector">•</div>
++              <div class="j2d-sector">S</div>
++              <div class="j2d-sector">T</div>
++              <div class="j2d-sector">U</div>
++              <div class="j2d-sector">D</div>
++              <div class="j2d-sector">Y</div>
++              <div class="j2d-sector">&nbsp;</div>
++              <div class="j2d-sector">H</div>
++              <div class="j2d-sector">U</div>
++              <div class="j2d-sector">B</div>
++              <div class="j2d-sector">•</div>
++              <div class="j2d-sector">S</div>
++              <div class="j2d-sector">T</div>
++              <div class="j2d-sector">U</div>
++              <div class="j2d-sector">D</div>
++              <div class="j2d-sector">Y</div>
++              <div class="j2d-sector">&nbsp;</div>
++              <div class="j2d-sector">H</div>
++              <div class="j2d-sector">U</div>
++              <div class="j2d-sector">B</div>
++              <div class="j2d-sector">•</div>
++            </div>
++          </div>
++        </div>
++
+         <div class="container">
+           <div class="row g-5 align-items-center justify-content-center">
+ 
+--- a/assets/j2d/j2d.css
++++ b/assets/j2d/j2d.css
+@@ -333,3 +333,60 @@
+   color: rgba(255,255,255,.75);
+   text-align: center;
+ }
++
++/* -------------------------------------------------------
++   Home: Study Hub rotating ring (hero top-right)
++   ------------------------------------------------------- */
++
++/* Ensure the hero (variant 2) becomes a positioning context for the corner animation. */
++.j2d-home .hero-single-2 {
++  position: relative;
++  overflow: hidden;
++}
++
++/* Keep the particle canvas inside the hero (and non-interactive). */
++.j2d-home .hero-single-2 .canvasParticles-two {
++  left: 0;
++  height: 100%;
++  pointer-events: none;
++}
++
++/* Position the Study Hub ring in the top-right of the hero, as per the mockup. */
++.j2d-studyhub-corner {
++  position: absolute;
++  top: clamp(92px, 9vh, 150px);
++  right: clamp(18px, 4vw, 72px);
++  z-index: 6;
++  pointer-events: none;
++}
++
++/* Make it larger, bolder and white so it reads clearly on the dark hero background. */
++.j2d-studyhub-corner .j2d-ring-preloader {
++  --ring-size: 9.8em;
++  --ring-depth: 5.2em;
++  --ring-font: 2.1em;
++  color: #ffffff;
++  opacity: 0.95;
++  filter: drop-shadow(0 10px 18px rgba(0,0,0,0.45));
++}
++
++.j2d-studyhub-corner .j2d-sector {
++  font-weight: 900;
++}
++
++/* Responsive adjustments: keep it on-canvas and readable. */
++@media (max-width: 991px) {
++  .j2d-studyhub-corner {
++    left: 50%;
++    right: auto;
++    transform: translateX(-50%) scale(0.88);
++    top: 86px;
++  }
++}
++
++@media (max-width: 576px) {
++  .j2d-studyhub-corner {
++    transform: translateX(-50%) scale(0.75);
++    top: 78px;
++  }
++}
