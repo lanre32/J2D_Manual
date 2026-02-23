@@ -63,9 +63,10 @@
 
 /* Text ring loader (scoped; does not affect page/body styles) */
 .j2d-brand-loader {
-  margin-left: calc(var(--j2d-logo-size) * 0.15);
-  margin-top: 6px;
-  opacity: 0.9;
+  position: absolute;
+  top: clamp(92px, 9vh, 150px);
+  right: clamp(18px, 4vw, 72px);
+  z-index: 6;
   pointer-events: none;
 }
 
@@ -332,61 +333,4 @@
   border: 1px dashed rgba(255,255,255,.25);
   color: rgba(255,255,255,.75);
   text-align: center;
-}
-
-/* -------------------------------------------------------
-   Home: Study Hub rotating ring (hero top-right)
-   ------------------------------------------------------- */
-
-/* Ensure the hero (variant 2) becomes a positioning context for the corner animation. */
-.j2d-home .hero-single-2 {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Keep the particle canvas inside the hero (and non-interactive). */
-.j2d-home .hero-single-2 .canvasParticles-two {
-  left: 0;
-  height: 100%;
-  pointer-events: none;
-}
-
-/* Position the Study Hub ring in the top-right of the hero, as per the mockup. */
-.j2d-studyhub-corner {
-  position: absolute;
-  top: clamp(92px, 9vh, 150px);
-  right: clamp(18px, 4vw, 72px);
-  z-index: 6;
-  pointer-events: none;
-}
-
-/* Make it larger, bolder and white so it reads clearly on the dark hero background. */
-.j2d-studyhub-corner .j2d-ring-preloader {
-  --ring-size: 9.8em;
-  --ring-depth: 5.2em;
-  --ring-font: 2.1em;
-  color: #ffffff;
-  opacity: 0.95;
-  filter: drop-shadow(0 10px 18px rgba(0,0,0,0.45));
-}
-
-.j2d-studyhub-corner .j2d-sector {
-  font-weight: 900;
-}
-
-/* Responsive adjustments: keep it on-canvas and readable. */
-@media (max-width: 991px) {
-  .j2d-studyhub-corner {
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%) scale(0.88);
-    top: 86px;
-  }
-}
-
-@media (max-width: 576px) {
-  .j2d-studyhub-corner {
-    transform: translateX(-50%) scale(0.75);
-    top: 78px;
-  }
 }
