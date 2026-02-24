@@ -1,6 +1,28 @@
 {
-  "generated_at": "2026-02-24 11:13:38",
+  "generated_at": "2026-02-24 19:30:13",
   "items": [
+    {
+      "title": "Leadership Attitudes: Lessons from Caleb",
+      "slug": "leadership-attitudes-lessons-from-caleb",
+      "category": "Leadership & Service",
+      "date": "2026-02-24",
+      "big_idea": "Leadership potential exists in everyone, but it is the attitudes we cultivate that set true leaders apart. By examining biblical figures like Caleb and David, alongside modern examples like Bill Gates and Steven Jobs, we learn that leadership is not just about skills but about the mindset and environment that nurture those skills.",
+      "primary_passages": [
+        "Numbers 14:24",
+        "Matthew 4:17",
+        "Genesis 1:26",
+        "Psalm 82:6"
+      ],
+      "tags": [
+        "Leadership Attitudes",
+        "Cultivating Mindset",
+        "Biblical Leadership",
+        "Environment Impact",
+        "Belief Systems"
+      ],
+      "url": "/manuals/leadership-service/leadership-attitudes-lessons-from-caleb/",
+      "theme": "BrownTan"
+    },
     {
       "title": "Keys to Overcoming Adversity",
       "slug": "keys-to-overcoming-adversity",
@@ -22,7 +44,378 @@
         "Prophetic Guidance"
       ],
       "url": "/manuals/trials-suffering/keys-to-overcoming-adversity/",
+      "theme": "greyish"
+    },
+    {
+      "title": "God's Design for Relationships",
+      "slug": "gods-design-for-relationships",
+      "category": "Relationships",
+      "date": "2026-02-24",
+      "big_idea": "Discover how God's original design for relationships, as seen in the creation of Adam and Eve, sets the foundation for understanding marriage, singleness, and the roles of men and women. By examining key scriptures, we can better understand how to cultivate healthy relationships that align with divine intentions.",
+      "primary_passages": [
+        "Matthew 19:3",
+        "Genesis 2:15",
+        "Joel 2"
+      ],
+      "tags": [
+        "God's Design for Relationships",
+        "Marriage Roles",
+        "Biblical Foundations",
+        "Understanding Singleness",
+        "Healthy Relationships"
+      ],
+      "url": "/manuals/relationships/gods-design-for-relationships/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Living by God's Principles",
+      "slug": "living-by-gods-principles",
+      "category": "Bible Foundations",
+      "date": "2026-02-24",
+      "big_idea": "God's principles are designed to guide us in every aspect of life, from personal conduct to marriage. Ignorance of these principles can lead to unnecessary struggles, while knowledge and application can simplify and protect our lives. By looking to scripture, we can uncover these divine guidelines and live in alignment with God's design.",
+      "primary_passages": [
+        "Psalm 119",
+        "Hebrews 1:1",
+        "Genesis 1",
+        "Matthew 19"
+      ],
+      "tags": [
+        "God's Principles",
+        "Scripture Application",
+        "Divine Guidelines",
+        "Knowledge and Wisdom",
+        "Marriage Design"
+      ],
+      "url": "/manuals/bible-foundations/living-by-gods-principles/",
+      "theme": "navy-gold"
+    },
+    {
+      "title": "Understanding Divorce and Marriage",
+      "slug": "understanding-divorce-and-marriage",
+      "category": "Family & Parenting",
+      "date": "2026-02-24",
+      "big_idea": "Marriage is a sacred institution established by God, intended to reflect His image and purpose. Understanding the original intent of marriage, as well as the roles and responsibilities within it, can help address the root causes of divorce. By aligning with biblical principles, couples can build stronger, more fulfilling relationships.",
+      "primary_passages": [
+        "Matthew 19:3-6",
+        "Genesis 2:18-25",
+        "Ephesians 5:22-33"
+      ],
+      "tags": [
+        "Biblical Marriage Principles",
+        "Marriage Roles",
+        "Divorce Insights",
+        "God's Design for Marriage",
+        "Marriage Unity"
+      ],
+      "url": "/manuals/family-parenting/understanding-divorce-and-marriage/",
+      "theme": "Violet"
+    },
+    {
+      "title": "Kingdom Citizenship and Relationships",
+      "slug": "kingdom-citizenship-and-relationships",
+      "category": "Identity & Purpose",
+      "date": "2026-02-24",
+      "big_idea": "As citizens of God's kingdom, our lives should reflect a culture distinct from the world. By understanding and obeying kingdom laws, we manifest God's wisdom and character in our relationships and daily conduct. This study explores how to live as law-abiding citizens of heaven, showcasing the kingdom's culture in every aspect of life.",
+      "primary_passages": [
+        "Philippians 3:18",
+        "1 Peter 2:11",
+        "1 Corinthians 6:9",
+        "Ephesians 3:9",
+        "Luke 17"
+      ],
+      "tags": [
+        "Kingdom Citizenship",
+        "Heavenly Principles",
+        "Cultural Distinction",
+        "Obedience to Kingdom Laws",
+        "Manifesting Kingdom Culture"
+      ],
+      "url": "/manuals/identity-purpose/kingdom-citizenship-and-relationships/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Restoring God's Authority in Relationships",
+      "slug": "restoring-gods-authority-in-relationships",
+      "category": "Relationships",
+      "date": "2026-02-24",
+      "big_idea": "In a world where relationships face numerous challenges, understanding God's authority and intention for relationships is crucial. By examining biblical examples and teachings, we can learn how to cultivate love, commitment, and self-awareness in our relationships. This study will guide you through the complexities of love, marriage, and self-love as seen through the lens of scripture.",
+      "primary_passages": [
+        "Genesis 2:18-25",
+        "1 Corinthians 7:8",
+        "1 Corinthians 7:26-28",
+        "Romans 13:8"
+      ],
+      "tags": [
+        "Biblical Relationships",
+        "God's Authority",
+        "Love and Commitment",
+        "Marriage Challenges",
+        "Self-Love"
+      ],
+      "url": "/manuals/relationships/restoring-gods-authority-in-relationships/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Letting Go for Personal Growth",
+      "slug": "letting-go-for-personal-growth",
+      "category": "Relationships",
+      "date": "2026-02-24",
+      "big_idea": "To truly grow, one must evaluate and let go of relationships that hinder progress. By prioritizing self-worth and setting boundaries, you open yourself to new opportunities and healthier connections. Embracing this change is an act of self-love and empowerment.",
+      "primary_passages": [
+        "Proverbs 13:20",
+        "1 Corinthians 15:33",
+        "Philippians 3:13-14",
+        "Ephesians 4:31-32"
+      ],
+      "tags": [
+        "Letting Go of Toxic Relationships",
+        "Personal Growth",
+        "Setting Boundaries",
+        "Self-Worth",
+        "Healthy Connections"
+      ],
+      "url": "/manuals/relationships/letting-go-for-personal-growth/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Divine Orchestration and Timing",
+      "slug": "divine-orchestration-and-timing",
+      "category": "Faith & Trust",
+      "date": "2026-02-24",
+      "big_idea": "Discover how God's perfect timing and divine orchestration lead to seasons of breakthrough and alignment. By understanding the importance of faithful perseverance and nurturing relationships, we can experience transformation and purpose. Trust in God's provision and promises as you navigate through life's challenges and opportunities.",
+      "primary_passages": [
+        "Psalm 145:18",
+        "Genesis 2:18",
+        "John 15:2",
+        "Deuteronomy 8:18",
+        "Luke 16:10"
+      ],
+      "tags": [
+        "Divine Timing",
+        "Faithful Perseverance",
+        "God's Provision",
+        "Season of Breakthrough",
+        "Trust in God"
+      ],
+      "url": "/manuals/faith-trust/divine-orchestration-and-timing/",
       "theme": "whitemarble"
+    },
+    {
+      "title": "Divine Timing in Relationships",
+      "slug": "divine-timing-in-relationships",
+      "category": "Relationships",
+      "date": "2026-02-24",
+      "big_idea": "Relationships rooted in divine timing and purpose bring peace and rest, not performance and work. By understanding oneself and surrendering to God's timing, individuals can prepare for love that honors their destiny and calling. Pain and self-discovery are integral to this preparation, leading to connections that are healing and fulfilling.",
+      "primary_passages": [
+        "Ecclesiastes 3:1",
+        "Romans 8:28",
+        "1 Corinthians 13:4-7",
+        "Jeremiah 29:11"
+      ],
+      "tags": [
+        "Divine Timing",
+        "Purposeful Love",
+        "Self-Understanding",
+        "Healing and Growth",
+        "Trust in God's Plan"
+      ],
+      "url": "/manuals/relationships/divine-timing-in-relationships/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Kingdom Citizenship Laws of Love",
+      "slug": "kingdom-citizenship-laws-of-love",
+      "category": "Relationships",
+      "date": "2026-02-24",
+      "big_idea": "In the Kingdom of God, love is not merely an emotion but a decision and a commitment to meet another's needs without expectation. Knowledge and understanding are crucial for sustaining relationships, as ignorance can lead to destruction. Explore the biblical laws governing love and marriage to build a strong, lasting relationship.",
+      "primary_passages": [
+        "Proverbs 4:7",
+        "Hosea 4:6",
+        "Romans 13:8",
+        "John 13:34",
+        "1 John 4:7-8",
+        "Ecclesiastes 5:4-5"
+      ],
+      "tags": [
+        "Biblical Love Principles",
+        "Marriage Foundations",
+        "Love as Commitment",
+        "Wisdom in Relationships",
+        "Consequences of Ignorance"
+      ],
+      "url": "/manuals/relationships/kingdom-citizenship-laws-of-love/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "God's Purpose in Painful Relationships",
+      "slug": "gods-purpose-in-painful-relationships",
+      "category": "Relationships",
+      "date": "2026-02-24",
+      "big_idea": "Painful relationships, especially with narcissists, are not meant to torment but to transform. Through these experiences, God reveals unaddressed wounds, refines your identity, and prepares you for a greater purpose. By understanding this divine purpose, you can reclaim your self-worth and set healthy boundaries.",
+      "primary_passages": [
+        "Exodus 9:16",
+        "John 13:27",
+        "Romans 8:28",
+        "2 Corinthians 12:9"
+      ],
+      "tags": [
+        "Challenging Relationships",
+        "Spiritual Growth",
+        "Healing Wounds",
+        "Divine Purpose",
+        "Identity Refinement"
+      ],
+      "url": "/manuals/relationships/gods-purpose-in-painful-relationships/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Biblical Roles in Marriage",
+      "slug": "biblical-roles-in-marriage",
+      "category": "Family & Parenting",
+      "date": "2026-02-24",
+      "big_idea": "Marriage is a sacred union that mirrors the relationship between Christ and the church. Husbands are called to love their wives sacrificially, as Christ loved the church, while wives are encouraged to submit to their husbands as to the Lord. This study explores how these roles foster a harmonious and holy marriage.",
+      "primary_passages": [
+        "Ephesians 5:22",
+        "Ephesians 5:23",
+        "Ephesians 5:24",
+        "Ephesians 5:25",
+        "Ephesians 5:28",
+        "Ephesians 5:31"
+      ],
+      "tags": [
+        "Biblical Marriage Roles",
+        "Sacrificial Love",
+        "Spiritual Leadership",
+        "Mutual Submission",
+        "Unity in Marriage"
+      ],
+      "url": "/manuals/family-parenting/biblical-roles-in-marriage/",
+      "theme": "Violet"
+    },
+    {
+      "title": "Biblical Insights on Marriage and Singleness",
+      "slug": "biblical-insights-on-marriage-and-singleness",
+      "category": "Relationships",
+      "date": "2026-02-24",
+      "big_idea": "Explore the biblical perspective on marriage and singleness, emphasizing the importance of being a whole individual before entering into marriage. Understand the misconceptions about love and the divine purpose of marriage as taught by Jesus and the prophets.",
+      "primary_passages": [
+        "Matthew 19",
+        "Malachi 2"
+      ],
+      "tags": [
+        "Biblical Marriage",
+        "Wholeness in Relationships",
+        "Singleness and Growth",
+        "Misconceptions About Love",
+        "God's Purpose for Marriage"
+      ],
+      "url": "/manuals/relationships/biblical-insights-on-marriage-and-singleness/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Singleness and Self-Love in Scripture",
+      "slug": "singleness-and-self-love-in-scripture",
+      "category": "Identity & Purpose",
+      "date": "2026-02-24",
+      "big_idea": "Explore how singleness and self-love are essential for building meaningful relationships and discovering personal gifts. Through biblical teachings, learn how to value yourself and others, and how your unique gifts can lead to influence and fulfillment. Discover the importance of self-discovery and self-worth in living a life of purpose and significance.",
+      "primary_passages": [
+        "Matthew 22:37-39"
+      ],
+      "tags": [
+        "Biblical Singleness",
+        "Self-Love",
+        "Personal Gifts",
+        "Identity in Christ",
+        "Purposeful Living"
+      ],
+      "url": "/manuals/identity-purpose/singleness-and-self-love-in-scripture/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Recognizing God's Signs in Relationships",
+      "slug": "recognizing-gods-signs-in-relationships",
+      "category": "Relationships",
+      "date": "2026-02-24",
+      "big_idea": "Relationships are a significant part of life, and discerning God's will in them is crucial. By recognizing signs such as peace, conflicting values, and repeated red flags, believers can align their relationships with God's purpose. This study explores how the Holy Spirit guides through these markers, ensuring that relationships foster spiritual growth and harmony.",
+      "primary_passages": [
+        "Galatians 5:22",
+        "Proverbs 3:5-6",
+        "Amos 3:3",
+        "2 Corinthians 6:14",
+        "Proverbs 27:12"
+      ],
+      "tags": [
+        "Divine Guidance",
+        "Spiritual Alignment",
+        "Peace in Relationships",
+        "Conflicting Values",
+        "Red Flags"
+      ],
+      "url": "/manuals/relationships/recognizing-gods-signs-in-relationships/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "God's Design for Singleness",
+      "slug": "gods-design-for-singleness",
+      "category": "Identity & Purpose",
+      "date": "2026-02-24",
+      "big_idea": "Many people misunderstand singleness as simply being unmarried, but it is actually a time for personal growth and self-discovery. Understanding God's design for singleness helps individuals become whole and prepared for healthy relationships. This study explores the biblical perspective on singleness and marriage, emphasizing the importance of being complete before entering into a marital relationship.",
+      "primary_passages": [
+        "Genesis 2:15",
+        "Genesis 2:18"
+      ],
+      "tags": [
+        "Singleness as Completeness",
+        "Self-Discovery",
+        "Biblical Singleness",
+        "Wholeness Before Marriage",
+        "God's Design for Relationships"
+      ],
+      "url": "/manuals/identity-purpose/gods-design-for-singleness/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Singleness: God's Original Design",
+      "slug": "singleness-gods-original-design",
+      "category": "Identity & Purpose",
+      "date": "2026-02-24",
+      "big_idea": "Explore the biblical perspective on singleness as the foundation of human relationships. Understand why singleness is emphasized over marriage and how it aligns with God's original design. Discover how being single is crucial for personal development and relational success.",
+      "primary_passages": [
+        "1 Corinthians 7",
+        "Genesis 1:26",
+        "Genesis 2:15",
+        "Matthew 19"
+      ],
+      "tags": [
+        "Singleness as Foundation",
+        "Biblical Singleness",
+        "God's Design for Relationships",
+        "Personal Development",
+        "Jesus' Example"
+      ],
+      "url": "/manuals/identity-purpose/singleness-gods-original-design/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "Kingdom Culture and Self-Worth",
+      "slug": "kingdom-culture-and-self-worth",
+      "category": "Identity & Purpose",
+      "date": "2026-02-24",
+      "big_idea": "The Kingdom of God is designed to extend its culture of love and influence across the earth. Understanding this kingdom culture helps us develop self-love and recognize our self-worth. By aligning with God's laws and environment, we can create a culture that reflects His love and purpose.",
+      "primary_passages": [
+        "Matthew 6:9-10",
+        "Galatians 5:6",
+        "1 John 4:7-8"
+      ],
+      "tags": [
+        "Kingdom Culture",
+        "Self-Love",
+        "Self-Worth",
+        "God's Love",
+        "Divine Purpose"
+      ],
+      "url": "/manuals/identity-purpose/kingdom-culture-and-self-worth/",
+      "theme": "cozy-leather"
     },
     {
       "title": "Kingdom Economics: Wisdom and Wealth",
@@ -262,28 +655,6 @@
       ],
       "url": "/manuals/faith-trust/overcoming-seasons-of-crisis/",
       "theme": "cream-black"
-    },
-    {
-      "title": "Leadership Attitudes: Lessons from Caleb",
-      "slug": "leadership-attitudes-lessons-from-caleb",
-      "category": "Leadership & Service",
-      "date": "2026-02-24",
-      "big_idea": "Leadership potential exists in everyone, but it is the attitudes we cultivate that set true leaders apart. By examining biblical figures like Caleb and David, alongside modern examples like Bill Gates and Steven Jobs, we learn that leadership is not just about skills but about the mindset and environment that nurture those skills.",
-      "primary_passages": [
-        "Numbers 14:24",
-        "Matthew 4:17",
-        "Genesis 1:26",
-        "Psalm 82:6"
-      ],
-      "tags": [
-        "Leadership Attitudes",
-        "Cultivating Mindset",
-        "Biblical Leadership",
-        "Environment Impact",
-        "Belief Systems"
-      ],
-      "url": "/manuals/leadership-service/leadership-attitudes-lessons-from-caleb/",
-      "theme": "BrownTan"
     },
     {
       "title": "Victory in Christ: Spiritual Warfare",
