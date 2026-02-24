@@ -1,0 +1,17 @@
+{
+  "label": "Whitemarble",
+  "vars": {
+    "--outer-bg": "#f4f2ec",
+    "--ink": "#1b1b1b",
+    "--muted": "rgba(27,27,27,.70)",
+    "--accent": "#001830",
+    "--accent-2": "#d8a848",
+    "--hdr-ink": "#f7f4ec",
+    "--hdr-shadow": "rgba(0,0,0,.55)",
+    "--card-ink": "#1b1b1b",
+    "--card-bg": "rgba(255,255,255,.78)",
+    "--card-bg-2": "rgba(255,255,255,.62)",
+    "--card-border": "rgba(0,24,48,0.260)",
+    "--soft-border": "rgba(0,0,0,.10)"
+  }
+}
