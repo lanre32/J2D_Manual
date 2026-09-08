@@ -16,11 +16,12 @@
   };
 
   // Featured folder: always show first (and styled differently).
-  const FEATURED_CATEGORY = 'House Fellowship Manuals 2026';
+  const FEATURED_CATEGORY = 'House Fellowship Manuals 2027';
 
   // Fallback list (used if category_styles.json can't be loaded).
   const DEFAULT_CATEGORIES = [
     FEATURED_CATEGORY,
+    'House Fellowship Manuals 2026',
     'Bible Foundations',
     'Character & Holiness',
     'Emotional Health',

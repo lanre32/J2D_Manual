@@ -64,7 +64,8 @@
     "Stewardship": "Managing time, resources, work, and money with Kingdom priorities.",
     "Trials & Suffering": "Finding hope, endurance, and joy through challenges and seasons of pain.",
     "Emotional Health": "Healing, peace, and resilience — renewing the mind with God’s truth.",
-    "House Fellowship Manuals 2026": "RCCG House Fellowship Manuals for 2026 — ready-to-use weekly study guides (HTML + PDF)."
+    "House Fellowship Manuals 2027": "RCCG House Fellowship Manuals for 2026/2027 (September 2026 – August 2027) — ready-to-use weekly study guides (HTML + PDF).",
+    "House Fellowship Manuals 2026": "Archive: RCCG House Fellowship Manuals for 2025/2026 — weekly study guides (HTML + PDF)."
   };
 
   const state = {

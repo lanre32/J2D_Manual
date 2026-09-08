@@ -68,6 +68,11 @@
     "House Fellowship Manuals 2026": {
       "theme": "whitemarble",
       "font_pair": "playfair-sourcesans",
+      "order": 1
+    },
+    "House Fellowship Manuals 2027": {
+      "theme": "whitemarble",
+      "font_pair": "playfair-sourcesans",
       "order": 0
     }
   },
