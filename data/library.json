@@ -1,28 +1,1314 @@
 {
-  "generated_at": "2026-02-26 17:10:22",
+  "generated_at": "2026-03-11 04:34:54",
   "items": [
+    {
+      "title": "Faith, Salvation, and Healing",
+      "slug": "faith-salvation-and-healing",
+      "category": "Faith & Trust",
+      "date": "2026-03-11",
+      "big_idea": "Explore how faith acts as a conduit for receiving God's gifts, including salvation and healing. Delve into the concept of the 'day of salvation' as a period of divine deliverance and healing, and learn how to embrace these gifts through faith. Discover the importance of recognizing Jesus as the cornerstone of our faith journey.",
+      "primary_passages": [
+        "Psalm 118:19-24",
+        "Acts 4:11-12",
+        "Ephesians 2:20",
+        "1 Peter 2:4-6",
+        "Romans 1:16"
+      ],
+      "tags": [
+        "Faith and Salvation",
+        "Jesus as Cornerstone",
+        "Receiving God's Gifts",
+        "Day of Salvation",
+        "Faith and Healing"
+      ],
+      "url": "/manuals/faith-trust/faith-salvation-and-healing/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "Faith of the Heart vs. Head",
+      "slug": "faith-of-the-heart-vs-head",
+      "category": "Faith & Trust",
+      "date": "2026-03-11",
+      "big_idea": "Faith is more than intellectual agreement; it is a deep trust rooted in the heart. Through biblical examples like Abraham and Thomas, we learn how true faith operates and how it can be cultivated and increased through God's word. This study will guide you in understanding and applying heart faith in your daily walk with God.",
+      "primary_passages": [
+        "Mark 11:22-26",
+        "John 20:25-29",
+        "Romans 4:17-21",
+        "Romans 10:10",
+        "Hebrews 11:1"
+      ],
+      "tags": [
+        "Heart Faith",
+        "Head Faith",
+        "Biblical Examples",
+        "Trust in God",
+        "Faith Growth"
+      ],
+      "url": "/manuals/faith-trust/faith-of-the-heart-vs-head/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "Faith and Prayer in the Spirit",
+      "slug": "faith-and-prayer-in-the-spirit",
+      "category": "Holy Spirit & Power",
+      "date": "2026-03-11",
+      "big_idea": "Faith is cultivated through continuous exposure to the Word of God, while prayer, especially in the Spirit, empowers and edifies believers. Understanding the role of the Holy Spirit and the importance of prayer can transform personal faith and the effectiveness of the church's mission.",
+      "primary_passages": [
+        "Romans 10:17",
+        "Ephesians 6:18",
+        "1 Corinthians 14:2",
+        "Matthew 9:37-38",
+        "2 Corinthians 6:16"
+      ],
+      "tags": [
+        "Faith Development",
+        "Prayer in the Spirit",
+        "Holy Spirit Empowerment",
+        "Believers as God's Temple",
+        "Role of Prayer in Mission"
+      ],
+      "url": "/manuals/holy-spirit-power/faith-and-prayer-in-the-spirit/",
+      "theme": "black-gold"
+    },
+    {
+      "title": "Power of Jesus' Name for Healing",
+      "slug": "power-of-jesus-name-for-healing",
+      "category": "Holy Spirit & Power",
+      "date": "2026-03-11",
+      "big_idea": "Explore the profound authority and power vested in the name of Jesus Christ of Nazareth. Through biblical examples and teachings, understand how faith in His name can bring healing and strength. Learn the steps to harness this power in your life and witness the manifestation of the Holy Spirit.",
+      "primary_passages": [
+        "Acts 3:1-16",
+        "Proverbs 4:20-22",
+        "John 14:12-14",
+        "Philippians 2:5-10",
+        "Mark 16:15-18"
+      ],
+      "tags": [
+        "Power of Jesus' Name",
+        "Faith and Healing",
+        "Authority in Christ",
+        "Greater Works",
+        "Manifestation of the Holy Spirit"
+      ],
+      "url": "/manuals/holy-spirit-power/power-of-jesus-name-for-healing/",
+      "theme": "black-gold"
+    },
+    {
+      "title": "Authority of the Believer in Christ",
+      "slug": "authority-of-the-believer-in-christ",
+      "category": "Holy Spirit & Power",
+      "date": "2026-03-11",
+      "big_idea": "Discover the profound truth of your spiritual authority as a believer seated with Christ. Learn how to exercise this authority over the devil and navigate spiritual warfare with confidence. Embrace your role in God's kingdom and reign in life through Jesus Christ.",
+      "primary_passages": [
+        "Ephesians 1:16-23",
+        "Ephesians 2:1-6",
+        "Luke 10:19",
+        "Ephesians 6:12",
+        "James 4:7"
+      ],
+      "tags": [
+        "Authority of the Believer",
+        "Spiritual Warfare",
+        "Seated with Christ",
+        "Victory Over the Devil",
+        "Faith and Authority"
+      ],
+      "url": "/manuals/holy-spirit-power/authority-of-the-believer-in-christ/",
+      "theme": "black-gold"
+    },
+    {
+      "title": "Exercising Spiritual Authority in Christ",
+      "slug": "exercising-spiritual-authority-in-christ",
+      "category": "Holy Spirit & Power",
+      "date": "2026-03-11",
+      "big_idea": "Understanding and exercising spiritual authority is crucial for believers to live victoriously. Through Christ's resurrection, believers are empowered to overcome the enemy and fulfill their divine purpose. This study explores the biblical foundation of spiritual authority and practical steps to exercise it effectively.",
+      "primary_passages": [
+        "Ephesians 1:16-23",
+        "Luke 10:19",
+        "Colossians 2:12-15",
+        "Matthew 18:18"
+      ],
+      "tags": [
+        "Authority of the Believer",
+        "Spiritual Warfare",
+        "Power of Prayer",
+        "Faith in Action",
+        "Victory in Christ"
+      ],
+      "url": "/manuals/holy-spirit-power/exercising-spiritual-authority-in-christ/",
+      "theme": "black-gold"
+    },
+    {
+      "title": "Faith and Healing in Capernaum",
+      "slug": "faith-and-healing-in-capernaum",
+      "category": "Faith & Trust",
+      "date": "2026-03-11",
+      "big_idea": "The miracles of Jesus in Capernaum reveal profound truths about faith and healing. Through the story of the nobleman's son, we learn that faith in Jesus' word can lead to healing, even without His physical presence. This study examines how obedience and trust in gradual healing processes are integral to experiencing miracles.",
+      "primary_passages": [
+        "John 4:46-54",
+        "Matthew 8:14-15"
+      ],
+      "tags": [
+        "Faith in Jesus' Word",
+        "Healing Miracles",
+        "Obedience in Healing",
+        "Gradual Healing",
+        "Jesus' Authority"
+      ],
+      "url": "/manuals/faith-trust/faith-and-healing-in-capernaum/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "Trusting God's Care and Provision",
+      "slug": "trusting-gods-care-and-provision",
+      "category": "Faith & Trust",
+      "date": "2026-03-11",
+      "big_idea": "Discover the biblical promise of living a carefree life by trusting in God's provision and care. Learn how to effectively cast your burdens on God and overcome anxiety through faith. This study will guide you through scriptural principles that ensure your prayers align with God's will, leading to a worry-free life.",
+      "primary_passages": [
+        "1 Peter 5:7",
+        "Philippians 4:6"
+      ],
+      "tags": [
+        "Trusting God's Care",
+        "Overcoming Anxiety",
+        "Casting Burdens",
+        "Faith and Provision",
+        "Prayer and Thanksgiving"
+      ],
+      "url": "/manuals/faith-trust/trusting-gods-care-and-provision/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "Victory through Spiritual Authority",
+      "slug": "victory-through-spiritual-authority",
+      "category": "Holy Spirit & Power",
+      "date": "2026-03-11",
+      "big_idea": "Explore how believers can exercise their God-given authority to overcome spiritual challenges and possess the promises of God. Through key biblical passages, learn how to tread upon spiritual threats and live victoriously by faith. This study will guide you in understanding and applying spiritual authority in your daily life.",
+      "primary_passages": [
+        "Luke 10:19",
+        "Psalm 91:13",
+        "Colossians 2:15",
+        "Ephesians 6",
+        "Joshua 1:3"
+      ],
+      "tags": [
+        "Spiritual Authority",
+        "Victory in Christ",
+        "Faith and Power",
+        "Overcoming Spiritual Adversaries",
+        "Living Victoriously"
+      ],
+      "url": "/manuals/holy-spirit-power/victory-through-spiritual-authority/",
+      "theme": "black-gold"
+    },
+    {
+      "title": "Redemption and Faith Development",
+      "slug": "redemption-and-faith-development",
+      "category": "Faith & Trust",
+      "date": "2026-03-11",
+      "big_idea": "Faith is cultivated by consistently hearing and revisiting the Word of God. Understanding that Christ has redeemed us from the curse of the law empowers believers to claim the blessings promised to Abraham. This study will guide you through the process of planting and watering the Word in your heart, leading to spiritual growth and freedom from curses.",
+      "primary_passages": [
+        "Galatians 3:13",
+        "2 Peter 1",
+        "1 Corinthians 3:6",
+        "Deuteronomy 28"
+      ],
+      "tags": [
+        "Faith Development",
+        "Hearing the Word",
+        "Redemption from Curses",
+        "Abraham's Blessings",
+        "Spiritual Growth"
+      ],
+      "url": "/manuals/faith-trust/redemption-and-faith-development/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "God's Unchanging Call and Healing",
+      "slug": "gods-unchanging-call-and-healing",
+      "category": "Faith & Trust",
+      "date": "2026-03-11",
+      "big_idea": "Explore the unchanging nature of God's call and the power of healing through faith. Understand how ministering the Word, acting on it, and being led by the Spirit can manifest healing and restoration. Learn about the role of special faith in overcoming spiritual challenges.",
+      "primary_passages": [
+        "Romans 11:29",
+        "Isaiah 53:4-5",
+        "Matthew 8:17",
+        "1 Peter 2:24"
+      ],
+      "tags": [
+        "God's Unchanging Call",
+        "Healing Through Faith",
+        "Ministering the Word",
+        "Gifts of the Spirit",
+        "Special Faith"
+      ],
+      "url": "/manuals/faith-trust/gods-unchanging-call-and-healing/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "The Fight of Faith in Christ",
+      "slug": "the-fight-of-faith-in-christ",
+      "category": "Faith & Trust",
+      "date": "2026-03-11",
+      "big_idea": "Faith is a journey that involves understanding our identity in Christ and confessing His truths. By aligning our thoughts and actions with God's word, we can overcome spiritual challenges and embrace the new creation we are in Christ. This study explores how faith comes by hearing and how confession plays a crucial role in our spiritual growth.",
+      "primary_passages": [
+        "1 Timothy 6:12",
+        "Romans 10:17",
+        "2 Corinthians 5:17",
+        "Isaiah 43:25",
+        "Ephesians 1:3"
+      ],
+      "tags": [
+        "Faith Journey",
+        "Scripture Engagement",
+        "Identity in Christ",
+        "Power of Confession",
+        "Spiritual Growth"
+      ],
+      "url": "/manuals/faith-trust/the-fight-of-faith-in-christ/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "Effective Prayer and Casting Cares",
+      "slug": "effective-prayer-and-casting-cares",
+      "category": "Prayer & Intercession",
+      "date": "2026-03-11",
+      "big_idea": "Prayer is a multifaceted practice that requires understanding different types and their unique rules. By casting our cares on the Lord and avoiding worry, we can live in God's presence and pray effectively. This study explores how to apply these principles in daily life.",
+      "primary_passages": [
+        "Ephesians 6:18",
+        "1 Peter 5:7",
+        "Mark 11:24",
+        "Philippians 4:6"
+      ],
+      "tags": [
+        "Effective Prayer",
+        "Casting Cares",
+        "Prayer Types",
+        "Faith in Prayer",
+        "Living in God's Presence"
+      ],
+      "url": "/manuals/prayer-intercession/effective-prayer-and-casting-cares/",
+      "theme": "cream-leather"
+    },
+    {
+      "title": "Faith and Healing in Scripture",
+      "slug": "faith-and-healing-in-scripture",
+      "category": "Faith & Trust",
+      "date": "2026-03-11",
+      "big_idea": "Discover how healing is an integral part of God's redemptive plan and how faith plays a crucial role in receiving and maintaining healing. By understanding the spiritual nature of healing and recognizing the enemy's role in sickness, believers can act on God's promises to experience divine health.",
+      "primary_passages": [
+        "Isaiah 53:4-5",
+        "Matthew 8:17",
+        "1 Peter 2:24",
+        "Acts 10:38",
+        "Mark 11:24"
+      ],
+      "tags": [
+        "Divine Healing",
+        "Faith and Healing",
+        "Spiritual Warfare",
+        "God's Promises",
+        "Redemptive Plan"
+      ],
+      "url": "/manuals/faith-trust/faith-and-healing-in-scripture/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "Jesus' Healing Ministry in Galilee",
+      "slug": "jesus-healing-ministry-in-galilee",
+      "category": "Holy Spirit & Power",
+      "date": "2026-03-11",
+      "big_idea": "Jesus' ministry in Galilee was marked by miraculous healings and teachings that demonstrated His power over sickness and oppression. By understanding and confessing our redemption through Christ, we can experience healing and freedom from the curses of the law. This study explores how faith and confession play crucial roles in accessing the abundant life Jesus offers.",
+      "primary_passages": [
+        "Matthew 4:23-24",
+        "Matthew 8:2-3",
+        "Matthew 9:20-22",
+        "Acts 10:38",
+        "Galatians 3:13"
+      ],
+      "tags": [
+        "Jesus' Healing Ministry",
+        "Faith and Redemption",
+        "Power of Confession",
+        "Miracles in Galilee",
+        "Authority Over Sickness"
+      ],
+      "url": "/manuals/holy-spirit-power/jesus-healing-ministry-in-galilee/",
+      "theme": "black-gold"
+    },
+    {
+      "title": "Standing Against Spiritual Opposition",
+      "slug": "standing-against-spiritual-opposition",
+      "category": "Faith & Trust",
+      "date": "2026-03-11",
+      "big_idea": "In a world where spiritual opposition is a reality, believers are called to stand firm in their faith. By recognizing the source of opposition and grounding themselves in the promises of God, they can overcome doubt and unbelief. This study explores how to effectively wield the armor of God and walk in the light of His Word.",
+      "primary_passages": [
+        "Ephesians 6:10-17",
+        "2 Corinthians 4:4",
+        "Romans 10:17",
+        "1 John 1:7",
+        "Acts 27"
+      ],
+      "tags": [
+        "Spiritual Opposition",
+        "Armor of God",
+        "Faith in God's Word",
+        "Walking in the Light",
+        "Overcoming Doubt"
+      ],
+      "url": "/manuals/faith-trust/standing-against-spiritual-opposition/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "Power of Confession and Faith",
+      "slug": "power-of-confession-and-faith",
+      "category": "Faith & Trust",
+      "date": "2026-03-11",
+      "big_idea": "Discover how the words you speak can align you with God's will and release His power in your life. By understanding the biblical principles of confession and faith, you can experience transformation and victory. Learn to harness the power of your tongue to bring about healing, provision, and divine alignment.",
+      "primary_passages": [
+        "Romans 10:17",
+        "Mark 11:23",
+        "Proverbs 18:21",
+        "Isaiah 55:10-11",
+        "Hebrews 4:12"
+      ],
+      "tags": [
+        "Power of Confession",
+        "Speaking God's Word",
+        "Faith Activation",
+        "Words Shape Reality",
+        "Divine Alignment"
+      ],
+      "url": "/manuals/faith-trust/power-of-confession-and-faith/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "Authority of the Believer in Ephesians",
+      "slug": "authority-of-the-believer-in-ephesians",
+      "category": "Holy Spirit & Power",
+      "date": "2026-03-11",
+      "big_idea": "Discover the profound authority granted to believers through Christ as outlined in Ephesians. Learn how to pray effectively using Paul's prayers, stand firm against spiritual adversaries, and act on the knowledge of your position in Christ. This study will empower you to exercise your God-given authority with confidence.",
+      "primary_passages": [
+        "Ephesians 1:16-23",
+        "Ephesians 3:14-19",
+        "Ephesians 2:6",
+        "Luke 10:19",
+        "Matthew 28:18"
+      ],
+      "tags": [
+        "Authority of the Believer",
+        "Spiritual Warfare",
+        "Position in Christ",
+        "Prayers of Paul",
+        "Wisdom and Revelation"
+      ],
+      "url": "/manuals/holy-spirit-power/authority-of-the-believer-in-ephesians/",
+      "theme": "black-gold"
+    },
+    {
+      "title": "Lessons from the Laodicean Church",
+      "slug": "lessons-from-the-laodicean-church",
+      "category": "Character & Holiness",
+      "date": "2026-03-10",
+      "big_idea": "The message to the Laodicean church in Revelation highlights the dangers of being lukewarm in faith and relying on self-sufficiency. Jesus calls for a passionate and dependent relationship with God, promising rewards to those who overcome these spiritual pitfalls.",
+      "primary_passages": [
+        "Revelation 3:15-16",
+        "Romans 12:1"
+      ],
+      "tags": [
+        "Spiritual Complacency",
+        "Lukewarm Faith",
+        "Self-Sufficiency",
+        "Dependence on God",
+        "Overcoming Spiritual Pitfalls"
+      ],
+      "url": "/manuals/character-holiness/lessons-from-the-laodicean-church/",
+      "theme": "green-gold"
+    },
+    {
+      "title": "Redefining Male Roles in Marriage",
+      "slug": "redefining-male-roles-in-marriage",
+      "category": "Family & Parenting",
+      "date": "2026-03-10",
+      "big_idea": "In a world where traditional roles are evolving, men are called to be more than just providers. This study explores how men can embrace comprehensive leadership in marriage, focusing on partnership and mentorship. By redefining male roles, we can foster healthier relationships and stronger families.",
+      "primary_passages": [
+        "1 Timothy 5"
+      ],
+      "tags": [
+        "Redefining Male Roles",
+        "Spiritual Leadership",
+        "Emotional Leadership",
+        "Partnership in Marriage",
+        "Challenging Societal Norms"
+      ],
+      "url": "/manuals/family-parenting/redefining-male-roles-in-marriage/",
+      "theme": "Violet"
+    },
+    {
+      "title": "Empowering Women in Biblical Relationships",
+      "slug": "empowering-women-in-biblical-relationships",
+      "category": "Relationships",
+      "date": "2026-03-10",
+      "big_idea": "Women have a unique and powerful role in relationships, as illustrated by biblical figures like Eve and Rebecca. By understanding and embracing their intrinsic value, setting standards, and pursuing spiritual growth, women can navigate relationships with confidence and purpose. This study explores these themes through scripture and practical insights.",
+      "primary_passages": [
+        "Genesis 2:18",
+        "Proverbs 31:10",
+        "1 Peter 3:7",
+        "Malachi 2:13-14",
+        "Ecclesiastes 4:9"
+      ],
+      "tags": [
+        "Empowering Women",
+        "Biblical Relationships",
+        "Spiritual Growth",
+        "Relational Nature",
+        "Setting Standards"
+      ],
+      "url": "/manuals/relationships/empowering-women-in-biblical-relationships/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Identifying True Love: Lessons from Amnon",
+      "slug": "identifying-true-love-lessons-from-amnon",
+      "category": "Relationships",
+      "date": "2026-03-10",
+      "big_idea": "In a world where emotions can be misleading, it's crucial to distinguish between true love and mere infatuation. The story of Amnon and Tamar in Second Samuel provides a powerful lesson on the dangers of mistaking obsession for love. By examining biblical principles, we can learn to identify the signs of genuine affection and avoid the pitfalls of superficial attraction.",
+      "primary_passages": [
+        "2 Samuel 13"
+      ],
+      "tags": [
+        "Identifying True Love",
+        "Biblical Insights on Love",
+        "Distinguishing Love from Attraction",
+        "Relationship Red Flags",
+        "Genuine Affection"
+      ],
+      "url": "/manuals/relationships/identifying-true-love-lessons-from-amnon/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Biblical Approach to Anger and Forgiveness",
+      "slug": "biblical-approach-to-anger-and-forgiveness",
+      "category": "Emotional Health",
+      "date": "2026-03-10",
+      "big_idea": "In a world filled with emotional challenges, the Bible offers profound insights into managing anger and embracing forgiveness. By understanding these teachings, we can transform our emotional responses and strengthen our faith. Discover how forgiveness is not just a moral duty but a powerful act of faith that aligns us with God's will.",
+      "primary_passages": [
+        "Ephesians 4:26",
+        "Luke 23:34",
+        "Romans 12:19",
+        "Philippians 4:13"
+      ],
+      "tags": [
+        "Managing Emotions",
+        "Biblical Forgiveness",
+        "Anger Management",
+        "Faith and Emotions",
+        "Trusting God's Justice"
+      ],
+      "url": "/manuals/emotional-health/biblical-approach-to-anger-and-forgiveness/",
+      "theme": "cream-black"
+    },
+    {
+      "title": "Compatibility in Marriage: Beyond Love",
+      "slug": "compatibility-in-marriage-beyond-love",
+      "category": "Relationships",
+      "date": "2026-03-10",
+      "big_idea": "While love is often seen as the cornerstone of marriage, it is not enough on its own. True compatibility, especially in spiritual and life goals, is essential for a lasting relationship. This study explores the importance of agreement and selflessness in marriage, urging couples to look beyond fleeting feelings.",
+      "primary_passages": [
+        "Amos 3:3",
+        "2 Corinthians 6:14"
+      ],
+      "tags": [
+        "Compatibility in Marriage",
+        "Spiritual Alignment",
+        "Selflessness",
+        "Enduring Relationships",
+        "Shared Values"
+      ],
+      "url": "/manuals/relationships/compatibility-in-marriage-beyond-love/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Manhood and Christ-likeness",
+      "slug": "manhood-and-christ-likeness",
+      "category": "Identity & Purpose",
+      "date": "2026-03-10",
+      "big_idea": "Discover how being a real man transcends biological identity and becomes a conscious choice aligned with Christ-like virtues. This study delves into the essential traits of a real man, emphasizing the importance of wisdom, excellence, and being a God lover. Learn how to invest in relationships and opportunities while embodying the principles of biblical manhood.",
+      "primary_passages": [
+        "Genesis 3:9",
+        "1 Samuel 16:7",
+        "Ephesians 5:25",
+        "Proverbs 4:7",
+        "Philippians 2:5"
+      ],
+      "tags": [
+        "Christ-Like Manhood",
+        "Biblical Manhood",
+        "Wisdom and Excellence",
+        "Accountability",
+        "Godly Relationships"
+      ],
+      "url": "/manuals/identity-purpose/manhood-and-christ-likeness/",
+      "theme": "cozy-leather"
+    },
+    {
+      "title": "God's Design for Marriage and Family",
+      "slug": "gods-design-for-marriage-and-family",
+      "category": "Family & Parenting",
+      "date": "2026-03-10",
+      "big_idea": "Marriage and family are not just social constructs but divine institutions established by God. Understanding the roles and responsibilities within these relationships is crucial for personal and societal success. By choosing the right partner and investing in the relationship, individuals can fulfill God's purpose for their lives.",
+      "primary_passages": [
+        "Ephesians 5",
+        "1 Corinthians 7",
+        "Ephesians 2"
+      ],
+      "tags": [
+        "God's Design for Family",
+        "Marriage Roles",
+        "Biblical Relationships",
+        "Choosing a Partner",
+        "Intentional Love"
+      ],
+      "url": "/manuals/family-parenting/gods-design-for-marriage-and-family/",
+      "theme": "Violet"
+    },
+    {
+      "title": "Understanding Love in Marriage",
+      "slug": "understanding-love-in-marriage",
+      "category": "Relationships",
+      "date": "2026-03-10",
+      "big_idea": "Marriage is a complex relationship that requires more than just physical attraction. Understanding the different kinds of love—Agape, Eros, and Filio—is essential for a lasting and fulfilling marriage. This study explores the importance of godly character and friendship in building a strong marital foundation.",
+      "primary_passages": [
+        "Romans 5:5",
+        "1 Corinthians 13:4-7",
+        "Ephesians 5:25-33",
+        "Song of Solomon 8:6-7"
+      ],
+      "tags": [
+        "Love in Marriage",
+        "Agape Love",
+        "Eros and Filio",
+        "Godly Character",
+        "Friendship in Marriage"
+      ],
+      "url": "/manuals/relationships/understanding-love-in-marriage/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Healing from Emotional Baggage",
+      "slug": "healing-from-emotional-baggage",
+      "category": "Relationships",
+      "date": "2026-03-10",
+      "big_idea": "Everyone carries emotional baggage that impacts their relationships. By acknowledging and addressing these issues, individuals can foster healing and growth. Marriage, as a covenant, involves sharing both strengths and weaknesses, and God's love is key to overcoming personal flaws.",
+      "primary_passages": [
+        "Genesis",
+        "Luke 4:18"
+      ],
+      "tags": [
+        "Emotional Baggage",
+        "Healing in Relationships",
+        "Marriage Covenant",
+        "God's Love",
+        "Emotional Wounds"
+      ],
+      "url": "/manuals/relationships/healing-from-emotional-baggage/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "God's Provision in Marriage Finances",
+      "slug": "gods-provision-in-marriage-finances",
+      "category": "Stewardship",
+      "date": "2026-03-10",
+      "big_idea": "Explore how God is the ultimate source of provision in marriage, and why relying solely on financial security can lead to instability. Learn how cultural beliefs about financial roles differ from biblical teachings, and discover the importance of building relationships on genuine connections rather than financial dependency.",
+      "primary_passages": [
+        "Proverbs 31",
+        "First Timothy 5"
+      ],
+      "tags": [
+        "God's Provision",
+        "Marriage Finances",
+        "Financial Dependency",
+        "Biblical Financial Roles",
+        "Cultural Beliefs"
+      ],
+      "url": "/manuals/stewardship/gods-provision-in-marriage-finances/",
+      "theme": "greyish"
+    },
+    {
+      "title": "Biblical Foundations for Kingdom Marriage",
+      "slug": "biblical-foundations-for-kingdom-marriage",
+      "category": "Family & Parenting",
+      "date": "2026-03-10",
+      "big_idea": "Marriage is a sacred union that requires careful partner selection, open communication, and adherence to biblical principles. By prioritizing agreement, financial unity, and transparency, couples can create a strong and lasting relationship. This study explores how biblical teachings can guide couples in building a marriage that honors God and each other.",
+      "primary_passages": [
+        "Genesis 2:24",
+        "Amos 3:3",
+        "1 Corinthians 7",
+        "John 2:5"
+      ],
+      "tags": [
+        "Biblical Marriage",
+        "Mutual Commitment",
+        "Communication in Marriage",
+        "Financial Unity",
+        "Choosing the Right Partner"
+      ],
+      "url": "/manuals/family-parenting/biblical-foundations-for-kingdom-marriage/",
+      "theme": "Violet"
+    },
+    {
+      "title": "Building Intimacy in Marriage",
+      "slug": "building-intimacy-in-marriage",
+      "category": "Relationships",
+      "date": "2026-03-10",
+      "big_idea": "Discover how intimacy acts as the cornerstone of a resilient marriage. Through biblical insights and practical steps, learn to build a relationship that can withstand life's challenges. Explore the importance of trust, intentionality, and understanding in nurturing a strong marital bond.",
+      "primary_passages": [
+        "Genesis 2:23-24",
+        "Matthew 7:24-27"
+      ],
+      "tags": [
+        "Intimacy in Marriage",
+        "Strong Marital Foundation",
+        "Trust and Transparency",
+        "Intentional Practices",
+        "Biblical Marriage Principles"
+      ],
+      "url": "/manuals/relationships/building-intimacy-in-marriage/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Marriage: Seasons and Intentional Love",
+      "slug": "marriage-seasons-and-intentional-love",
+      "category": "Relationships",
+      "date": "2026-03-10",
+      "big_idea": "Marriage is a journey through various stages, each with its own challenges and joys. Like fine wine, it should become sweeter over time. By understanding the seasons of marriage and practicing intentional love, couples can navigate challenges and grow together spiritually and emotionally.",
+      "primary_passages": [
+        "Ecclesiastes 3:1",
+        "John 2:1-11"
+      ],
+      "tags": [
+        "Marriage Seasons",
+        "Intentional Love",
+        "Spiritual Growth",
+        "Marital Challenges",
+        "Transformation in Marriage"
+      ],
+      "url": "/manuals/relationships/marriage-seasons-and-intentional-love/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Communion with the Holy Spirit",
+      "slug": "communion-with-the-holy-spirit",
+      "category": "Holy Spirit & Power",
+      "date": "2026-03-10",
+      "big_idea": "Paul's final words to the Corinthians encapsulate the essence of Christian living: embracing the grace of Jesus, the love of God, and the active presence of the Holy Spirit. This study explores how these elements shape our faith and daily interactions, emphasizing the importance of communion with the Holy Spirit in our spiritual journey.",
+      "primary_passages": [
+        "2 Corinthians 13:11-14",
+        "John 3:16",
+        "1 Corinthians 2:9-12"
+      ],
+      "tags": [
+        "Trinity Roles",
+        "Grace of Jesus",
+        "Love of God",
+        "Holy Spirit Communion",
+        "Christian Living",
+        "Paul's Teachings"
+      ],
+      "url": "/manuals/holy-spirit-power/communion-with-the-holy-spirit/",
+      "theme": "black-gold"
+    },
+    {
+      "title": "Managing Marital Conflict Effectively",
+      "slug": "managing-marital-conflict-effectively",
+      "category": "Relationships",
+      "date": "2026-03-10",
+      "big_idea": "Conflicts in marriage are inevitable due to inherent differences between partners. By understanding and accepting these differences, couples can improve their relationships. This study explores practical strategies for managing marital conflict, focusing on communication styles and role dynamics.",
+      "primary_passages": [
+        "Ephesians 5:22-33",
+        "1 Peter 3:7",
+        "Colossians 3:18-19"
+      ],
+      "tags": [
+        "Managing Marital Conflict",
+        "Understanding Gender Differences",
+        "Communication in Marriage",
+        "Conflict Resolution Strategies",
+        "Marriage Dynamics"
+      ],
+      "url": "/manuals/relationships/managing-marital-conflict-effectively/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Choosing a Spouse with Love and Wisdom",
+      "slug": "choosing-a-spouse-with-love-and-wisdom",
+      "category": "Relationships",
+      "date": "2026-03-10",
+      "big_idea": "Marriage is more than just a feeling; it's a commitment that requires careful consideration of who you marry. By understanding the different types of love and ensuring a strong spiritual foundation, you can build a lasting relationship. Discover how friendship and commitment play crucial roles in choosing the right partner.",
+      "primary_passages": [
+        "1 Corinthians 13:4-7",
+        "Ephesians 5:25-33",
+        "Proverbs 18:22",
+        "1 Peter 3:7"
+      ],
+      "tags": [
+        "Choosing the Right Spouse",
+        "Love as Commitment",
+        "Spiritual Foundation in Marriage",
+        "Friendship in Marriage",
+        "Marriage Success"
+      ],
+      "url": "/manuals/relationships/choosing-a-spouse-with-love-and-wisdom/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Security and Faith in Marriage",
+      "slug": "security-and-faith-in-marriage",
+      "category": "Relationships",
+      "date": "2026-03-10",
+      "big_idea": "Marriage thrives on understanding and fulfilling each partner's needs, with security and faith being pivotal. This study delves into the unique perspectives of men and women, highlighting the importance of spiritual, emotional, and financial security, and the transformative power of faith. By examining these aspects, couples can build a resilient and harmonious relationship.",
+      "primary_passages": [
+        "Ephesians 5:25-33",
+        "1 Peter 3:7",
+        "Proverbs 31:10-31",
+        "1 Corinthians 13:4-7"
+      ],
+      "tags": [
+        "Security in Marriage",
+        "Faith in Relationships",
+        "Gender Perspectives",
+        "Emotional and Financial Needs",
+        "Spiritual Growth"
+      ],
+      "url": "/manuals/relationships/security-and-faith-in-marriage/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Respect and Understanding in Marriage",
+      "slug": "respect-and-understanding-in-marriage",
+      "category": "Relationships",
+      "date": "2026-03-10",
+      "big_idea": "In marriage, understanding the unique needs of men and women is crucial for a harmonious relationship. Men often perceive respect as their primary love language, which aligns with biblical teachings. By examining scriptural examples and principles, couples can learn to foster mutual respect and acceptance, leading to a more fulfilling partnership.",
+      "primary_passages": [
+        "Ephesians 5",
+        "1 Samuel 25",
+        "Proverbs 31"
+      ],
+      "tags": [
+        "Respect in Marriage",
+        "Biblical Principles",
+        "Understanding Needs",
+        "Ephesians 5",
+        "Abigail and David"
+      ],
+      "url": "/manuals/relationships/respect-and-understanding-in-marriage/",
+      "theme": "Turqbrown"
+    },
+    {
+      "title": "Marriage: Divine Design and Preparation",
+      "slug": "marriage-divine-design-and-preparation",
+      "category": "Family & Parenting",
+      "date": "2026-03-10",
+      "big_idea": "Marriage is a sacred union designed by God, reflecting His relationship with the church. To enter this covenant successfully, individuals must prepare through learning, character assessment, and building a strong foundation of companionship. Understanding the divine purpose of marriage helps avoid pitfalls and fosters a fulfilling partnership.",
+      "primary_passages": [
+        "Genesis 2:18-25",
+        "Ephesians 5",
+        "Genesis 5:1-2"
+      ],
+      "tags": [
+        "Divine Institution",
+        "Marriage Preparation",
+        "Selflessness in Marriage",
+        "Choosing a Spouse",
+        "Building Intimacy",
+        "Biblical Marriage Principles"
+      ],
+      "url": "/manuals/family-parenting/marriage-divine-design-and-preparation/",
+      "theme": "Violet"
+    },
+    {
+      "title": "True Worship: Spirit and Truth",
+      "slug": "true-worship-spirit-and-truth",
+      "category": "Worship & Church Life",
+      "date": "2026-03-05",
+      "big_idea": "In a conversation with the Samaritan woman, Jesus redefines worship as an act that transcends physical locations and rituals, focusing instead on the sincerity of the heart and alignment with divine truth. This study explores the biblical pattern for true worship, emphasizing the importance of living a life that reflects God's glory.",
+      "primary_passages": [
+        "John 4",
+        "Acts 15"
+      ],
+      "tags": [
+        "True Worship",
+        "Spirit and Truth",
+        "Heart Posture",
+        "Samaritan Woman",
+        "Tabernacle of David"
+      ],
+      "url": "/manuals/worship-church-life/true-worship-spirit-and-truth/",
+      "theme": "Blueocean"
+    },
+    {
+      "title": "Dimensions of Kingdom Come",
+      "slug": "dimensions-of-kingdom-come",
+      "category": "Holy Spirit & Power",
+      "date": "2026-03-05",
+      "big_idea": "The kingdom of God is not merely a religious concept but a comprehensive governmental system established through Jesus Christ. It involves the lordship, influence, and culture of Christ being manifested through believers. By understanding the kingdom as both a person and a program, believers can effectively participate in God's plan for world evangelization and discipleship.",
+      "primary_passages": [
+        "Daniel 2:44",
+        "Matthew 6",
+        "Colossians 1:15-19",
+        "Isaiah 6:8",
+        "Ephesians 3:10"
+      ],
+      "tags": [
+        "Kingdom of God",
+        "Jesus Christ",
+        "Evangelization",
+        "Discipleship",
+        "Manifesting the Kingdom"
+      ],
+      "url": "/manuals/holy-spirit-power/dimensions-of-kingdom-come/",
+      "theme": "black-gold"
+    },
+    {
+      "title": "God's Faithfulness and Timing",
+      "slug": "gods-faithfulness-and-timing",
+      "category": "Faith & Trust",
+      "date": "2026-03-05",
+      "big_idea": "In a world where waiting can lead to doubt, understanding God's timing and faithfulness is crucial. Through biblical examples like Joseph and Abraham, we see that delays are not denials but part of God's perfect plan. This study explores how to maintain faith and hope in God's promises, even when fulfillment seems distant.",
+      "primary_passages": [
+        "2 Peter 3:9",
+        "Habakkuk 2:2-3",
+        "Galatians 4:4",
+        "Romans 4:18-21",
+        "Isaiah 40:31"
+      ],
+      "tags": [
+        "Sovereign Timing of God",
+        "Faith in Delayed Promises",
+        "Endurance in Waiting",
+        "God's Faithfulness",
+        "Promise Fulfillment"
+      ],
+      "url": "/manuals/faith-trust/gods-faithfulness-and-timing/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "Spiritual Significance of Morning Prayer",
+      "slug": "spiritual-significance-of-morning-prayer",
+      "category": "Spiritual Disciplines",
+      "date": "2026-03-05",
+      "big_idea": "The first moments of the morning hold profound spiritual significance. By dedicating this time to prayer and declarations, believers can establish divine protection and purpose for their day. Emulating biblical figures like David and Jesus, who prioritized morning prayer, can lead to renewed mercies and spiritual provision.",
+      "primary_passages": [
+        "Psalm 5:3",
+        "Mark 1:35",
+        "Lamentations 3:22-23",
+        "Isaiah 50:4",
+        "Job 22:28"
+      ],
+      "tags": [
+        "Morning Prayer",
+        "Divine Connection",
+        "Daily Alignment",
+        "Spiritual Protection",
+        "Biblical Examples"
+      ],
+      "url": "/manuals/spiritual-disciplines/spiritual-significance-of-morning-prayer/",
+      "theme": "lilac-purple"
+    },
+    {
+      "title": "Establishing Systems for Breakthrough",
+      "slug": "establishing-systems-for-breakthrough",
+      "category": "Stewardship",
+      "date": "2026-03-05",
+      "big_idea": "Discover the prophetic importance of establishing systems in your life, drawing from biblical principles. Learn how the number four symbolizes completeness and how midweek can be a pivotal time for setting structures that lead to spiritual and financial breakthroughs. Embrace the wisdom of Scripture to build a life of sustained abundance and spiritual growth.",
+      "primary_passages": [
+        "Proverbs 24:3-4",
+        "Zechariah 4:10",
+        "1 Corinthians 1:8",
+        "John 11:52",
+        "Hebrews 9:14"
+      ],
+      "tags": [
+        "Spiritual Systems",
+        "Financial Stability",
+        "Biblical Principles",
+        "Sustained Growth",
+        "Prophetic Significance"
+      ],
+      "url": "/manuals/stewardship/establishing-systems-for-breakthrough/",
+      "theme": "greyish"
+    },
+    {
+      "title": "Platforms for Hosting God's Glory",
+      "slug": "platforms-for-hosting-gods-glory",
+      "category": "Spiritual Disciplines",
+      "date": "2026-03-05",
+      "big_idea": "Discover how prayer, word study, worship, obedience, and sacrifice serve as platforms for hosting the glory of God. Through scriptural insights, learn how these practices transform lives and invite divine presence. Embrace these spiritual disciplines to deepen your relationship with God and witness His glory in increasing measures.",
+      "primary_passages": [
+        "2 Chronicles 5:13-14",
+        "Luke 9:29-34",
+        "2 Corinthians 3:18",
+        "Exodus 25:9, 40; 40:33-35",
+        "Leviticus 9:6"
+      ],
+      "tags": [
+        "Manifesting God's Glory",
+        "Prayer and Worship",
+        "Biblical Obedience",
+        "Spiritual Transformation",
+        "Sacrifice and Faith"
+      ],
+      "url": "/manuals/spiritual-disciplines/platforms-for-hosting-gods-glory/",
+      "theme": "lilac-purple"
+    },
+    {
+      "title": "Encouraged by the Living Word",
+      "slug": "encouraged-by-the-living-word",
+      "category": "Bible Foundations",
+      "date": "2026-03-04",
+      "big_idea": "“In the beginning was the Word” (John 1:1) sets the foundation for why Scripture is not optional for faith and life. Psalm 1 portrays the blessed life as rooted and fruitful through delight in God’s instruction. Psalm 38 voices the honest need of a suffering heart that turns toward God rather than away from Him. This study encourages steady trust and direction through God’s Word.",
+      "primary_passages": [
+        "John 1:1",
+        "Psalms 1",
+        "Psalms 38"
+      ],
+      "tags": [
+        "Word Of God",
+        "Scripture As Foundation",
+        "Delight In God’s Instruction",
+        "Meditation Day And Night",
+        "Rooted And Fruitful Life",
+        "Honest Prayer In Distress"
+      ],
+      "url": "/manuals/bible-foundations/encouraged-by-the-living-word/",
+      "theme": "navy-gold"
+    },
+    {
+      "title": "Knowing God and Doing Exploits",
+      "slug": "knowing-god-and-doing-exploits",
+      "category": "Spiritual Disciplines",
+      "date": "2026-03-04",
+      "big_idea": "Two short verses sketch a whole discipleship pathway: keep God’s Word continually before you, and let it shape what you do. As you grow in truly knowing God, you are strengthened to stand firm and act boldly. This study traces that simple, repeatable rhythm—Word, obedience, and God-knowledge leading to spiritual strength and impact.",
+      "primary_passages": [
+        "Joshua 1:8a",
+        "Joshua 1:8b",
+        "Daniel 11:32a",
+        "Daniel 11:32b"
+      ],
+      "tags": [
+        "Meditating On Scripture",
+        "Word-Centered Living",
+        "Obedience To God’s Word",
+        "Knowing God Personally",
+        "Spiritual Strength",
+        "Courageous Action"
+      ],
+      "url": "/manuals/spiritual-disciplines/knowing-god-and-doing-exploits/",
+      "theme": "lilac-purple"
+    },
+    {
+      "title": "Persevere Without Looking Back",
+      "slug": "persevere-without-looking-back",
+      "category": "Trials & Suffering",
+      "date": "2026-03-04",
+      "big_idea": "Trials are not meaningless interruptions; they are a pathway God uses to produce maturity. Scripture warns against starting the journey and then turning back with divided focus. As God established His promise to Abram, believers are invited to keep their eyes forward and persevere until God’s work is complete.",
+      "primary_passages": [
+        "James 1:2-4",
+        "Luke 9:62",
+        "Genesis 15:19"
+      ],
+      "tags": [
+        "Perseverance In Trials",
+        "Endurance That Produces Maturity",
+        "Forward-Focused Discipleship",
+        "Undivided Commitment",
+        "Anchored In God’s Promises",
+        "Steady Faith Under Pressure"
+      ],
+      "url": "/manuals/trials-suffering/persevere-without-looking-back/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "Responding to God’s Vision in Light",
+      "slug": "responding-to-gods-vision-in-light",
+      "category": "Character & Holiness",
+      "date": "2026-03-04",
+      "big_idea": "“The Lord is showing me a vision” is not only about what is revealed—it is about how we respond. John 3:19–21 contrasts two paths: loving darkness to hide evil deeds, or coming to the light to live in truth. This study helps you examine your response to God’s revelation and choose a life that can stand openly in His light.",
+      "primary_passages": [
+        "John 3:19",
+        "John 3:20",
+        "John 3:21"
+      ],
+      "tags": [
+        "Coming Into The Light",
+        "Rejecting Hidden Sin",
+        "Doing Truth",
+        "Transparency Before God",
+        "Responding To God’s Revelation",
+        "Deeds Done In God"
+      ],
+      "url": "/manuals/character-holiness/responding-to-gods-vision-in-light/",
+      "theme": "green-gold"
+    },
+    {
+      "title": "Jesus the Word and Our Mission",
+      "slug": "jesus-the-word-and-our-mission",
+      "category": "Evangelism & Mission",
+      "date": "2026-03-04",
+      "big_idea": "Before anything was made, the Word already was—and all creation came through Him. God raised up a witness to point people to the light, and Jesus Himself came to do the Father’s will even when that path involved rejection and humiliation. After His victory, Jesus declares all authority and commissions His followers to go, make disciples, baptize, and teach with confidence in His continual presence.",
+      "primary_passages": [
+        "John 1:1-3",
+        "Matthew 28:18-20",
+        "Hebrews 10:7",
+        "John 1:6",
+        "Mark 15:16"
+      ],
+      "tags": [
+        "Jesus The Eternal Word",
+        "Great Commission",
+        "Witness To The Light",
+        "Obedience To God’s Will",
+        "Authority Of Christ",
+        "Endurance In Suffering"
+      ],
+      "url": "/manuals/evangelism-mission/jesus-the-word-and-our-mission/",
+      "theme": "armygreen"
+    },
+    {
+      "title": "Daniel’s Resolve in a Defiling Culture",
+      "slug": "daniels-resolve-in-a-defiling-culture",
+      "category": "Character & Holiness",
+      "date": "2026-03-04",
+      "big_idea": "Many of us right now sense the Lord calling for clear, inward resolve. Daniel 1:8 shows a quiet but firm decision: Daniel purposed in his heart that he would not defile himself. This study explores what that kind of decision looks like and how faithfulness can be lived out with wisdom under real pressure.",
+      "primary_passages": [
+        "Daniel 1:8",
+        "Daniel 1:3-5",
+        "Daniel 1:9-16",
+        "Daniel 1:17-20"
+      ],
+      "tags": [
+        "Purpose In The Heart",
+        "Resisting Cultural Pressure",
+        "Holiness Without Compromise",
+        "Wisdom Under Authority",
+        "Faithfulness In A Foreign Culture",
+        "Trusting God For Favor"
+      ],
+      "url": "/manuals/character-holiness/daniels-resolve-in-a-defiling-culture/",
+      "theme": "green-gold"
+    },
+    {
+      "title": "Sent by Jesus in God’s Love",
+      "slug": "sent-by-jesus-in-gods-love",
+      "category": "Evangelism & Mission",
+      "date": "2026-03-04",
+      "big_idea": "The same Jesus who is worthy of “hallelujah” and “praise the Lord” also speaks a commission: “As the Father has sent Me, I also send you.” His sending is rooted in God’s love, empowered by faith for meaningful works, and strengthened by the promise that He has prepared a place for His people. This study traces those themes through key moments and promises in John’s Gospel.",
+      "primary_passages": [
+        "John 20:21",
+        "John 3:16",
+        "John 14:12",
+        "John 14:2",
+        "John 18:1"
+      ],
+      "tags": [
+        "Sent By Jesus",
+        "God’s Love In Christ",
+        "Believe And Obey",
+        "Faith That Works",
+        "Hope Of A Prepared Place",
+        "Mission In The Gospel Of John"
+      ],
+      "url": "/manuals/evangelism-mission/sent-by-jesus-in-gods-love/",
+      "theme": "armygreen"
+    },
+    {
+      "title": "God’s Good Word: Restoration",
+      "slug": "gods-good-word-restoration",
+      "category": "Faith & Trust",
+      "date": "2026-03-04",
+      "big_idea": "One word can reframe everything: restoration. This study centers on the simple but powerful claim that restoration is a good word from God. As you read, reflect, and pray, let this word shape your expectations and response.",
+      "primary_passages": [
+        "Joel 2:25",
+        "Psalm 23:3",
+        "Jeremiah 30:17",
+        "Isaiah 61:7",
+        "1 Peter 5:10"
+      ],
+      "tags": [
+        "Restoration Promises",
+        "Receiving God’s Good Word",
+        "Hope After Loss",
+        "Healing And Renewal",
+        "Persevering Through Suffering",
+        "Strengthened And Established"
+      ],
+      "url": "/manuals/faith-trust/gods-good-word-restoration/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "Revival, Gift-Stirring, and Steadfast Living",
+      "slug": "revival-gift-stirring-and-steadfast-living",
+      "category": "Faith & Trust",
+      "date": "2026-03-04",
+      "big_idea": "These scriptures together point to renewal: God revives, heals, redeems, and supplies. They also call believers to respond—by stirring up what God has given and staying steadfast in His work. As you study, look for how God’s restoration connects with daily faithfulness, provision, protection, and unity.",
+      "primary_passages": [
+        "2 Timothy 1:6",
+        "Hosea 6:2",
+        "1 Corinthians 15:58",
+        "Deuteronomy 8:18",
+        "2 Corinthians 9:10",
+        "1 Peter 2:24"
+      ],
+      "tags": [
+        "Revival And Restoration",
+        "Stirring Up Spiritual Gifts",
+        "Steadfast Perseverance",
+        "Divine Provision And Increase",
+        "Healing And Redemption In Christ",
+        "Unity And Spiritual Protection"
+      ],
+      "url": "/manuals/faith-trust/revival-gift-stirring-and-steadfast-living/",
+      "theme": "whitemarble"
+    },
+    {
+      "title": "Philadelphia: Obedience and Divine Reward",
+      "slug": "philadelphia-obedience-and-divine-reward",
+      "category": "Character & Holiness",
+      "date": "2026-03-02",
+      "big_idea": "Explore how the church in Philadelphia received commendation from Jesus for their obedience and faithfulness. Learn about the importance of accepting correction with humility and the blessings that follow obedience. Discover the framework for evaluating spiritual health and the promises given to those who endure trials with faith.",
+      "primary_passages": [
+        "Revelation 3:7-13",
+        "Hebrews 12",
+        "1 Timothy 3:16",
+        "Isaiah 1:19",
+        "Deuteronomy 28"
+      ],
+      "tags": [
+        "Obedience and Reward",
+        "Spiritual Growth",
+        "Divine Protection",
+        "Endurance in Trials",
+        "Humility in Correction"
+      ],
+      "url": "/manuals/character-holiness/philadelphia-obedience-and-divine-reward/",
+      "theme": "green-gold"
+    },
+    {
+      "title": "Philadelphia: Obedience and the Open Door",
+      "slug": "philadelphia-obedience-and-the-open-door",
+      "category": "Character & Holiness",
+      "date": "2026-03-02",
+      "big_idea": "Revelation’s message to Philadelphia presents Jesus as the Holy and True One who opens what no one can shut. The same Lord calls His people to keep His word, refuse denial, and hold fast. This study traces how Christ’s authority, our obedience, and a life that fears God fit together in a practical, lifelong response.",
+      "primary_passages": [
+        "Revelation 3:7-13",
+        "Isaiah 22:22",
+        "Luke 5:5",
+        "Isaiah 1:19",
+        "Ecclesiastes 12:13",
+        "1 Timothy 3:16"
+      ],
+      "tags": [
+        "Church In Philadelphia",
+        "Key Of David",
+        "Open Door",
+        "Keeping His Word",
+        "Faithful Obedience",
+        "Hold Fast Perseverance",
+        "Fear Of God"
+      ],
+      "url": "/manuals/character-holiness/philadelphia-obedience-and-the-open-door/",
+      "theme": "green-gold"
+    },
+    {
+      "title": "God's Comprehensive Protection Plan",
+      "slug": "gods-comprehensive-protection-plan",
+      "category": "Spiritual Disciplines",
+      "date": "2026-02-27",
+      "big_idea": "Explore how God's protection is like a divine insurance policy, offering safety and healing beyond human capabilities. Through prayer, fasting, and obedience, believers can experience God's miraculous timing and comprehensive care. This study delves into biblical examples and teachings that illustrate the power of faith and preparation in accessing God's promises.",
+      "primary_passages": [
+        "Psalm 91",
+        "Matthew 17:13-23",
+        "Exodus 15:26",
+        "John 10:10",
+        "John 3:16"
+      ],
+      "tags": [
+        "Divine Protection",
+        "Faith and Obedience",
+        "Prayer and Fasting",
+        "God's Promises",
+        "Miraculous Timing"
+      ],
+      "url": "/manuals/spiritual-disciplines/gods-comprehensive-protection-plan/",
+      "theme": "lilac-purple"
+    },
+    {
+      "title": "God's Comprehensive Protection Plan",
+      "slug": "gods-comprehensive-protection-plan",
+      "category": "Faith & Trust",
+      "date": "2026-02-27",
+      "big_idea": "In a world where human insurance policies have limitations, God's comprehensive protection plan offers complete coverage for every aspect of life. By surrendering to Jesus Christ and staying under His divine cover, believers can experience healing, provision, and eternal life. Discover how God's promises ensure that the righteous are never forsaken and how His wisdom is freely given to those who ask.",
+      "primary_passages": [
+        "John 3:16",
+        "1 Peter 2:24",
+        "Exodus 15:26",
+        "John 10:10",
+        "Psalm 37:25"
+      ],
+      "tags": [
+        "Divine Insurance",
+        "God's Protection",
+        "Faith in Jesus",
+        "Eternal Life",
+        "Healing and Provision"
+      ],
+      "url": "/manuals/faith-trust/gods-comprehensive-protection-plan/",
+      "theme": "whitemarble"
+    },
     {
       "title": "Restoration Through Humility",
       "slug": "restoration-through-humility",
       "category": "Character & Holiness",
-      "date": "2026-02-26",
-      "big_idea": "Nebuchadnezzar's journey from prideful king to restored ruler is a powerful testament to the dangers of pride and the transformative power of humility and God's mercy. Through his story, we learn that storms are inevitable, but God's grace can restore and renew us, offering new beginnings even after the darkest times.",
+      "date": "2026-02-27",
+      "big_idea": "Nebuchadnezzar's journey from prideful ruler to a humbled servant of God offers timeless lessons on the consequences of arrogance and the transformative power of divine mercy. Through his story, we learn that no matter how far we fall, God can restore us if we turn to Him with humility and faith.",
       "primary_passages": [
         "Daniel 4:34-37",
         "Proverbs 16:18",
-        "James 4:6",
         "John 16:33",
         "Isaiah 43:1-2"
       ],
       "tags": [
-        "Nebuchadnezzar's Pride",
-        "God's Restoration",
-        "Humility and Grace",
-        "Overcoming Pride",
-        "Spiritual Renewal"
+        "Nebuchadnezzar's Story",
+        "Dangers of Pride",
+        "God's Mercy",
+        "Restoration",
+        "Humility and Faith"
       ],
       "url": "/manuals/character-holiness/restoration-through-humility/",
       "theme": "green-gold"
+    },
+    {
+      "title": "Power of Jesus' Name in Warfare",
+      "slug": "power-of-jesus-name-in-warfare",
+      "category": "Holy Spirit & Power",
+      "date": "2026-02-27",
+      "big_idea": "Discover the transformative power of invoking Jesus' name in spiritual battles. Learn how submission to God and resistance against evil can lead to victory over darkness. Through biblical examples, understand the authority believers have in Jesus to overcome demonic oppression.",
+      "primary_passages": [
+        "Philippians 2:9-11",
+        "Colossians 2:15",
+        "James 4:7",
+        "Mark 5:2-15",
+        "1 John 3:8"
+      ],
+      "tags": [
+        "Authority of Jesus",
+        "Spiritual Warfare",
+        "Overcoming Darkness",
+        "Submission to God",
+        "Victory in Christ"
+      ],
+      "url": "/manuals/holy-spirit-power/power-of-jesus-name-in-warfare/",
+      "theme": "black-gold"
     },
     {
       "title": "Restoration Through Humility",
